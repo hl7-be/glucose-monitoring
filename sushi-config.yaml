@@ -7,20 +7,20 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: hl7.fhir.eu.empty-ig
-canonical: http://example.com/fhir/empty-ig
-url: http://example.com/fhir/example/ImplementationGuide/empty-ig
-name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
-description: Example IG exercises many of the fields in a SUSHI configuration.
-status: active
+id: hl7.fhir.be.glucose-monitoring
+canonical: https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring
+url: https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring
+name: Glucose Monitoring
+title: "HL7 FHIR Implementation Guide: Glucose Monitoring"
+description: "HL7 FHIR Implementation Guide: Glucose Monitoring"
+status: draft
 license: CC0-1.0
 date: 2020-02-26
 version: 1.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
-# it can be a single item OR and array here, but the current tooling 
-# only supports one FHIR version per Implementation Guide
+# it can be a single item OR and array here (but so far SUSHI only
+# supports 4.0.1 anyway).
 fhirVersion: 4.0.1
 
 # The following two lines correspond to items that used to be in
@@ -37,23 +37,23 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
-  email: my-group@example.com
+  name: eHealth Platform 
+  url: https://www.ehealth.fgov.be
+  email: message-structure@www.ehealth.fgov.be
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: Message-Structure
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: message-structure@www.ehealth.fgov.be
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
 # code syntax can be used here.
 
-#jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
+#jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -130,49 +130,16 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # sub-pages.
 pages:
   index.xml:
-    title: Home
-  scope.md:
-    title: Scope and Content
-  background.md:
-    title: Background
-  challenges.md:
-    title: Challenges
-  design.md:
-    title: Design Choices
-  references.md:
-    title: References
-  usecases.md:
-    title: Use Cases
-  workflow.md:
-    title: Workflow
-  logicals.md:
-    title: Logical models
-  terminology.md:
-    title: Terminology Considerations
-  profilemapping.md:
-    title: Mapping to profiles
-  examples.md:
-    title: Examples
-
-  implementationnotes.md:
-    title: Implementation notes
-  authors.md:
-    title: Authors
-  knownissues.md:
-    title: Known issues
-  downloads.md:
-    title: Downloads
-  dependencies.md:
-    title: Dependencies
-  copyright.md:
-    title: Copyright
-  xversion.md:
-    title: Cross-version
-
-#  artifacts.md: artifacts.html
+    title: Glucose Monitoring
+  guidance.xml:
+    title: Guidance
+  spec.md:
+  changes.xml:
+  downloads.xml:
 
 
 
+# The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
 # should follow the format defined in ImplementationGuide:
 # * meta
@@ -195,40 +162,15 @@ pages:
 # include a `menu.xml` file in input/includes.
 menu:
   Home: index.html
-#  Guidance: guidance.html
-  Introduction: 
-    Scope and content: scope.html
-    Background: background.html
-    Challenges: challenges.html
-    Design choices: design.html
-    References: references.html
-  Functional:
-    Use cases: usecases.html
-    Workflow: workflow.html
-#      - Status management
-#      - Scenarios
-    Logical models: logicals.html
-    Terminology considerations: terminology.html
-
-
-  Implementation:
-    Mapping to profiles: profilemapping.html
-    Examples: examples.html
-    Implementation notes: implementationnotes.html
-
-  About: 
-    Authors: authors.html
-    Known issues: knownissues.html
-    Downloads: downloads.html
-    Dependencies: dependencies.html
-    Copyright: copyright.html
-    Cross-version analysis: xversion.html
-
-  Artifacts: artifacts.html
-  Rx: index.html
-#  Downloads: downloads.html
-#  Changes: changes.html
-#  History: ../history.html
+  Guidance: guidance.html
+  Artifacts:
+    Logical Models: artifacts.html#structures-logical-models
+    Profiles: artifacts.html#structures-resource-profiles
+    Value Sets: artifacts.html#terminology-value-sets
+    Naming Systems: artifacts.html#terminology-naming-systems
+    Examples: artifacts.html#example-example-instances
+  Downloads: downloads.html
+#  History: http://hl7.org/fhir/us/example/history.html
 
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -239,6 +181,13 @@ menu:
 #parameters:
 #  excludettl: true
 #  validation: [allow-any-extensions, no-broken-links]
+parameters:
+  shownav: 'true'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+  path-expansion-params: Parameters-terminology-expansion.json
 
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.
@@ -248,3 +197,45 @@ FSHOnly: false
 # When set to true, the "short" and "definition" field on the root element of an Extension will
 # be set to the "Title" and "Description" of that Extension. Default is true.
 #applyExtensionMetadataToRoot: false
+
+
+dependencies:
+  hl7.fhir.be.core: current
+  hl7.fhir.be.core-clinical: current
+  hl7.fhir.extensions.r5: 4.0.1  
+
+resources:
+  Bundle/uc52-bundle:
+    name: Use case 5.2
+    description: Bundle containing only a pdf, no derived data  
+  Composition/uc52-composition:
+    name: Use case 5.2 (Composition)
+    description: Index page of the Bundle
+  DiagnosticReport/uc52-pdfonly:
+    name: Use case 5.2 (Diagnostic Report)
+    description: Diagnostic report, containing the pdf
+  Bundle/uc53-bundle:
+    name: Use case 5.3
+    description: Bundle containing pdf and derived data (with/without reference range)
+  DiagnosticReport/uc53-pdf-derived:
+    name: Use case 5.3 (Diagnostic Report)
+    description: Diagnostic report, containing a pdf and references to derived observations
+  Composition/uc53-composition:
+    name: Use case 5.3 (Composition)
+    description: Index page of the Bundle
+  Observation/c611b58d-27bb-49e2-b3ec-bd59e986f5f3:
+    name: Use case 5.3 (Observation)
+  Observation/397dffb4-a88a-47d0-b10d-beffcbf6157d:
+    name: Use case 5.3 (Observation)
+  Observation/6756477d-b57a-4611-b048-374d46f52908:
+    name: Use case 5.3 (Observation)
+  Observation/b28ef33b-0480-4bde-a5df-94988813110b:
+    name: Use case 5.3 (Observation)
+  Observation/449a728d-dfb4-422d-94aa-1a2d43849ee5:
+    name: Use case 5.3 (Observation)
+  Observation/a6665182-e11a-40a9-ae83-9b093a353f16:
+    name: Use case 5.3 (Observation)
+  Observation/454a29d0-0893-458a-b2e5-25452b89e29a:
+    name: Use case 5.3 (Observation)
+  Device/device:
+    name: Use case 5.3 (Device)

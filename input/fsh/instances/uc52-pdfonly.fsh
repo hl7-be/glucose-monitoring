@@ -1,6 +1,6 @@
 Instance: uc52-bundle
 InstanceOf: Bundle
-* identifier[+].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-diagnostic-report-diabetes"
+* identifier[+].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diagnostic-report-diabetes"
 * identifier[=].value = "6e126868-aa6a-41ef-b7fb-3c8b690d8ffb"
 * type = #document
 * entry[+].resource = uc52-composition
@@ -21,7 +21,7 @@ InstanceOf: Composition
 
 Instance: uc52-pdfonly
 InstanceOf: BeDiagnosticReportDiabetes
-* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-diagnostic-report-diabetes"
+* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diagnostic-report-diabetes"
 * identifier[UUID][=].value = "6e126868-aa6a-41ef-b7fb-3c8b690d8ffb"
 * extension[BeExtRecordedDate].valueDateTime = "2024-11-25"
 * effectivePeriod.start = "2024-11-11"
@@ -34,7 +34,7 @@ InstanceOf: BeDiagnosticReportDiabetes
 * category[+] = $sct#408475000
 * category[+] = $sct#394583002
 * code = $sct#439926003
-* extension[device].extension[concept].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-diabetes-device-type#701010000576
+* extension[device].extension[concept].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diabetes-device-type#701010000576
 * status = #final
 * presentedForm.data = "JVBERi0xLjANCjEgMCBvYmo8PC9QYWdlcyAyIDAgUj4+ZW5kb2JqIDIgMCBvYmo8PC9LaWRzWzMgMCBSXS9Db3VudCAxPj5lbmRvYmogMyAwIG9iajw8L01lZGlhQm94WzAgMCAzIDNdPj5lbmRvYmoNCnRyYWlsZXI8PC9Sb290IDEgMCBSPj4="
 * presentedForm.contentType = #"application/pdf"

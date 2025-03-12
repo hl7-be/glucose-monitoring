@@ -1,6 +1,6 @@
 Instance: uc53-bundle
 InstanceOf: Bundle
-* identifier[+].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-diagnostic-report-diabetes"
+* identifier[+].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diagnostic-report-diabetes"
 * identifier[=].value = "6e126868-aa6a-41ef-b7fb-3c8b690d8ffb"
 * type = #document
 * entry[+].resource = uc53-composition
@@ -40,7 +40,7 @@ InstanceOf: Composition
 
 Instance: uc53-pdf-derived
 InstanceOf: BeDiagnosticReportDiabetes
-* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-diagnostic-report-diabetes"
+* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diagnostic-report-diabetes"
 * identifier[UUID][=].value = "6e126868-aa6a-41ef-b7fb-3c8b690d8ffb"
 * extension[BeExtRecordedDate].valueDateTime = "2024-11-25"
 * effectivePeriod.start = "2024-11-11"
@@ -53,7 +53,7 @@ InstanceOf: BeDiagnosticReportDiabetes
 * category[+] = $sct#408475000
 * category[+] = $sct#394583002
 * code = $sct#439926003
-* extension[device].extension[concept].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-diabetes-device-type#701010000576
+* extension[device].extension[concept].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diabetes-device-type#701010000576
 * status = #final
 * presentedForm.data = "JVBERi0xLjANCjEgMCBvYmo8PC9QYWdlcyAyIDAgUj4+ZW5kb2JqIDIgMCBvYmo8PC9LaWRzWzMgMCBSXS9Db3VudCAxPj5lbmRvYmogMyAwIG9iajw8L01lZGlhQm94WzAgMCAzIDNdPj5lbmRvYmoNCnRyYWlsZXI8PC9Sb290IDEgMCBSPj4="
 * presentedForm.contentType = #"application/pdf"
@@ -69,7 +69,7 @@ InstanceOf: BeDiagnosticReportDiabetes
 Instance: c611b58d-27bb-49e2-b3ec-bd59e986f5f3
 InstanceOf: BeObservationDiabetes
 Description: "Coefficient of variation"
-* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-observation-diabetes"
+* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-observation-diabetes"
 * identifier[UUID][=].value = "c611b58d-27bb-49e2-b3ec-bd59e986f5f3"
 * extension[BeExtRecordedDate].valueDateTime = "2024-11-25"
 * effectivePeriod.start = "2024-11-11"
@@ -97,7 +97,7 @@ Description: "Coefficient of variation"
 Instance: 397dffb4-a88a-47d0-b10d-beffcbf6157d
 InstanceOf: BeObservationDiabetes
 Description: "Days sensor worn"
-* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-observation-diabetes"
+* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-observation-diabetes"
 * identifier[UUID][=].value = "397dffb4-a88a-47d0-b10d-beffcbf6157d"
 * extension[BeExtRecordedDate].valueDateTime = "2024-11-25"
 * effectivePeriod.start = "2024-11-11"
@@ -127,7 +127,7 @@ Description: "Days sensor worn"
 Instance: 6756477d-b57a-4611-b048-374d46f52908
 InstanceOf: BeObservationDiabetes
 Description: "% Data Captured"
-* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-observation-diabetes"
+* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-observation-diabetes"
 * identifier[UUID][=].value = "6756477d-b57a-4611-b048-374d46f52908"
 * extension[BeExtRecordedDate].valueDateTime = "2024-11-25"
 * effectivePeriod.start = "2024-11-11"
@@ -156,7 +156,7 @@ Description: "% Data Captured"
 Instance: b44fe5d5-f57b-4424-b628-d2baeb447738
 InstanceOf: BeObservationDiabetes
 Description: "TAR-Very high"
-* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-observation-diabetes"
+* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-observation-diabetes"
 * identifier[UUID][=].value = "b44fe5d5-f57b-4424-b628-d2baeb447738"
 * extension[BeExtRecordedDate].valueDateTime = "2024-11-25"
 * effectivePeriod.start = "2024-11-11"
@@ -186,7 +186,7 @@ Description: "TAR-Very high"
 Instance: b28ef33b-0480-4bde-a5df-94988813110b
 InstanceOf: BeObservationDiabetes
 Description: "TAR-High"
-* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-observation-diabetes"
+* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-observation-diabetes"
 * identifier[UUID][=].value = "b28ef33b-0480-4bde-a5df-94988813110b"
 * extension[BeExtRecordedDate].valueDateTime = "2024-11-25"
 * effectivePeriod.start = "2024-11-11"
@@ -215,7 +215,7 @@ Description: "TAR-High"
 Instance: 449a728d-dfb4-422d-94aa-1a2d43849ee5
 InstanceOf: BeObservationDiabetes
 Description: "TIR"
-* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-observation-diabetes"
+* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-observation-diabetes"
 * identifier[UUID][=].value = "449a728d-dfb4-422d-94aa-1a2d43849ee5"
 * extension[BeExtRecordedDate].valueDateTime = "2024-11-25"
 * effectivePeriod.start = "2024-11-11"
@@ -246,7 +246,7 @@ Description: "TIR"
 Instance: a6665182-e11a-40a9-ae83-9b093a353f16
 InstanceOf: BeObservationDiabetes
 Description: "TBR Time below range - low"
-* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-observation-diabetes"
+* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-observation-diabetes"
 * identifier[UUID][=].value = "a6665182-e11a-40a9-ae83-9b093a353f16"
 * extension[BeExtRecordedDate].valueDateTime = "2024-11-25"
 * effectivePeriod.start = "2024-11-11"
@@ -276,7 +276,7 @@ Description: "TBR Time below range - low"
 Instance: 454a29d0-0893-458a-b2e5-25452b89e29a
 InstanceOf: BeObservationDiabetes
 Description: "TBR Time below range – very low"
-* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-observation-diabetes"
+* identifier[UUID][+].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-observation-diabetes"
 * identifier[UUID][=].value = "454a29d0-0893-458a-b2e5-25452b89e29a"
 * extension[BeExtRecordedDate].valueDateTime = "2024-11-25"
 * effectivePeriod.start = "2024-11-11"
@@ -304,7 +304,7 @@ Description: "TBR Time below range – very low"
 
 Instance: device
 InstanceOf: Device
-* type.coding.system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-diabetes-device-type"
+* type.coding.system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diabetes-device-type"
 * type.coding.code = #701010000576
 
 

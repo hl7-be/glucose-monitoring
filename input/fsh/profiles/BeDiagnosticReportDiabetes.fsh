@@ -5,16 +5,16 @@ Id: be-diagnostic-report-diabetes
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open 
 * identifier contains UUID 1..1 MS
-* identifier[UUID].system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-diagnostic-report-diabetes"
+* identifier[UUID].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diagnostic-report-diabetes"
 * extension contains BeExtRecordedDate named recorded-date 1..1 MS and
     BeExtRecorder named recorder 1..1 MS and
     BeExtCodeableReference named device 0..1 MS and
-    BeExtSimpleNote named note 0..* MS and
-    http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
+    BeExtSimpleNote named note 0..* MS //and
+    //http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
 * extension[device].extension[concept].valueCodeableConcept 1..1 MS
-* extension[device].extension[concept].valueCodeableConcept.coding.system = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-diabetes-device-type"
+* extension[device].extension[concept].valueCodeableConcept.coding.system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diabetes-device-type"
 * effective[x] only Period
-* effectivePeriod MS
+* effectivePeriod 1..1 MS
 * effectivePeriod.start 1..1 MS
 * effectivePeriod.end 1..1 MS
 * resultsInterpreter only Reference(BePractitionerRole or BePractitioner)
@@ -27,9 +27,10 @@ Id: be-diagnostic-report-diabetes
 * result ^slicing.discriminator.path = "reference.resolve().code"
 * result ^slicing.rules = #open  
 * result MS
-* result only Reference(BeObservation)
+* result only Reference(BeObservationDiabetes)
 * conclusion MS
 * presentedForm MS
 * presentedForm.contentType = #"application/pdf"
 * status MS
 * status from BeVSDiabetesReportStatus
+* subject 1..1 MS

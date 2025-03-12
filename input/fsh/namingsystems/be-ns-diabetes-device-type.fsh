@@ -7,5 +7,5 @@ Usage: #definition
 * kind = #identifier
 * date = "2024"
 * uniqueId[+].type = #uri
-* uniqueId[=].value = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/NamingSystem/be-ns-diabetes-device-type"
+* uniqueId[=].value = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diabetes-device-type"
 * uniqueId[=].preferred = true

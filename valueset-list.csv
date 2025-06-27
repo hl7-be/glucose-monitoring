@@ -1,0 +1,7 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-category,1.0.0,draft,,BeVSDiabetesObservationCategory,BeVSDiabetesObservationCategory,"Values to be used in the categorisation of Diabetes observations",,"SCT"
+https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-code,1.0.0,draft,,BeVSDiabetesObservationCode,BeVSDiabetesObservationCode,"Values to be used in the code of Diabetes observations",,"SCT"
+https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-status,1.0.0,draft,,BeVSDiabetesObservationStatus,BeVSDiabetesObservationStatus,"Values to be used in the status of Diabetes observations",,"hl7.fhir.r4.core"
+https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-category,1.0.0,draft,,BeVSDiabetesReportCategory,BeVSDiabetesReportCategory,"Values to be used in the categorisation of Diabetes reports",,"SCT"
+https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-code,1.0.0,draft,,BeVSDiabetesReportCode,BeVSDiabetesReportCode,"Values to be used in the code of Diabetes reports",,"SCT"
+https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-status,1.0.0,draft,,BeVSDiabetesReportStatus,BeVSDiabetesReportStatus,"Values to be used in the status of Diabetes reports",,"hl7.fhir.r4.core"

@@ -1,0 +1,100 @@
+[
+  {
+    "id" : "hl7.fhir.be.glucose-monitoring",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ImplementationGuide/hl7.fhir.be.glucose-monitoring",
+    "version" : "1.0.0",
+    "name" : "GlucoseMonitoring"
+  },
+  {
+    "id" : "be-ns-diabetes-device-type",
+    "type" : "NamingSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diabetes-device-type",
+    "version" : "1.0.0",
+    "name" : "BeNSDiabetesDeviceType"
+  },
+  {
+    "id" : "be-ns-diagnostic-report-diabetes",
+    "type" : "NamingSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diagnostic-report-diabetes",
+    "version" : "1.0.0",
+    "name" : "BeNSDiagnosticReportDiabetes"
+  },
+  {
+    "id" : "be-ns-observation-diabetes",
+    "type" : "NamingSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-observation-diabetes",
+    "version" : "1.0.0",
+    "name" : "BeNSObservationDiabetes"
+  },
+  {
+    "id" : "BeModelDiagnosticReportDiabetes",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelDiagnosticReportDiabetes",
+    "version" : "1.0.0",
+    "name" : "BeModelDiagnosticReportDiabetes"
+  },
+  {
+    "id" : "BeModelObservationDiabetes",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelObservationDiabetes",
+    "version" : "1.0.0",
+    "name" : "BeModelObservationDiabetes"
+  },
+  {
+    "id" : "be-diagnostic-report-diabetes",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-diagnostic-report-diabetes",
+    "version" : "1.0.0",
+    "name" : "BeDiagnosticReportDiabetes"
+  },
+  {
+    "id" : "be-observation-diabetes",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-observation-diabetes",
+    "version" : "1.0.0",
+    "name" : "BeObservationDiabetes"
+  },
+  {
+    "id" : "be-vs-diabetes-observation-category",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-category",
+    "version" : "1.0.0",
+    "name" : "BeVSDiabetesObservationCategory"
+  },
+  {
+    "id" : "be-vs-diabetes-observation-code",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-code",
+    "version" : "1.0.0",
+    "name" : "BeVSDiabetesObservationCode"
+  },
+  {
+    "id" : "be-vs-diabetes-observation-status",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-status",
+    "version" : "1.0.0",
+    "name" : "BeVSDiabetesObservationStatus"
+  },
+  {
+    "id" : "be-vs-diabetes-report-category",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-category",
+    "version" : "1.0.0",
+    "name" : "BeVSDiabetesReportCategory"
+  },
+  {
+    "id" : "be-vs-diabetes-report-code",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-code",
+    "version" : "1.0.0",
+    "name" : "BeVSDiabetesReportCode"
+  },
+  {
+    "id" : "be-vs-diabetes-report-status",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-status",
+    "version" : "1.0.0",
+    "name" : "BeVSDiabetesReportStatus"
+  }
+]

@@ -1,0 +1,1972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="3f22a694-452e-4185-bc57-16f6a7309ab0"/>
+  <meta>
+    <lastUpdated value="2025-09-10T19:33:44.323+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-category"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from apps.health.belgium.be based on SNOMED CT Belgian Edition edition 15-Jul 2025</p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-439926003"> </a>  
+                  <a href="http://snomed.info/id/439926003">439926003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ambulatory continuous glucose monitoring of interstitial tissue fluid</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-258090004"> </a>  
+                  <a href="http://snomed.info/id/258090004">258090004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Calculated</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-258104002"> </a>  
+                  <a href="http://snomed.info/id/258104002">258104002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Measured</td>
+              </tr>
+            </table>
+            <p>
+              <b>Additional Language Displays</b>
+            </p>
+            <table class="codes">
+              <tr>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+              </tr>
+              <tr>
+                <td>439926003</td>
+                <td>Ambulatory continuous glucose monitoring of interstitial tissue fluid (procedure)</td>
+                <td>Ambulatory continuous glucose monitoring of interstitial tissue fluid</td>
+                <td>Ambulatory continuous glucose monitoring of interstitial tissue fluid</td>
+                <td>'monitoring' ambulatoire continu du glucose dans le liquide tissulaire interstitiel</td>
+                <td>surveillance ambulatoire continue du glucose dans le liquide tissulaire interstitiel</td>
+                <td>ambulant continu monitoren van glucose in weefselvocht</td>
+                <td>ambulante continue glucosemonitoring in interstitiële vloeistof</td>
+              </tr>
+              <tr>
+                <td>258090004</td>
+                <td>Calculated (qualifier value)</td>
+                <td>Calculated</td>
+                <td>Calculated</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>258104002</td>
+                <td>Measured (qualifier value)</td>
+                <td>Measured</td>
+                <td>Measured</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-category"/>
+        <version value="1.0.0"/>
+        <name value="BeVSDiabetesObservationCategory"/>
+        <title value="BeVSDiabetesObservationCategory"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-09-10T19:33:02+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a3ef706c-e923-4de4-ad81-52b64efaa6cf"/>
+          <timestamp value="2025-09-10T19:34:22+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20250715"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20250715"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="439926003"/>
+            <display value="Ambulatory continuous glucose monitoring of interstitial tissue fluid"/>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="ambulant continu monitoren van glucose in weefselvocht"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Ambulatory continuous glucose monitoring of interstitial tissue fluid"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Ambulatory continuous glucose monitoring of interstitial tissue fluid (procedure)"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="surveillance ambulatoire continue du glucose dans le liquide tissulaire interstitiel"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005080-04"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Ambulatory continuous glucose monitoring of interstitial tissue fluid"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="ambulante continue glucosemonitoring in interstitiële vloeistof"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="'monitoring' ambulatoire continu du glucose dans le liquide tissulaire interstitiel"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="258090004"/>
+            <display value="Calculated"/>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Calculated"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Calculated (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005080-04"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Calculated"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="258104002"/>
+            <display value="Measured"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Measured (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Measured"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005080-04"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Measured"/>
+            </designation>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-code"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from apps.health.belgium.be based on SNOMED CT Belgian Edition edition 15-Jul 2025</p>
+            <p>This value set contains 14 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141121000172108"> </a>  
+                  <a href="http://snomed.info/id/141121000172108">141121000172108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Coefficient of variation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141131000172106"> </a>  
+                  <a href="http://snomed.info/id/141131000172106">141131000172106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Days sensor worn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141141000172104"> </a>  
+                  <a href="http://snomed.info/id/141141000172104">141141000172104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Frequency of hyperglycaemic episodes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141241000172105"> </a>  
+                  <a href="http://snomed.info/id/141241000172105">141241000172105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Glucose management index</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-365845005"> </a>  
+                  <a href="http://snomed.info/id/365845005">365845005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hemoglobin A1C - diabetic control finding</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141151000172102"> </a>  
+                  <a href="http://snomed.info/id/141151000172102">141151000172102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Mean number of point-of-care capillary blood glucose measurements per day</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141161000172100"> </a>  
+                  <a href="http://snomed.info/id/141161000172100">141161000172100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Mean substance concentration of glucose in capillary blood using minimally-invasive continuous glucose monitoring device</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141171000172109"> </a>  
+                  <a href="http://snomed.info/id/141171000172109">141171000172109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Number of clinically significant hypoglycaemic episodes recorded by continuous glucose monitoring device</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141181000172107"> </a>  
+                  <a href="http://snomed.info/id/141181000172107">141181000172107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Percentage of data captured</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141191000172105"> </a>  
+                  <a href="http://snomed.info/id/141191000172105">141191000172105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Percentage of time above level 1 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141201000172108"> </a>  
+                  <a href="http://snomed.info/id/141201000172108">141201000172108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Percentage of time above level 2 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141211000172106"> </a>  
+                  <a href="http://snomed.info/id/141211000172106">141211000172106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Percentage of time below level 1 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141221000172101"> </a>  
+                  <a href="http://snomed.info/id/141221000172101">141221000172101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Percentage of time below level 2 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-141231000172103"> </a>  
+                  <a href="http://snomed.info/id/141231000172103">141231000172103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Percentage of time in target glucose range to total glucose monitoring time using minimally-invasive continuous glucose monitoring device</td>
+              </tr>
+            </table>
+            <p>
+              <b>Additional Language Displays</b>
+            </p>
+            <table class="codes">
+              <tr>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+              </tr>
+              <tr>
+                <td>141121000172108</td>
+                <td>Coefficient of variation (observable entity)</td>
+                <td></td>
+                <td>Coefficient of variation</td>
+                <td></td>
+                <td>coefficient de variation</td>
+                <td></td>
+                <td>variatiecoëfficiënt</td>
+              </tr>
+              <tr>
+                <td>141131000172106</td>
+                <td>Days sensor worn (observable entity)</td>
+                <td></td>
+                <td>Days sensor worn</td>
+                <td></td>
+                <td>nombre de jours de port du capteur</td>
+                <td></td>
+                <td>dagen sensor gedragen</td>
+              </tr>
+              <tr>
+                <td>141141000172104</td>
+                <td>Frequency of hyperglycaemic episodes (observable entity)</td>
+                <td></td>
+                <td>Frequency of hyperglycaemic episodes</td>
+                <td>crise hyperglycémique d'origine diabétique</td>
+                <td>nombre d'événements hypoglycémiques</td>
+                <td>hyperglycemische ontregeling bij diabetes mellitus</td>
+                <td>aantal ernstige hyperglycemische voorvallen</td>
+              </tr>
+              <tr>
+                <td>141241000172105</td>
+                <td>GMI (Glucose Management Index)</td>
+                <td></td>
+                <td>Glucose management index</td>
+                <td></td>
+                <td>paramètre calculé sur la base du taux de glucose moyen</td>
+                <td></td>
+                <td>parameter berekend op basis van het gemiddelde glucosegehalte</td>
+              </tr>
+              <tr>
+                <td>365845005</td>
+                <td>Hemoglobin A1C - diabetic control finding (finding)</td>
+                <td>Haemoglobin A1C - diabetic control finding</td>
+                <td>Hemoglobin A1C - diabetic control finding</td>
+                <td>observation concernant le niveau d'HbA1c (hémoglobine A1c) comme indicateur du contrôle diabétique</td>
+                <td>constatation concernant le taux d'hémoglobine A1c dans l'équilibre diabétique</td>
+                <td>bevinding betreffende hemoglobine A1c voor glykemische controle</td>
+                <td>bevinding betreffende hemoglobine A1c bij diabetescontrole</td>
+              </tr>
+              <tr>
+                <td>141151000172102</td>
+                <td>Mean number of point-of-care capillary blood glucose measurements per day (observable entity)</td>
+                <td></td>
+                <td>Mean number of point-of-care capillary blood glucose measurements per day</td>
+                <td></td>
+                <td>nombre moyen de scans par jour</td>
+                <td></td>
+                <td>gemiddeld aantal scans per dag</td>
+              </tr>
+              <tr>
+                <td>141161000172100</td>
+                <td>Mean substance concentration of glucose in capillary blood using minimally-invasive continuous glucose monitoring device (observable entity)</td>
+                <td></td>
+                <td>Mean substance concentration of glucose in capillary blood using minimally-invasive continuous glucose monitoring device</td>
+                <td></td>
+                <td>glucose moyen</td>
+                <td></td>
+                <td>gemiddelde glucose</td>
+              </tr>
+              <tr>
+                <td>141171000172109</td>
+                <td>Number of clinically significant hypoglycaemic episodes recorded by continuous glucose monitoring device (observable entity)</td>
+                <td></td>
+                <td>Number of clinically significant hypoglycaemic episodes recorded by continuous glucose monitoring device</td>
+                <td>nombre d'épisodes hypoglycémiques cliniquement significatifs enregistrés par un dispositif de 'monitoring' continu du glucose</td>
+                <td>nombre d'épisodes hypoglycémiques cliniquement pertinents enregistrés par un dispositif de surveillance continue de la glycémie</td>
+                <td>hypoglykemie bij diabetes mellitus</td>
+                <td>aantal ernstige hypoglycemische voorvallen</td>
+              </tr>
+              <tr>
+                <td>141181000172107</td>
+                <td>Percentage of data captured (observable entity)</td>
+                <td></td>
+                <td>Percentage of data captured</td>
+                <td></td>
+                <td>pourcentage de données capturées</td>
+                <td>percentage gegevens</td>
+                <td>percentage opgenom</td>
+              </tr>
+              <tr>
+                <td>141191000172105</td>
+                <td>Percentage of time above level 1 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device (observable entity)</td>
+                <td></td>
+                <td>Percentage of time above level 1 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device</td>
+                <td></td>
+                <td>temps pendant lequel la valeur glycémique est dans l'intervalle 'haut' de la catégorie diabétique</td>
+                <td></td>
+                <td>tijd waarin de glycemische waarde binnen het 'hoog' interval van de categorie ligt</td>
+              </tr>
+              <tr>
+                <td>141201000172108</td>
+                <td>Percentage of time above level 2 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device (observable entity)</td>
+                <td></td>
+                <td>Percentage of time above level 2 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device</td>
+                <td></td>
+                <td>temps pendant lequel la valeur glycémique est au-dessus du limite 'très haut' de la catégorie diabétique</td>
+                <td></td>
+                <td>tijd waarin de glycemische waarde boven het 'zeer hoog' bereik van de categorie ligt</td>
+              </tr>
+              <tr>
+                <td>141211000172106</td>
+                <td>Percentage of time below level 1 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device (observable entity)</td>
+                <td></td>
+                <td>Percentage of time below level 1 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device</td>
+                <td></td>
+                <td>temps pendant lequel la valeur glycémique est dans l'intervalle 'bas' de la catégorie diabétique</td>
+                <td></td>
+                <td>tijd waarin de glycemische waarde binnen het interval 'laag' van de categorie ligt</td>
+              </tr>
+              <tr>
+                <td>141221000172101</td>
+                <td>Percentage of time below level 2 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device (observable entity)</td>
+                <td></td>
+                <td>Percentage of time below level 2 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device</td>
+                <td></td>
+                <td>temps pendant lequel la valeur glycémique est dans l'intervalle 'très bas' de la catégorie diabétique</td>
+                <td></td>
+                <td>tijd waarin de glycemische waarde binnen het interval 'zeer laag' van de categorie ligt</td>
+              </tr>
+              <tr>
+                <td>141231000172103</td>
+                <td>Percentage of time in target glucose range to total glucose monitoring time using minimally-invasive continuous glucose monitoring device (observable entity)</td>
+                <td></td>
+                <td>Percentage of time in target glucose range to total glucose monitoring time using minimally-invasive continuous glucose monitoring device</td>
+                <td></td>
+                <td>temps pendant lequel la valeur glycémique est dans l'intervalle 'normal' de la catégorie diabétique</td>
+                <td></td>
+                <td>tijd waarin de glycemische waarde binnen het 'normaal' interval van de categorie ligt</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-code"/>
+        <version value="1.0.0"/>
+        <name value="BeVSDiabetesObservationCode"/>
+        <title value="BeVSDiabetesObservationCode"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-09-10T19:33:02+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:960ee321-1b4e-426e-adc0-864bd3443fd9"/>
+          <timestamp value="2025-09-10T19:34:23+00:00"/>
+          <total value="14"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20250715"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20250715"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141121000172108"/>
+            <display value="Coefficient of variation"/>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Coefficient of variation"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="coefficient de variation"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Coefficient of variation (observable entity)"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="variatiecoëfficiënt"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141131000172106"/>
+            <display value="Days sensor worn"/>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="dagen sensor gedragen"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Days sensor worn"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="nombre de jours de port du capteur"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Days sensor worn (observable entity)"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141141000172104"/>
+            <display value="Frequency of hyperglycaemic episodes"/>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="nombre d'événements hypoglycémiques"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="hyperglycemische ontregeling bij diabetes mellitus"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="crise hyperglycémique d'origine diabétique"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="aantal ernstige hyperglycemische voorvallen"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Frequency of hyperglycaemic episodes"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Frequency of hyperglycaemic episodes (observable entity)"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141241000172105"/>
+            <display value="Glucose management index"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Glucose management index (observable entity)"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="paramètre calculé sur la base du taux de glucose moyen"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="GMI (Glucose Management Index)"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Glucose management index"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="parameter berekend op basis van het gemiddelde glucosegehalte"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="365845005"/>
+            <display value="Hemoglobin A1C - diabetic control finding"/>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Hemoglobin A1C - diabetic control finding"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Hemoglobin A1C - diabetic control finding (finding)"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="observation concernant le taux d'HbA1c (hémoglobine A1c) dans l'équilibre du diabète"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="observation concernant le niveau d'HbA1c (hémoglobine A1c) comme indicateur du contrôle diabétique"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005080-04"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Haemoglobin A1C - diabetic control finding"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="bevinding betreffende hemoglobine A1c bij diabetescontrole"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="bevinding betreffende HbA1c bij diabetescontrole"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="constatation concernant le taux d'hémoglobine A1c dans l'équilibre diabétique"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="bevinding betreffende hemoglobine A1c voor glykemische controle"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141151000172102"/>
+            <display value="Mean number of point-of-care capillary blood glucose measurements per day"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Mean number of point-of-care capillary blood glucose measurements per day (observable entity)"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Mean number of point-of-care capillary blood glucose measurements per day"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="nombre moyen de scans par jour"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="gemiddeld aantal scans per dag"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141161000172100"/>
+            <display value="Mean substance concentration of glucose in capillary blood using minimally-invasive continuous glucose monitoring device"/>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Mean substance concentration of glucose in capillary blood using minimally-invasive continuous glucose monitoring device"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Mean substance concentration of glucose in capillary blood using minimally-invasive continuous glucose monitoring device (observable entity)"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="gemiddelde glucose"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="glucose moyen"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141171000172109"/>
+            <display value="Number of clinically significant hypoglycaemic episodes recorded by continuous glucose monitoring device"/>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="hypoglykemie bij diabetes mellitus"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="nombre d'épisodes hypoglycémiques cliniquement pertinents enregistrés par un dispositif de surveillance continue de la glycémie"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Number of clinically significant hypoglycaemic episodes recorded by continuous glucose monitoring device (observable entity)"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="nombre d'épisodes hypoglycémiques cliniquement significatifs enregistrés par un dispositif de 'monitoring' continu du glucose"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Number of clinically significant hypoglycaemic episodes recorded by continuous glucose monitoring device"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="aantal ernstige hypoglycemische voorvallen"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141181000172107"/>
+            <display value="Percentage of data captured"/>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Percentage of data captured"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="percentage opgenom"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Percentage of data captured (observable entity)"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="pourcentage de données capturées"/>
+            </designation>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="percentage gegevens"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141191000172105"/>
+            <display value="Percentage of time above level 1 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device"/>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="temps pendant lequel la valeur glycémique est dans l'intervalle 'haut' de la catégorie diabétique"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="tijd waarin de glycemische waarde binnen het 'hoog' interval van de categorie ligt"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Percentage of time above level 1 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Percentage of time above level 1 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device (observable entity)"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141201000172108"/>
+            <display value="Percentage of time above level 2 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device"/>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Percentage of time above level 2 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="tijd waarin de glycemische waarde boven het 'zeer hoog' bereik van de categorie ligt"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="temps pendant lequel la valeur glycémique est au-dessus du limite 'très haut' de la catégorie diabétique"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Percentage of time above level 2 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device (observable entity)"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141211000172106"/>
+            <display value="Percentage of time below level 1 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device"/>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="tijd waarin de glycemische waarde binnen het interval 'laag' van de categorie ligt"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="temps pendant lequel la valeur glycémique est dans l'intervalle 'bas' de la catégorie diabétique"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Percentage of time below level 1 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Percentage of time below level 1 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device (observable entity)"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141221000172101"/>
+            <display value="Percentage of time below level 2 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device"/>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="tijd waarin de glycemische waarde binnen het interval 'zeer laag' van de categorie ligt"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Percentage of time below level 2 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Percentage of time below level 2 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device (observable entity)"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="temps pendant lequel la valeur glycémique est dans l'intervalle 'très bas' de la catégorie diabétique"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="141231000172103"/>
+            <display value="Percentage of time in target glucose range to total glucose monitoring time using minimally-invasive continuous glucose monitoring device"/>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="temps pendant lequel la valeur glycémique est dans l'intervalle 'normal' de la catégorie diabétique"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Percentage of time in target glucose range to total glucose monitoring time using minimally-invasive continuous glucose monitoring device (observable entity)"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="tijd waarin de glycemische waarde binnen het 'normaal' interval van de categorie ligt"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Percentage of time in target glucose range to total glucose monitoring time using minimally-invasive continuous glucose monitoring device"/>
+            </designation>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-observation-status.html">codesystem ObservationStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/observation-status-final"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-observation-status.html#observation-status-final">final</a>
+                </td>
+                <td>http://hl7.org/fhir/observation-status</td>
+                <td>Final</td>
+                <td>
+                  <div>
+                    <p>The observation is complete and there are no further actions needed. Additional information such &quot;released&quot;, &quot;signed&quot;, etc would be represented using 
+                      <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a> which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of 
+                      <code>preliminary</code> until they are all completed and then a status of 
+                      <code>final</code> would be applied.
+                    </p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/observation-status-entered-in-error"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-observation-status.html#observation-status-entered-in-error">entered-in-error</a>
+                </td>
+                <td>http://hl7.org/fhir/observation-status</td>
+                <td>Entered in Error</td>
+                <td>
+                  <div>
+                    <p>The observation has been withdrawn following previous final release.  This electronic record should never have existed, though it is possible that real-world decisions were based on it. (If real-world activity has occurred, the status should be &quot;cancelled&quot; rather than &quot;entered-in-error&quot;.).</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-status"/>
+        <version value="1.0.0"/>
+        <name value="BeVSDiabetesObservationStatus"/>
+        <title value="BeVSDiabetesObservationStatus"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-09-10T19:33:02+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:cf3e947f-bc65-4546-a9c3-4c836caec455"/>
+          <timestamp value="2025-09-10T19:34:24+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/observation-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/observation-status"/>
+            <code value="final"/>
+            <display value="Final"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/observation-status"/>
+            <code value="entered-in-error"/>
+            <display value="Entered in Error"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-category"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from apps.health.belgium.be based on SNOMED CT Belgian Edition edition 15-Jul 2025</p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Display (English)</b>
+                </td>
+                <td>
+                  <b>Display (English)</b>
+                </td>
+                <td>
+                  <b>Display (English)</b>
+                </td>
+                <td>
+                  <b>Display (Nederlands)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-4311000179106"> </a>  
+                  <a href="http://snomed.info/id/4311000179106">4311000179106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chemical pathology report</td>
+                <td>Chemical pathology report (record artifact)</td>
+                <td>Chemical pathology report</td>
+                <td>Chemical pathology report</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-408475000"> </a>  
+                  <a href="http://snomed.info/id/408475000">408475000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diabetic medicine</td>
+                <td>Diabetic medicine (qualifier value)</td>
+                <td>Diabetic medicine</td>
+                <td>Diabetic medicine</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-394583002"> </a>  
+                  <a href="http://snomed.info/id/394583002">394583002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Endocrinology</td>
+                <td>Endocrinology (qualifier value)</td>
+                <td>Endocrinology</td>
+                <td>Endocrinology</td>
+                <td>endocrinologie</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-category"/>
+        <version value="1.0.0"/>
+        <name value="BeVSDiabetesReportCategory"/>
+        <title value="BeVSDiabetesReportCategory"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-09-10T19:33:02+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:11cf8199-058d-4d06-a2cb-264c3497b3d5"/>
+          <timestamp value="2025-09-10T19:34:24+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20250715"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20250715"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="4311000179106"/>
+            <display value="Chemical pathology report"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Chemical pathology report (record artifact)"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Chemical pathology report"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005080-04"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Chemical pathology report"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="408475000"/>
+            <display value="Diabetic medicine"/>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005080-04"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Diabetic medicine"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Diabetic medicine (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Diabetic medicine"/>
+            </designation>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="394583002"/>
+            <display value="Endocrinology"/>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Endocrinology (qualifier value)"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="endocrinologie"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005080-04"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Endocrinology"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Endocrinology"/>
+            </designation>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-code"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from apps.health.belgium.be based on SNOMED CT Belgian Edition edition 15-Jul 2025</p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-439926003"> </a>  
+                  <a href="http://snomed.info/id/439926003">439926003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Ambulatory continuous glucose monitoring of interstitial tissue fluid</td>
+              </tr>
+            </table>
+            <p>
+              <b>Additional Language Displays</b>
+            </p>
+            <table class="codes">
+              <tr>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>English (English, en)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>French (fr)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+                <td>
+                  <b>Nederlands (Dutch, nl)</b>
+                </td>
+              </tr>
+              <tr>
+                <td>439926003</td>
+                <td>Ambulatory continuous glucose monitoring of interstitial tissue fluid (procedure)</td>
+                <td>Ambulatory continuous glucose monitoring of interstitial tissue fluid</td>
+                <td>Ambulatory continuous glucose monitoring of interstitial tissue fluid</td>
+                <td>'monitoring' ambulatoire continu du glucose dans le liquide tissulaire interstitiel</td>
+                <td>surveillance ambulatoire continue du glucose dans le liquide tissulaire interstitiel</td>
+                <td>ambulant continu monitoren van glucose in weefselvocht</td>
+                <td>ambulante continue glucosemonitoring in interstitiële vloeistof</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-code"/>
+        <version value="1.0.0"/>
+        <name value="BeVSDiabetesReportCode"/>
+        <title value="BeVSDiabetesReportCode"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-09-10T19:33:02+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:10519352-8975-46cb-b1c8-bec1ddb4575f"/>
+          <timestamp value="2025-09-10T19:34:24+00:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20250715"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20250715"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="439926003"/>
+            <display value="Ambulatory continuous glucose monitoring of interstitial tissue fluid"/>
+            <designation>
+              <language value="nl"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="ambulant continu monitoren van glucose in weefselvocht"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005090-07"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Ambulatory continuous glucose monitoring of interstitial tissue fluid"/>
+            </designation>
+            <designation>
+              <language value="en"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000003001"/>
+                <display value="Fully specified name"/>
+              </use>
+              <value value="Ambulatory continuous glucose monitoring of interstitial tissue fluid (procedure)"/>
+            </designation>
+            <designation>
+              <language value="fr-x-sctlang-21000172-104"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="surveillance ambulatoire continue du glucose dans le liquide tissulaire interstitiel"/>
+            </designation>
+            <designation>
+              <language value="en-x-sctlang-90000000-00005080-04"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="Ambulatory continuous glucose monitoring of interstitial tissue fluid"/>
+            </designation>
+            <designation>
+              <language value="nl-x-sctlang-31000172-101"/>
+              <use>
+                <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"/>
+                <code value="preferredForLanguage"/>
+                <display value="Preferred For Language"/>
+              </use>
+              <value value="ambulante continue glucosemonitoring in interstitiële vloeistof"/>
+            </designation>
+            <designation>
+              <language value="fr"/>
+              <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000013009"/>
+                <display value="Synonym"/>
+              </use>
+              <value value="'monitoring' ambulatoire continu du glucose dans le liquide tissulaire interstitiel"/>
+            </designation>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html">codesystem DiagnosticReportStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/diagnostic-report-status-final"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-final">final</a>
+                </td>
+                <td>http://hl7.org/fhir/diagnostic-report-status</td>
+                <td>Final</td>
+                <td>The report is complete and verified by an authorized person.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/diagnostic-report-status-partial"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-partial">partial</a>
+                </td>
+                <td>http://hl7.org/fhir/diagnostic-report-status</td>
+                <td>Partial</td>
+                <td>This is a partial (e.g. initial, interim or preliminary) report: data in the report may be incomplete or unverified.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-status"/>
+        <version value="1.0.0"/>
+        <name value="BeVSDiabetesReportStatus"/>
+        <title value="BeVSDiabetesReportStatus"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-09-10T19:33:02+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ebfb3e5c-52c1-4cb6-8db5-8e1734e46c02"/>
+          <timestamp value="2025-09-10T19:34:25+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="includeDesignations"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/diagnostic-report-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="final"/>
+            <display value="Final"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="partial"/>
+            <display value="Partial"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

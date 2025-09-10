@@ -1,0 +1,91 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-diabetes-observation-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-diabetes-observation-code</b></p><a name=\"be-vs-diabetes-observation-code\"> </a><a name=\"hcbe-vs-diabetes-observation-code\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/11000172109</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141191000172105\">141191000172105</a></td><td style=\"color: #cccccc\">Percentage of time above level 1 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141201000172108\">141201000172108</a></td><td style=\"color: #cccccc\">Percentage of time above level 2 hyperglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141231000172103\">141231000172103</a></td><td style=\"color: #cccccc\">Percentage of time in target glucose range to total glucose monitoring time using minimally-invasive continuous glucose monitoring device</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141211000172106\">141211000172106</a></td><td style=\"color: #cccccc\">Percentage of time below level 1 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141221000172101\">141221000172101</a></td><td style=\"color: #cccccc\">Percentage of time below level 2 hypoglycaemic threshold to total continuous glucose monitoring time using minimally-invasive continuous glucose monitoring device</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141151000172102\">141151000172102</a></td><td style=\"color: #cccccc\">Mean number of point-of-care capillary blood glucose measurements per day</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141171000172109\">141171000172109</a></td><td style=\"color: #cccccc\">Number of clinically significant hypoglycaemic episodes recorded by continuous glucose monitoring device</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141141000172104\">141141000172104</a></td><td style=\"color: #cccccc\">Frequency of hyperglycaemic episodes</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/365845005\">365845005</a></td><td style=\"color: #cccccc\">Hemoglobin A1C - diabetic control finding</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141161000172100\">141161000172100</a></td><td style=\"color: #cccccc\">Mean substance concentration of glucose in capillary blood using minimally-invasive continuous glucose monitoring device</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141121000172108\">141121000172108</a></td><td style=\"color: #cccccc\">Coefficient of variation</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141131000172106\">141131000172106</a></td><td style=\"color: #cccccc\">Days sensor worn</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141181000172107\">141181000172107</a></td><td style=\"color: #cccccc\">Percentage of data captured</td></tr><tr><td><a href=\"http://snomed.info/sct/11000172109/id/141241000172105\">141241000172105</a></td><td style=\"color: #cccccc\">Glucose management index</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-code",
+  "version" : "1.0.0",
+  "name" : "BeVSDiabetesObservationCode",
+  "title" : "BeVSDiabetesObservationCode",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-09-10T19:33:02+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be"
+    },
+    {
+      "system" : "email",
+      "value" : "message-structure@www.ehealth.fgov.be"
+    }]
+  },
+  {
+    "name" : "Message-Structure",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@www.ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Values to be used in the code of Diabetes observations",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000172109",
+      "concept" : [{
+        "code" : "141191000172105"
+      },
+      {
+        "code" : "141201000172108"
+      },
+      {
+        "code" : "141231000172103"
+      },
+      {
+        "code" : "141211000172106"
+      },
+      {
+        "code" : "141221000172101"
+      },
+      {
+        "code" : "141151000172102"
+      },
+      {
+        "code" : "141171000172109"
+      },
+      {
+        "code" : "141141000172104"
+      },
+      {
+        "code" : "365845005"
+      },
+      {
+        "code" : "141161000172100"
+      },
+      {
+        "code" : "141121000172108"
+      },
+      {
+        "code" : "141131000172106"
+      },
+      {
+        "code" : "141181000172107"
+      },
+      {
+        "code" : "141241000172105"
+      }]
+    }]
+  }
+}

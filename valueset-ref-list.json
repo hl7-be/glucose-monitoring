@@ -1,0 +1,76 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSDiabetesObservationCategory",
+      "title" : "BeVSDiabetesObservationCategory",
+      "description" : "Values to be used in the categorisation of Diabetes observations",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-be-observation-diabetes.html" : "BeObservationDiabetes"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-code",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSDiabetesObservationCode",
+      "title" : "BeVSDiabetesObservationCode",
+      "description" : "Values to be used in the code of Diabetes observations",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-be-observation-diabetes.html" : "BeObservationDiabetes"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-observation-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSDiabetesObservationStatus",
+      "title" : "BeVSDiabetesObservationStatus",
+      "description" : "Values to be used in the status of Diabetes observations",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "uses" : {
+      },
+      "StructureDefinition-be-observation-diabetes.html" : "BeObservationDiabetes"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSDiabetesReportCategory",
+      "title" : "BeVSDiabetesReportCategory",
+      "description" : "Values to be used in the categorisation of Diabetes reports",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-be-diagnostic-report-diabetes.html" : "BeDiagnosticReportDiabetes"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-code",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSDiabetesReportCode",
+      "title" : "BeVSDiabetesReportCode",
+      "description" : "Values to be used in the code of Diabetes reports",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-be-diagnostic-report-diabetes.html" : "BeDiagnosticReportDiabetes"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-report-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSDiabetesReportStatus",
+      "title" : "BeVSDiabetesReportStatus",
+      "description" : "Values to be used in the status of Diabetes reports",
+      "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+      "uses" : {
+      },
+      "StructureDefinition-be-diagnostic-report-diabetes.html" : "BeDiagnosticReportDiabetes"
+    }
+  ]
+}

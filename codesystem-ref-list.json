@@ -1,0 +1,43 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/diagnostic-report-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticReportStatus",
+      "title" : "DiagnosticReportStatus",
+      "description" : "The status of the diagnostic report.",
+      "oids" : ["2.16.840.1.113883.4.642.4.236"],
+      "uses" : {
+      },
+      "ValueSet-be-vs-diabetes-report-status.html" : "BeVSDiabetesReportStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "oids" : ["2.16.840.1.113883.4.642.4.401"],
+      "uses" : {
+      },
+      "ValueSet-be-vs-diabetes-observation-status.html" : "BeVSDiabetesObservationStatus"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-be-vs-diabetes-observation-category.html" : "BeVSDiabetesObservationCategory",
+      "ValueSet-be-vs-diabetes-report-code.html" : "BeVSDiabetesReportCode",
+      "ValueSet-be-vs-diabetes-report-category.html" : "BeVSDiabetesReportCategory",
+      "ValueSet-be-vs-diabetes-observation-code.html" : "BeVSDiabetesObservationCode"
+    }
+  ]
+}

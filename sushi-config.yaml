@@ -224,18 +224,18 @@ resources:
     name: Use case 5.3 (Composition)
     description: Index page of the Bundle
   Observation/c611b58d-27bb-49e2-b3ec-bd59e986f5f3:
-    name: Use case 5.3 (Observation)
+    name: Use case 5.3 (Coefficient of variation Observation)
   Observation/397dffb4-a88a-47d0-b10d-beffcbf6157d:
-    name: Use case 5.3 (Observation)
+    name: Use case 5.3 (Days sensor worn Observation)
   Observation/6756477d-b57a-4611-b048-374d46f52908:
-    name: Use case 5.3 (Observation)
+    name: Use case 5.3 (% Data Captured Observation)
   Observation/b28ef33b-0480-4bde-a5df-94988813110b:
-    name: Use case 5.3 (Observation)
+    name: Use case 5.3 (TAR-High Observation)
   Observation/449a728d-dfb4-422d-94aa-1a2d43849ee5:
-    name: Use case 5.3 (Observation)
+    name: Use case 5.3 (TIR Observation)
   Observation/a6665182-e11a-40a9-ae83-9b093a353f16:
-    name: Use case 5.3 (Observation)
+    name: Use case 5.3 (TBR Time below range - low Observation)
   Observation/454a29d0-0893-458a-b2e5-25452b89e29a:
-    name: Use case 5.3 (Observation)
+    name: Use case 5.3 (TBR Time below range – very low Observation)
   Device/device:
     name: Use case 5.3 (Device)

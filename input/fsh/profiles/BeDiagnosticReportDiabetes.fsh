@@ -1,6 +1,7 @@
 Profile: BeDiagnosticReportDiabetes
 Parent: DiagnosticReport
 Id: be-diagnostic-report-diabetes
+Description: "Belgian FHIR profile for a diabetes diagnostic report based on glucose monitoring data."
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open 

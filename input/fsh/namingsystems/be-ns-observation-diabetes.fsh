@@ -1,6 +1,7 @@
 Instance: be-ns-observation-diabetes
 InstanceOf: NamingSystem
 Usage: #definition
+* description = "Naming system for diabetes observation identifiers."
 * name = "BeNSObservationDiabetes"
 * status = #active
 * kind = #identifier

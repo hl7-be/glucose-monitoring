@@ -12,9 +12,9 @@ canonical: https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring
 name: Glucose Monitoring
 title: "HL7 FHIR Implementation Guide: Glucose Monitoring"
 description: "HL7 FHIR Implementation Guide: Glucose Monitoring"
-status: draft
+status: active
 license: CC0-1.0
-date: 2020-02-26
+date: 2026-10-16
 version: 1.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource

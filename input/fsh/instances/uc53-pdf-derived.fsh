@@ -304,6 +304,7 @@ Description: "TBR Time below range – very low"
 
 Instance: device
 InstanceOf: Device
+Description: "Device"
 * type.coding.system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diabetes-device-type"
 * type.coding.code = #701010000576
 

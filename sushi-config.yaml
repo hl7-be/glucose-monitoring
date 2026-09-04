@@ -9,7 +9,6 @@
 
 id: hl7.fhir.be.glucose-monitoring
 canonical: https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring
-url: https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring
 name: Glucose Monitoring
 title: "HL7 FHIR Implementation Guide: Glucose Monitoring"
 description: "HL7 FHIR Implementation Guide: Glucose Monitoring"
@@ -200,9 +199,9 @@ FSHOnly: false
 
 
 dependencies:
-  hl7.fhir.be.core: current
-  hl7.fhir.be.core-clinical: current
-  hl7.fhir.extensions.r5: 4.0.1  
+  hl7.fhir.be.core: 2.2.0
+  hl7.fhir.be.core-clinical: 1.3.0
+  hl7.fhir.uv.xver-r5.r4: 0.1.0  
 
 resources:
   Bundle/uc52-bundle:

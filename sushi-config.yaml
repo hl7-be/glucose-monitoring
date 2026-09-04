@@ -186,6 +186,7 @@ parameters:
   apply-jurisdiction: 'true'
   apply-publisher: 'true'
   apply-version: 'true'
+  excludettl: true
   path-expansion-params: Parameters-terminology-expansion.json
 
 # The FSHOnly flag indicates if only FSH resources should be exported.

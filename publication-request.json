@@ -1,0 +1,20 @@
+{
+  "package-id": "hl7.fhir.be.glucose-monitoring",
+  "version": "1.0.0",
+  "status": "release",
+  "sequence": "Trial Use",
+  "fhirversion": "R4",
+  "desc": "eHealth FHIR Glucose Monitoring Profiles for Belgium",
+  "desccmd": "eHealth FHIR Glucose Monitoring Profiles for Belgium",
+  "title": "eHealth FHIR Glucose Monitoring Profiles for Belgium",
+  "ci-build" : "https://build.fhir.org/ig/hl7-be/glucose-monitoring",
+  "category": "National Base",
+  "introduction": "eHealth FHIR Glucose Monitoring Profiles for Belgium",
+  "path": "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/1.0.0",
+  "mode" : "milestone",
+  "milestone" : true,
+  "first": true,
+  "registry-description": "eHealth FHIR Glucose Monitoring Profiles for Belgium",
+  "registry-country": "be",
+  "registry-authority": "eHealth Platform (BE)"
+}

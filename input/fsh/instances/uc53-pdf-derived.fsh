@@ -53,7 +53,7 @@ InstanceOf: BeDiagnosticReportDiabetes
 * category[+] = $sct#408475000
 * category[+] = $sct#394583002
 * code = $sct#439926003
-* extension[device].extension[concept].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diabetes-device-type#701010000576
+* extension[device].extension[concept].valueCodeableConcept = BeCSDiabetesDeviceType#701010000576
 * status = #final
 * presentedForm.data = "JVBERi0xLjANCjEgMCBvYmo8PC9QYWdlcyAyIDAgUj4+ZW5kb2JqIDIgMCBvYmo8PC9LaWRzWzMgMCBSXS9Db3VudCAxPj5lbmRvYmogMyAwIG9iajw8L01lZGlhQm94WzAgMCAzIDNdPj5lbmRvYmoNCnRyYWlsZXI8PC9Sb290IDEgMCBSPj4="
 * presentedForm.contentType = #"application/pdf"
@@ -304,7 +304,7 @@ Description: "TBR Time below range – very low"
 
 Instance: device
 InstanceOf: Device
-* type.coding.system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diabetes-device-type"
-* type.coding.code = #701010000576
+Description: "Device"
+* type = BeCSDiabetesDeviceType#701010000576
 
 

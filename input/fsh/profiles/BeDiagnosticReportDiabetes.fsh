@@ -12,7 +12,7 @@ Id: be-diagnostic-report-diabetes
     BeExtSimpleNote named note 0..* MS //and
     //http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
 * extension[device].extension[concept].valueCodeableConcept 1..1 MS
-* extension[device].extension[concept].valueCodeableConcept.coding.system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diabetes-device-type"
+* extension[device].extension[concept].valueCodeableConcept from BeVSDiabetesDeviceType (extensible)
 * effective[x] only Period
 * effectivePeriod 1..1 MS
 * effectivePeriod.start 1..1 MS

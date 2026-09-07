@@ -1,0 +1,118 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/Observation/449a728d-dfb4-422d-94aa-1a2d43849ee5> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "449a728d-dfb4-422d-94aa-1a2d43849ee5"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-observation-diabetes" ;
+       fhir:index -1 ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-observation-diabetes>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation 449a728d-dfb4-422d-94aa-1a2d43849ee5</b></p><a name=\"449a728d-dfb4-422d-94aa-1a2d43849ee5\"> </a><a name=\"hc449a728d-dfb4-422d-94aa-1a2d43849ee5\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-observation-diabetes.html\">BeObservationDiabetes</a></p></div><p><b>BeExtRecordedDate</b>: 2024-11-25</p><p><b>BeExtRecorder</b>: Identifier: <a href=\"https://build.fhir.org/ig/hl7-be/core/NamingSystem-be-nihdi.html\" title=\"RIZIV/INAMI\">BeNIHDINamingSystem</a>/0403044007</p><p><b>identifier</b>: <a href=\"NamingSystem-be-ns-observation-diabetes.html\">BeNSObservationDiabetes</a>/449a728d-dfb4-422d-94aa-1a2d43849ee5</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 439926003}\">Ambulatory continuous glucose monitoring of interstitial tissue fluid (procedure)</span>, <span title=\"Codes:{http://snomed.info/sct 258090004}\">Calculated</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 438565545}\">438565545</span></p><p><b>subject</b>: Identifier: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-ssin.html\" title=\"NISS/INSZ\">BeSSINNamingSystem</a>/80051207915</p><p><b>effective</b>: 2024-11-11 --&gt; 2024-11-24</p><p><b>performer</b>: Identifier: <a href=\"https://build.fhir.org/ig/hl7-be/core/NamingSystem-be-nihdi.html\" title=\"RIZIV/INAMI\">BeNIHDINamingSystem</a>/0403044007</p><p><b>value</b>: 47 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p><p><b>device</b>: <a href=\"Bundle-uc53-bundle.html#urn-uuid-ce11c616-6625-4966-8a16-012ee8ff1d8e\">Device: type = 701010000576</a></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>AppliesTo</b></td></tr><tr><td style=\"display: none\">*</td><td>25 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td><span title=\"Codes:\">≥70 mg/dL, &lt;180 mg/dL</span></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorded-date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2024-11-25"^^xsd:date ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder" ] ;
+     fhir:Extension.valueReference [
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi" ] ;
+         fhir:Identifier.value [ fhir:value "0403044007" ]
+       ]
+     ]
+  ] ;
+  fhir:Observation.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-observation-diabetes" ] ;
+     fhir:Identifier.value [ fhir:value "449a728d-dfb4-422d-94aa-1a2d43849ee5" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:439926003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000172109" ] ;
+       fhir:Coding.code [ fhir:value "439926003" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:258090004 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000172109" ] ;
+       fhir:Coding.code [ fhir:value "258090004" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:438565545 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000172109" ] ;
+       fhir:Coding.code [ fhir:value "438565545" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin" ] ;
+       fhir:Identifier.value [ fhir:value "80051207915" ]
+     ]
+  ] ;
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "2024-11-11"^^xsd:date ] ;
+     fhir:Period.end [ fhir:value "2024-11-24"^^xsd:date ]
+  ] ;
+  fhir:Observation.performer [
+     fhir:index -1 ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi" ] ;
+       fhir:Identifier.value [ fhir:value "0403044007" ]
+     ]
+  ] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "47"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "%" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "%" ]
+  ] ;
+  fhir:Observation.device [
+     fhir:Reference.reference [ fhir:value "urn:uuid:ce11c616-6625-4966-8a16-012ee8ff1d8e" ]
+  ] ;
+  fhir:Observation.referenceRange [
+     fhir:index -1 ;
+     fhir:Observation.referenceRange.low [
+       fhir:Quantity.value [ fhir:value "25"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "%" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "%" ]
+     ] ;
+     fhir:Observation.referenceRange.appliesTo [
+       fhir:index -1 ;
+       fhir:CodeableConcept.text [ fhir:value "≥70 mg/dL, <180 mg/dL" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/Observation/449a728d-dfb4-422d-94aa-1a2d43849ee5.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

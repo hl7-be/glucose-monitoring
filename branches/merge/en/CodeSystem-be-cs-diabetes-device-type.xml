@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-diabetes-device-type"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem be-cs-diabetes-device-type</b></p><a name="be-cs-diabetes-device-type"> </a><a name="hcbe-cs-diabetes-device-type"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/CodeSystem/be-cs-diabetes-device-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">701010000180<a name="be-cs-diabetes-device-type-701010000180"> </a></td><td>FreeStyle Libre® Flash Glucose Monitoring System</td></tr><tr><td style="white-space:nowrap">701010000576<a name="be-cs-diabetes-device-type-701010000576"> </a></td><td>FreeStyle Libre® 2 Flash Glucose Monitoring System</td></tr><tr><td style="white-space:nowrap">701010000675<a name="be-cs-diabetes-device-type-701010000675"> </a></td><td>GlucoMen Day CGM</td></tr><tr><td style="white-space:nowrap">701010000279<a name="be-cs-diabetes-device-type-701010000279"> </a></td><td>Guardian Connect System</td></tr><tr><td style="white-space:nowrap">701010000378<a name="be-cs-diabetes-device-type-701010000378"> </a></td><td>Dexcom G5® Mobile continuous glucose monitoring system</td></tr><tr><td style="white-space:nowrap">701010000477<a name="be-cs-diabetes-device-type-701010000477"> </a></td><td>Dexcom G5® Mobile continuous glucose monitoring system</td></tr><tr><td style="white-space:nowrap">701010000774<a name="be-cs-diabetes-device-type-701010000774"> </a></td><td>Guardian 4 Sensor</td></tr><tr><td style="white-space:nowrap">701010000873<a name="be-cs-diabetes-device-type-701010000873"> </a></td><td>Dexcom ONE Continuous Glucose Monitoring (CGM) system</td></tr><tr><td style="white-space:nowrap">701010000972<a name="be-cs-diabetes-device-type-701010000972"> </a></td><td>FreeStyle Libre 3</td></tr><tr><td style="white-space:nowrap">701010001071<a name="be-cs-diabetes-device-type-701010001071"> </a></td><td>Dexcom G7 Continuous Glucose Monitoring (CGM) system</td></tr><tr><td style="white-space:nowrap">701010001170<a name="be-cs-diabetes-device-type-701010001170"> </a></td><td>Glunovo p3</td></tr><tr><td style="white-space:nowrap">701010001269<a name="be-cs-diabetes-device-type-701010001269"> </a></td><td>Dexcom ONE+</td></tr><tr><td style="white-space:nowrap">701019999989<a name="be-cs-diabetes-device-type-701019999989"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/CodeSystem/be-cs-diabetes-device-type"/>
+  <version value="1.0.0"/>
+  <name value="BeCSDiabetesDeviceType"/>
+  <title value="BeCSDiabetesDeviceType"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-07T12:16:40+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@www.ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message-Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@www.ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Identification codes for glucose monitoring sensor types used in Belgium."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="For information purposes. The list of sensor types and identification codes is maintained by INAMI and may be updated regularly."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="13"/>
+  <concept>
+    <code value="701010000180"/>
+    <display value="FreeStyle Libre® Flash Glucose Monitoring System"/>
+  </concept>
+  <concept>
+    <code value="701010000576"/>
+    <display value="FreeStyle Libre® 2 Flash Glucose Monitoring System"/>
+  </concept>
+  <concept>
+    <code value="701010000675"/>
+    <display value="GlucoMen Day CGM"/>
+  </concept>
+  <concept>
+    <code value="701010000279"/>
+    <display value="Guardian Connect System"/>
+  </concept>
+  <concept>
+    <code value="701010000378"/>
+    <display value="Dexcom G5® Mobile continuous glucose monitoring system"/>
+  </concept>
+  <concept>
+    <code value="701010000477"/>
+    <display value="Dexcom G5® Mobile continuous glucose monitoring system"/>
+  </concept>
+  <concept>
+    <code value="701010000774"/>
+    <display value="Guardian 4 Sensor"/>
+  </concept>
+  <concept>
+    <code value="701010000873"/>
+    <display value="Dexcom ONE Continuous Glucose Monitoring (CGM) system"/>
+  </concept>
+  <concept>
+    <code value="701010000972"/>
+    <display value="FreeStyle Libre 3"/>
+  </concept>
+  <concept>
+    <code value="701010001071"/>
+    <display value="Dexcom G7 Continuous Glucose Monitoring (CGM) system"/>
+  </concept>
+  <concept>
+    <code value="701010001170"/>
+    <display value="Glunovo p3"/>
+  </concept>
+  <concept>
+    <code value="701010001269"/>
+    <display value="Dexcom ONE+"/>
+  </concept>
+  <concept>
+    <code value="701019999989"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,562 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "BeModelDiagnosticReportDiabetes",
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition BeModelDiagnosticReportDiabetes</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes\" title=\"Logical model representing a diabetes diagnostic report based on glucose monitoring data.\">BeModelDiagnosticReportDiabetes</a><a name=\"BeModelDiagnosticReportDiabetes\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">BeModelDiagnosticReportDiabetes</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.uniqueIdentifierNational\" title=\"Unique business identifier of the report.(https://docs.google.com/document/d/13qamEPfdQ2HgUiXmjwHQNchpEU3LsQHF5MN9jKufX2g/edit?usp=sharing).\">uniqueIdentifierNational</a><a name=\"BeModelDiagnosticReportDiabetes.uniqueIdentifierNational\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Unique business identifier of the report.(https://docs.google.com/document/d/13qamEPfdQ2HgUiXmjwHQNchpEU3LsQHF5MN9jKufX2g/edit?usp=sharing).</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.businessIdentifier\" title=\"Report identifier for the internal supplier's business.\">businessIdentifier</a><a name=\"BeModelDiagnosticReportDiabetes.businessIdentifier\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Report identifier for the internal supplier's business.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.recordedDate\" title=\"Date the report was produced.\">recordedDate</a><a name=\"BeModelDiagnosticReportDiabetes.recordedDate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date the report was produced.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.observationPeriod\" title=\"From date to date corresponding to the period covered by the report. Typically 14 to 30 days. See 2.1 above, Figure 3 Data relationship logic.\">observationPeriod</a><a name=\"BeModelDiagnosticReportDiabetes.observationPeriod\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">From date to date corresponding to the period covered by the report. Typically 14 to 30 days. See 2.1 above, Figure 3 Data relationship logic.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.patient\" title=\"We refer to the patient, subject of the report, by his unique identifier.This identifier is preferably the patient's national register number (NISS). In some cases, another unique identifier may be allowed.\">patient</a><a name=\"BeModelDiagnosticReportDiabetes.patient\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">We refer to the patient, subject of the report, by his unique identifier.This identifier is preferably the patient's national register number (NISS). In some cases, another unique identifier may be allowed.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.recorder\" title=\"This refers to the service provider or organization that encodes the information.[1] The unique identifier for each natural person is the NISS, while for each organization the business number serves as the unique identifier.\">recorder</a><a name=\"BeModelDiagnosticReportDiabetes.recorder\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">This refers to the service provider or organization that encodes the information.[1] The unique identifier for each natural person is the NISS, while for each organization the business number serves as the unique identifier.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.performer\" title=\"We refer to the service provider or organization that collects the observations and produces the report. [2]The unique identifier of each natural person is the NISS, while for each organization the company number serves as the unique identifier.For the Diabetes Diagnostic Report, it is: “performer = recorder.»\">performer</a><a name=\"BeModelDiagnosticReportDiabetes.performer\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">We refer to the service provider or organization that collects the observations and produces the report. [2]The unique identifier of each natural person is the NISS, while for each organization the company number serves as the unique identifier.For the Diabetes Diagnostic Report, it is: “performer = recorder.»</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.interpreter\" title=\"Care provider identified by their NISS (endocrinologist* , general practitioner, etc.) interprets the observations in the report. ResultsInterpreter This element will not be provided by the producer of the report, but will include the reference of the healthcare provider who does the interpretation.\">interpreter</a><a name=\"BeModelDiagnosticReportDiabetes.interpreter\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Care provider identified by their NISS (endocrinologist* , general practitioner, etc.) interprets the observations in the report. ResultsInterpreter This element will not be provided by the producer of the report, but will include the reference of the healthcare provider who does the interpretation.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.category\" title=\"Category of the report. According to ref. 8, it would be appropriate to consider setting the cardinality of the Catgory field to 1..* and to add to this report the values: 4311000179106 |Chemical pathology report (record artifact) and 408475000 |Diabetic medicine (qualifier value). 394583002 |Endocrinology (qualifier value) of the report. Look at VS_DiagRep_Category.\">category</a><a name=\"BeModelDiagnosticReportDiabetes.category\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Category of the report. According to ref. 8, it would be appropriate to consider setting the cardinality of the Catgory field to 1..* and to add to this report the values: 4311000179106 |Chemical pathology report (record artifact) and 408475000 |Diabetic medicine (qualifier value). 394583002 |Endocrinology (qualifier value) of the report. Look at VS_DiagRep_Category.<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.qualification\" title=\"Is the category of diabetic patient (CAT 1, CAT 2, CAT 3). (See glossary for details).By default, the qualification is “CAT 3”.The category is calculated by an algorithm from the diagnosis provided by the doctor — interpreter.\">qualification</a><a name=\"BeModelDiagnosticReportDiabetes.qualification\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the category of diabetic patient (CAT 1, CAT 2, CAT 3). (See glossary for details).By default, the qualification is “CAT 3”.The category is calculated by an algorithm from the diagnosis provided by the doctor — interpreter.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.device\" title=\"Identification number assigned by INAMI to the sensor type.See VS_Diab_Device\">device</a><a name=\"BeModelDiagnosticReportDiabetes.device\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identification number assigned by INAMI to the sensor type.See VS_Diab_Device</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.code\" title=\"Report code. In the diabetes project framework, it is proposed to indicate the type of procedure that leads to the production of the primary values ​​of this report. That is to say 439926003 | Ambulatory continuous glucose monitoring of interstitial tissue fluid. VS_DiagRep_Code.\">code</a><a name=\"BeModelDiagnosticReportDiabetes.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Report code. In the diabetes project framework, it is proposed to indicate the type of procedure that leads to the production of the primary values ​​of this report. That is to say 439926003 | Ambulatory continuous glucose monitoring of interstitial tissue fluid. VS_DiagRep_Code.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.derivedObservations\" title=\"List of references to “derived values” type observations (a dozen derived observations) mentioned in the report.[3]His observations are part of the diagnostic report.\">derivedObservations</a><a name=\"BeModelDiagnosticReportDiabetes.derivedObservations\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">List of references to “derived values” type observations (a dozen derived observations) mentioned in the report.[3]His observations are part of the diagnostic report.<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.measurementObservations\" title=\"List of references to “blood glucose measurement” type observations used to produce the analysis (a few thousand measurements) [4] type (“SCI”)[5]\">measurementObservations</a><a name=\"BeModelDiagnosticReportDiabetes.measurementObservations\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">List of references to “blood glucose measurement” type observations used to produce the analysis (a few thousand measurements) [4] type (“SCI”)[5]<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.diagnosis\" title=\"Problem reference related to this diagnostic report.This element will not be provided by the producer of the report but will be provided by the healthcare provider who does the interpretation.\">diagnosis</a><a name=\"BeModelDiagnosticReportDiabetes.diagnosis\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Problem reference related to this diagnostic report.This element will not be provided by the producer of the report but will be provided by the healthcare provider who does the interpretation.<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.note\" title=\"Report comments in free text format. This element will not be provided by the producer of the report, but will be provided by the healthcare provider doing the interpretation.\">note</a><a name=\"BeModelDiagnosticReportDiabetes.note\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Annotation\">Annotation</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Report comments in free text format. This element will not be provided by the producer of the report, but will be provided by the healthcare provider doing the interpretation.<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.document\" title=\"PDF document containing the complete report (text, graphics, deduced observations, conclusions, etc.)\">document</a><a name=\"BeModelDiagnosticReportDiabetes.document\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/binary.html\">Binary</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">PDF document containing the complete report (text, graphics, deduced observations, conclusions, etc.)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes-definitions.html#BeModelDiagnosticReportDiabetes.status\" title=\"Report status. By default it is “Final”. Value according to the business rule on “% Data Captured” see VS_DiagRep_Status\">status</a><a name=\"BeModelDiagnosticReportDiabetes.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Report status. By default it is “Final”. Value according to the business rule on “% Data Captured” see VS_DiagRep_Status</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelDiagnosticReportDiabetes",
+  "version" : "1.0.0",
+  "name" : "BeModelDiagnosticReportDiabetes",
+  "status" : "active",
+  "date" : "2026-09-07T08:39:35+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be"
+    },
+    {
+      "system" : "email",
+      "value" : "message-structure@www.ehealth.fgov.be"
+    }]
+  },
+  {
+    "name" : "Message-Structure",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@www.ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Logical model representing a diabetes diagnostic report based on glucose monitoring data.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelDiagnosticReportDiabetes",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "4.0.1"
+    }],
+    "element" : [{
+      "id" : "BeModelDiagnosticReportDiabetes",
+      "path" : "BeModelDiagnosticReportDiabetes",
+      "short" : "BeModelDiagnosticReportDiabetes",
+      "definition" : "Logical model representing a diabetes diagnostic report based on glucose monitoring data.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.uniqueIdentifierNational",
+      "path" : "BeModelDiagnosticReportDiabetes.uniqueIdentifierNational",
+      "short" : "Unique business identifier of the report.(https://docs.google.com/document/d/13qamEPfdQ2HgUiXmjwHQNchpEU3LsQHF5MN9jKufX2g/edit?usp=sharing).",
+      "definition" : "Unique business identifier of the report.(https://docs.google.com/document/d/13qamEPfdQ2HgUiXmjwHQNchpEU3LsQHF5MN9jKufX2g/edit?usp=sharing).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.uniqueIdentifierNational",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.businessIdentifier",
+      "path" : "BeModelDiagnosticReportDiabetes.businessIdentifier",
+      "short" : "Report identifier for the internal supplier's business.",
+      "definition" : "Report identifier for the internal supplier's business.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.businessIdentifier",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.recordedDate",
+      "path" : "BeModelDiagnosticReportDiabetes.recordedDate",
+      "short" : "Date the report was produced.",
+      "definition" : "Date the report was produced.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.recordedDate",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.observationPeriod",
+      "path" : "BeModelDiagnosticReportDiabetes.observationPeriod",
+      "short" : "From date to date corresponding to the period covered by the report. Typically 14 to 30 days. See 2.1 above, Figure 3 Data relationship logic.",
+      "definition" : "From date to date corresponding to the period covered by the report. Typically 14 to 30 days. See 2.1 above, Figure 3 Data relationship logic.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.observationPeriod",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.patient",
+      "path" : "BeModelDiagnosticReportDiabetes.patient",
+      "short" : "We refer to the patient, subject of the report, by his unique identifier.This identifier is preferably the patient's national register number (NISS). In some cases, another unique identifier may be allowed.",
+      "definition" : "We refer to the patient, subject of the report, by his unique identifier.This identifier is preferably the patient's national register number (NISS). In some cases, another unique identifier may be allowed.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.patient",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.recorder",
+      "path" : "BeModelDiagnosticReportDiabetes.recorder",
+      "short" : "This refers to the service provider or organization that encodes the information.[1] The unique identifier for each natural person is the NISS, while for each organization the business number serves as the unique identifier.",
+      "definition" : "This refers to the service provider or organization that encodes the information.[1] The unique identifier for each natural person is the NISS, while for each organization the business number serves as the unique identifier.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.recorder",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.performer",
+      "path" : "BeModelDiagnosticReportDiabetes.performer",
+      "short" : "We refer to the service provider or organization that collects the observations and produces the report. [2]The unique identifier of each natural person is the NISS, while for each organization the company number serves as the unique identifier.For the Diabetes Diagnostic Report, it is: “performer = recorder.»",
+      "definition" : "We refer to the service provider or organization that collects the observations and produces the report. [2]The unique identifier of each natural person is the NISS, while for each organization the company number serves as the unique identifier.For the Diabetes Diagnostic Report, it is: “performer = recorder.»",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.performer",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.interpreter",
+      "path" : "BeModelDiagnosticReportDiabetes.interpreter",
+      "short" : "Care provider identified by their NISS (endocrinologist* , general practitioner, etc.) interprets the observations in the report. ResultsInterpreter This element will not be provided by the producer of the report, but will include the reference of the healthcare provider who does the interpretation.",
+      "definition" : "Care provider identified by their NISS (endocrinologist* , general practitioner, etc.) interprets the observations in the report. ResultsInterpreter This element will not be provided by the producer of the report, but will include the reference of the healthcare provider who does the interpretation.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.interpreter",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.category",
+      "path" : "BeModelDiagnosticReportDiabetes.category",
+      "short" : "Category of the report. According to ref. 8, it would be appropriate to consider setting the cardinality of the Catgory field to 1..* and to add to this report the values: 4311000179106 |Chemical pathology report (record artifact) and 408475000 |Diabetic medicine (qualifier value). 394583002 |Endocrinology (qualifier value) of the report. Look at VS_DiagRep_Category.",
+      "definition" : "Category of the report. According to ref. 8, it would be appropriate to consider setting the cardinality of the Catgory field to 1..* and to add to this report the values: 4311000179106 |Chemical pathology report (record artifact) and 408475000 |Diabetic medicine (qualifier value). 394583002 |Endocrinology (qualifier value) of the report. Look at VS_DiagRep_Category.",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.category",
+        "min" : 1,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.qualification",
+      "path" : "BeModelDiagnosticReportDiabetes.qualification",
+      "short" : "Is the category of diabetic patient (CAT 1, CAT 2, CAT 3). (See glossary for details).By default, the qualification is “CAT 3”.The category is calculated by an algorithm from the diagnosis provided by the doctor — interpreter.",
+      "definition" : "Is the category of diabetic patient (CAT 1, CAT 2, CAT 3). (See glossary for details).By default, the qualification is “CAT 3”.The category is calculated by an algorithm from the diagnosis provided by the doctor — interpreter.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.qualification",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.device",
+      "path" : "BeModelDiagnosticReportDiabetes.device",
+      "short" : "Identification number assigned by INAMI to the sensor type.See VS_Diab_Device",
+      "definition" : "Identification number assigned by INAMI to the sensor type.See VS_Diab_Device",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.device",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.code",
+      "path" : "BeModelDiagnosticReportDiabetes.code",
+      "short" : "Report code. In the diabetes project framework, it is proposed to indicate the type of procedure that leads to the production of the primary values ​​of this report. That is to say 439926003 | Ambulatory continuous glucose monitoring of interstitial tissue fluid. VS_DiagRep_Code.",
+      "definition" : "Report code. In the diabetes project framework, it is proposed to indicate the type of procedure that leads to the production of the primary values ​​of this report. That is to say 439926003 | Ambulatory continuous glucose monitoring of interstitial tissue fluid. VS_DiagRep_Code.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.code",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.derivedObservations",
+      "path" : "BeModelDiagnosticReportDiabetes.derivedObservations",
+      "short" : "List of references to “derived values” type observations (a dozen derived observations) mentioned in the report.[3]His observations are part of the diagnostic report.",
+      "definition" : "List of references to “derived values” type observations (a dozen derived observations) mentioned in the report.[3]His observations are part of the diagnostic report.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.derivedObservations",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Observation"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.measurementObservations",
+      "path" : "BeModelDiagnosticReportDiabetes.measurementObservations",
+      "short" : "List of references to “blood glucose measurement” type observations used to produce the analysis (a few thousand measurements) [4] type (“SCI”)[5]",
+      "definition" : "List of references to “blood glucose measurement” type observations used to produce the analysis (a few thousand measurements) [4] type (“SCI”)[5]",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.measurementObservations",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Observation"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.diagnosis",
+      "path" : "BeModelDiagnosticReportDiabetes.diagnosis",
+      "short" : "Problem reference related to this diagnostic report.This element will not be provided by the producer of the report but will be provided by the healthcare provider who does the interpretation.",
+      "definition" : "Problem reference related to this diagnostic report.This element will not be provided by the producer of the report but will be provided by the healthcare provider who does the interpretation.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.diagnosis",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Condition"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.note",
+      "path" : "BeModelDiagnosticReportDiabetes.note",
+      "short" : "Report comments in free text format. This element will not be provided by the producer of the report, but will be provided by the healthcare provider doing the interpretation.",
+      "definition" : "Report comments in free text format. This element will not be provided by the producer of the report, but will be provided by the healthcare provider doing the interpretation.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.note",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Annotation"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.document",
+      "path" : "BeModelDiagnosticReportDiabetes.document",
+      "short" : "PDF document containing the complete report (text, graphics, deduced observations, conclusions, etc.)",
+      "definition" : "PDF document containing the complete report (text, graphics, deduced observations, conclusions, etc.)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.document",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Binary"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.status",
+      "path" : "BeModelDiagnosticReportDiabetes.status",
+      "short" : "Report status. By default it is “Final”. Value according to the business rule on “% Data Captured” see VS_DiagRep_Status",
+      "definition" : "Report status. By default it is “Final”. Value according to the business rule on “% Data Captured” see VS_DiagRep_Status",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelDiagnosticReportDiabetes.status",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "BeModelDiagnosticReportDiabetes",
+      "path" : "BeModelDiagnosticReportDiabetes",
+      "short" : "BeModelDiagnosticReportDiabetes",
+      "definition" : "Logical model representing a diabetes diagnostic report based on glucose monitoring data."
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.uniqueIdentifierNational",
+      "path" : "BeModelDiagnosticReportDiabetes.uniqueIdentifierNational",
+      "short" : "Unique business identifier of the report.(https://docs.google.com/document/d/13qamEPfdQ2HgUiXmjwHQNchpEU3LsQHF5MN9jKufX2g/edit?usp=sharing).",
+      "definition" : "Unique business identifier of the report.(https://docs.google.com/document/d/13qamEPfdQ2HgUiXmjwHQNchpEU3LsQHF5MN9jKufX2g/edit?usp=sharing).",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.businessIdentifier",
+      "path" : "BeModelDiagnosticReportDiabetes.businessIdentifier",
+      "short" : "Report identifier for the internal supplier's business.",
+      "definition" : "Report identifier for the internal supplier's business.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.recordedDate",
+      "path" : "BeModelDiagnosticReportDiabetes.recordedDate",
+      "short" : "Date the report was produced.",
+      "definition" : "Date the report was produced.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.observationPeriod",
+      "path" : "BeModelDiagnosticReportDiabetes.observationPeriod",
+      "short" : "From date to date corresponding to the period covered by the report. Typically 14 to 30 days. See 2.1 above, Figure 3 Data relationship logic.",
+      "definition" : "From date to date corresponding to the period covered by the report. Typically 14 to 30 days. See 2.1 above, Figure 3 Data relationship logic.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.patient",
+      "path" : "BeModelDiagnosticReportDiabetes.patient",
+      "short" : "We refer to the patient, subject of the report, by his unique identifier.This identifier is preferably the patient's national register number (NISS). In some cases, another unique identifier may be allowed.",
+      "definition" : "We refer to the patient, subject of the report, by his unique identifier.This identifier is preferably the patient's national register number (NISS). In some cases, another unique identifier may be allowed.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.recorder",
+      "path" : "BeModelDiagnosticReportDiabetes.recorder",
+      "short" : "This refers to the service provider or organization that encodes the information.[1] The unique identifier for each natural person is the NISS, while for each organization the business number serves as the unique identifier.",
+      "definition" : "This refers to the service provider or organization that encodes the information.[1] The unique identifier for each natural person is the NISS, while for each organization the business number serves as the unique identifier.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.performer",
+      "path" : "BeModelDiagnosticReportDiabetes.performer",
+      "short" : "We refer to the service provider or organization that collects the observations and produces the report. [2]The unique identifier of each natural person is the NISS, while for each organization the company number serves as the unique identifier.For the Diabetes Diagnostic Report, it is: “performer = recorder.»",
+      "definition" : "We refer to the service provider or organization that collects the observations and produces the report. [2]The unique identifier of each natural person is the NISS, while for each organization the company number serves as the unique identifier.For the Diabetes Diagnostic Report, it is: “performer = recorder.»",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.interpreter",
+      "path" : "BeModelDiagnosticReportDiabetes.interpreter",
+      "short" : "Care provider identified by their NISS (endocrinologist* , general practitioner, etc.) interprets the observations in the report. ResultsInterpreter This element will not be provided by the producer of the report, but will include the reference of the healthcare provider who does the interpretation.",
+      "definition" : "Care provider identified by their NISS (endocrinologist* , general practitioner, etc.) interprets the observations in the report. ResultsInterpreter This element will not be provided by the producer of the report, but will include the reference of the healthcare provider who does the interpretation.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.category",
+      "path" : "BeModelDiagnosticReportDiabetes.category",
+      "short" : "Category of the report. According to ref. 8, it would be appropriate to consider setting the cardinality of the Catgory field to 1..* and to add to this report the values: 4311000179106 |Chemical pathology report (record artifact) and 408475000 |Diabetic medicine (qualifier value). 394583002 |Endocrinology (qualifier value) of the report. Look at VS_DiagRep_Category.",
+      "definition" : "Category of the report. According to ref. 8, it would be appropriate to consider setting the cardinality of the Catgory field to 1..* and to add to this report the values: 4311000179106 |Chemical pathology report (record artifact) and 408475000 |Diabetic medicine (qualifier value). 394583002 |Endocrinology (qualifier value) of the report. Look at VS_DiagRep_Category.",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.qualification",
+      "path" : "BeModelDiagnosticReportDiabetes.qualification",
+      "short" : "Is the category of diabetic patient (CAT 1, CAT 2, CAT 3). (See glossary for details).By default, the qualification is “CAT 3”.The category is calculated by an algorithm from the diagnosis provided by the doctor — interpreter.",
+      "definition" : "Is the category of diabetic patient (CAT 1, CAT 2, CAT 3). (See glossary for details).By default, the qualification is “CAT 3”.The category is calculated by an algorithm from the diagnosis provided by the doctor — interpreter.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.device",
+      "path" : "BeModelDiagnosticReportDiabetes.device",
+      "short" : "Identification number assigned by INAMI to the sensor type.See VS_Diab_Device",
+      "definition" : "Identification number assigned by INAMI to the sensor type.See VS_Diab_Device",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.code",
+      "path" : "BeModelDiagnosticReportDiabetes.code",
+      "short" : "Report code. In the diabetes project framework, it is proposed to indicate the type of procedure that leads to the production of the primary values ​​of this report. That is to say 439926003 | Ambulatory continuous glucose monitoring of interstitial tissue fluid. VS_DiagRep_Code.",
+      "definition" : "Report code. In the diabetes project framework, it is proposed to indicate the type of procedure that leads to the production of the primary values ​​of this report. That is to say 439926003 | Ambulatory continuous glucose monitoring of interstitial tissue fluid. VS_DiagRep_Code.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.derivedObservations",
+      "path" : "BeModelDiagnosticReportDiabetes.derivedObservations",
+      "short" : "List of references to “derived values” type observations (a dozen derived observations) mentioned in the report.[3]His observations are part of the diagnostic report.",
+      "definition" : "List of references to “derived values” type observations (a dozen derived observations) mentioned in the report.[3]His observations are part of the diagnostic report.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Observation"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.measurementObservations",
+      "path" : "BeModelDiagnosticReportDiabetes.measurementObservations",
+      "short" : "List of references to “blood glucose measurement” type observations used to produce the analysis (a few thousand measurements) [4] type (“SCI”)[5]",
+      "definition" : "List of references to “blood glucose measurement” type observations used to produce the analysis (a few thousand measurements) [4] type (“SCI”)[5]",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Observation"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.diagnosis",
+      "path" : "BeModelDiagnosticReportDiabetes.diagnosis",
+      "short" : "Problem reference related to this diagnostic report.This element will not be provided by the producer of the report but will be provided by the healthcare provider who does the interpretation.",
+      "definition" : "Problem reference related to this diagnostic report.This element will not be provided by the producer of the report but will be provided by the healthcare provider who does the interpretation.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Condition"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.note",
+      "path" : "BeModelDiagnosticReportDiabetes.note",
+      "short" : "Report comments in free text format. This element will not be provided by the producer of the report, but will be provided by the healthcare provider doing the interpretation.",
+      "definition" : "Report comments in free text format. This element will not be provided by the producer of the report, but will be provided by the healthcare provider doing the interpretation.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Annotation"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.document",
+      "path" : "BeModelDiagnosticReportDiabetes.document",
+      "short" : "PDF document containing the complete report (text, graphics, deduced observations, conclusions, etc.)",
+      "definition" : "PDF document containing the complete report (text, graphics, deduced observations, conclusions, etc.)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Binary"
+      }]
+    },
+    {
+      "id" : "BeModelDiagnosticReportDiabetes.status",
+      "path" : "BeModelDiagnosticReportDiabetes.status",
+      "short" : "Report status. By default it is “Final”. Value according to the business rule on “% Data Captured” see VS_DiagRep_Status",
+      "definition" : "Report status. By default it is “Final”. Value according to the business rule on “% Data Captured” see VS_DiagRep_Status",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    }]
+  }
+}

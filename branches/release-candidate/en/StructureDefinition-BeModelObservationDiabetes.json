@@ -1,0 +1,346 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "BeModelObservationDiabetes",
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition BeModelObservationDiabetes</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelObservationDiabetes-definitions.html#BeModelObservationDiabetes\" title=\"Logical model representing a derived glucose monitoring observation in the context of diabetes care.\">BeModelObservationDiabetes</a><a name=\"BeModelObservationDiabetes\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">BeModelObservationDiabetes</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelObservationDiabetes-definitions.html#BeModelObservationDiabetes.uniqueIdentifier\" title=\"Unique observation business identifier.\">uniqueIdentifier</a><a name=\"BeModelObservationDiabetes.uniqueIdentifier\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Unique observation business identifier.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelObservationDiabetes-definitions.html#BeModelObservationDiabetes.recordedDate\" title=\"Date of encoding of the observation by the Recorder. (DateTime format) See management rule 13.\">recordedDate</a><a name=\"BeModelObservationDiabetes.recordedDate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date of encoding of the observation by the Recorder. (DateTime format) See management rule 13.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelObservationDiabetes-definitions.html#BeModelObservationDiabetes.observationPeriod\" title=\"Date or observation period (e.g. 27/11/2023) (DateTime format)\">observationPeriod</a><a name=\"BeModelObservationDiabetes.observationPeriod\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date or observation period (e.g. 27/11/2023) (DateTime format)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelObservationDiabetes-definitions.html#BeModelObservationDiabetes.patient\" title=\"Is the unique identifier of the patient. The unique identifier must be the National Patient Register Number (NISS) [1].\">patient</a><a name=\"BeModelObservationDiabetes.patient\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the unique identifier of the patient. The unique identifier must be the National Patient Register Number (NISS) [1].</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelObservationDiabetes-definitions.html#BeModelObservationDiabetes.recorder\" title=\"Is the unique identifier (national register number)[1] of the health professional or organization (company number) which encodes the information and takes responsibility for its content.\">recorder</a><a name=\"BeModelObservationDiabetes.recorder\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the unique identifier (national register number)[1] of the health professional or organization (company number) which encodes the information and takes responsibility for its content.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelObservationDiabetes-definitions.html#BeModelObservationDiabetes.category\" title=\"698472009 “Glucose monitoring” (FR) (invariant)See VS_Obs_Dia_Category\">category</a><a name=\"BeModelObservationDiabetes.category\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">698472009 “Glucose monitoring” (FR) (invariant)See VS_Obs_Dia_Category<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelObservationDiabetes-definitions.html#BeModelObservationDiabetes.status\" title=\"445665009 “Final report” - invariant. See VS_Obs_Diab_Status Status\">status</a><a name=\"BeModelObservationDiabetes.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">445665009 “Final report” - invariant. See VS_Obs_Diab_Status Status</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelObservationDiabetes-definitions.html#BeModelObservationDiabetes.code\" title=\"Code corresponding to the derived value (coding to be established by SNOMED CT). Ex: AGP-PGATAR Time Above Range, TIR Time In Range…See VS_Obs_Diab_Code\">code</a><a name=\"BeModelObservationDiabetes.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code corresponding to the derived value (coding to be established by SNOMED CT). Ex: AGP-PGATAR Time Above Range, TIR Time In Range…See VS_Obs_Diab_Code</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelObservationDiabetes-definitions.html#BeModelObservationDiabetes.value\" title=\"Derived value. Value[x]\">value</a><a name=\"BeModelObservationDiabetes.value\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Derived value. Value[x]</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelObservationDiabetes-definitions.html#BeModelObservationDiabetes.referenceRange\" title=\"Structure composed of reference elements allowing the interpretation of measurements:·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.Low (0...1)·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.High (0...1)·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.AppliesTo (0...*)We automatically work according to the ADA standards which define target value intervals for the following derived observations:  Coded1 Coefficient of Variation2 Days Sensor Worn3% Data Captured4 TAR % (Time above range - very high)5 TAR % (Time above range - high)6 SHOOTING % (Time in Range)7 TBR % (Time below range - low)8 TBR % (Time below range - very low)By observation code derived from this list, we will potentially find:A) Target - reference interval to indicate the target lower limit (“Low”) and upper limit (“High”).Note that these limits do not depend on the diabetes category.For example: for TIR, it is recommended that the blood glucose value be at least 70% of the time in the “normal” range.So for ReferenceRange “TIR_REF”→ TIR_REF.Low = 70%→ TIR_REF.High = 100%B) filter - application interval with a lower limit and an upper limit to filter the measurement observations considered in the calculation of the derived value. This defines the range of counted values. These ranges may vary by diabetes category.For example: the “normal” range is between 70 mg/dL and 180 mg/dL for category 1 and 3, and between 63 mg/dL and 140 mg/dL for category 2.So for ReferenceRange “TIR_REF”→ TIR_REF.AppliesTo(CAT1, ≥70 mg/dL, ≤180 mg/dL)→ TIR_REF.AppliesTo(CAT2, ≥63 mg/dL, ≤140 mg/dL)→ TIR_REF.AppliesTo(CAT3, ≥70 mg/dL, ≤180 mg/dL)As we base ourselves on ADA standards, there is little point in passing all this information for each observation.If, however, a doctor changes values ​​(target and/or filter) for a specific patient AND you want to communicate these changes outside of your patient file, this mechanism provides the means.See VS_Obs_Diab_Ref\">referenceRange</a><a name=\"BeModelObservationDiabetes.referenceRange\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Range\">Range</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Structure composed of reference elements allowing the interpretation of measurements:·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.Low (0...1)·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.High (0...1)·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.AppliesTo (0...*)We automatically work according to the ADA standards which define target value intervals for the following derived observations:  Coded1 Coefficient of Variation2 Days Sensor Worn3% Data Captured4 TAR % (Time above range - very high)5 TAR % (Time above range - high)6 SHOOTING % (Time in Range)7 TBR % (Time below range - low)8 TBR % (Time below range - very low)By observation code derived from this list, we will potentially find:A) Target - reference interval to indicate the target lower limit (“Low”) and upper limit (“High”).Note that these limits do not depend on the diabetes category.For example: for TIR, it is recommended that the blood glucose value be at least 70% of the time in the “normal” range.So for ReferenceRange “TIR_REF”→ TIR_REF.Low = 70%→ TIR_REF.High = 100%B) filter - application interval with a lower limit and an upper limit to filter the measurement observations considered in the calculation of the derived value. This defines the range of counted values. These ranges may vary by diabetes category.For example: the “normal” range is between 70 mg/dL and 180 mg/dL for category 1 and 3, and between 63 mg/dL and 140 mg/dL for category 2.So for ReferenceRange “TIR_REF”→ TIR_REF.AppliesTo(CAT1, ≥70 mg/dL, ≤180 mg/dL)→ TIR_REF.AppliesTo(CAT2, ≥63 mg/dL, ≤140 mg/dL)→ TIR_REF.AppliesTo(CAT3, ≥70 mg/dL, ≤180 mg/dL)As we base ourselves on ADA standards, there is little point in passing all this information for each observation.If, however, a doctor changes values ​​(target and/or filter) for a specific patient AND you want to communicate these changes outside of your patient file, this mechanism provides the means.See VS_Obs_Diab_Ref<br/></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelObservationDiabetes",
+  "version" : "1.0.0",
+  "name" : "BeModelObservationDiabetes",
+  "status" : "active",
+  "date" : "2026-09-07T08:39:35+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be"
+    },
+    {
+      "system" : "email",
+      "value" : "message-structure@www.ehealth.fgov.be"
+    }]
+  },
+  {
+    "name" : "Message-Structure",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@www.ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Logical model representing a derived glucose monitoring observation in the context of diabetes care.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelObservationDiabetes",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "4.0.1"
+    }],
+    "element" : [{
+      "id" : "BeModelObservationDiabetes",
+      "path" : "BeModelObservationDiabetes",
+      "short" : "BeModelObservationDiabetes",
+      "definition" : "Logical model representing a derived glucose monitoring observation in the context of diabetes care.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "BeModelObservationDiabetes.uniqueIdentifier",
+      "path" : "BeModelObservationDiabetes.uniqueIdentifier",
+      "short" : "Unique observation business identifier.",
+      "definition" : "Unique observation business identifier.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelObservationDiabetes.uniqueIdentifier",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.recordedDate",
+      "path" : "BeModelObservationDiabetes.recordedDate",
+      "short" : "Date of encoding of the observation by the Recorder. (DateTime format) See management rule 13.",
+      "definition" : "Date of encoding of the observation by the Recorder. (DateTime format) See management rule 13.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelObservationDiabetes.recordedDate",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.observationPeriod",
+      "path" : "BeModelObservationDiabetes.observationPeriod",
+      "short" : "Date or observation period (e.g. 27/11/2023) (DateTime format)",
+      "definition" : "Date or observation period (e.g. 27/11/2023) (DateTime format)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelObservationDiabetes.observationPeriod",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.patient",
+      "path" : "BeModelObservationDiabetes.patient",
+      "short" : "Is the unique identifier of the patient. The unique identifier must be the National Patient Register Number (NISS) [1].",
+      "definition" : "Is the unique identifier of the patient. The unique identifier must be the National Patient Register Number (NISS) [1].",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelObservationDiabetes.patient",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.recorder",
+      "path" : "BeModelObservationDiabetes.recorder",
+      "short" : "Is the unique identifier (national register number)[1] of the health professional or organization (company number) which encodes the information and takes responsibility for its content.",
+      "definition" : "Is the unique identifier (national register number)[1] of the health professional or organization (company number) which encodes the information and takes responsibility for its content.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelObservationDiabetes.recorder",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.category",
+      "path" : "BeModelObservationDiabetes.category",
+      "short" : "698472009 “Glucose monitoring” (FR) (invariant)See VS_Obs_Dia_Category",
+      "definition" : "698472009 “Glucose monitoring” (FR) (invariant)See VS_Obs_Dia_Category",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "BeModelObservationDiabetes.category",
+        "min" : 1,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.status",
+      "path" : "BeModelObservationDiabetes.status",
+      "short" : "445665009 “Final report” - invariant. See VS_Obs_Diab_Status Status",
+      "definition" : "445665009 “Final report” - invariant. See VS_Obs_Diab_Status Status",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelObservationDiabetes.status",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.code",
+      "path" : "BeModelObservationDiabetes.code",
+      "short" : "Code corresponding to the derived value (coding to be established by SNOMED CT). Ex: AGP-PGATAR Time Above Range, TIR Time In Range…See VS_Obs_Diab_Code",
+      "definition" : "Code corresponding to the derived value (coding to be established by SNOMED CT). Ex: AGP-PGATAR Time Above Range, TIR Time In Range…See VS_Obs_Diab_Code",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelObservationDiabetes.code",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.value",
+      "path" : "BeModelObservationDiabetes.value",
+      "short" : "Derived value. Value[x]",
+      "definition" : "Derived value. Value[x]",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "BeModelObservationDiabetes.value",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.referenceRange",
+      "path" : "BeModelObservationDiabetes.referenceRange",
+      "short" : "Structure composed of reference elements allowing the interpretation of measurements:·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.Low (0...1)·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.High (0...1)·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.AppliesTo (0...*)We automatically work according to the ADA standards which define target value intervals for the following derived observations:  Coded1 Coefficient of Variation2 Days Sensor Worn3% Data Captured4 TAR % (Time above range - very high)5 TAR % (Time above range - high)6 SHOOTING % (Time in Range)7 TBR % (Time below range - low)8 TBR % (Time below range - very low)By observation code derived from this list, we will potentially find:A) Target - reference interval to indicate the target lower limit (“Low”) and upper limit (“High”).Note that these limits do not depend on the diabetes category.For example: for TIR, it is recommended that the blood glucose value be at least 70% of the time in the “normal” range.So for ReferenceRange “TIR_REF”→ TIR_REF.Low = 70%→ TIR_REF.High = 100%B) filter - application interval with a lower limit and an upper limit to filter the measurement observations considered in the calculation of the derived value. This defines the range of counted values. These ranges may vary by diabetes category.For example: the “normal” range is between 70 mg/dL and 180 mg/dL for category 1 and 3, and between 63 mg/dL and 140 mg/dL for category 2.So for ReferenceRange “TIR_REF”→ TIR_REF.AppliesTo(CAT1, ≥70 mg/dL, ≤180 mg/dL)→ TIR_REF.AppliesTo(CAT2, ≥63 mg/dL, ≤140 mg/dL)→ TIR_REF.AppliesTo(CAT3, ≥70 mg/dL, ≤180 mg/dL)As we base ourselves on ADA standards, there is little point in passing all this information for each observation.If, however, a doctor changes values ​​(target and/or filter) for a specific patient AND you want to communicate these changes outside of your patient file, this mechanism provides the means.See VS_Obs_Diab_Ref",
+      "definition" : "Structure composed of reference elements allowing the interpretation of measurements:·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.Low (0...1)·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.High (0...1)·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.AppliesTo (0...*)We automatically work according to the ADA standards which define target value intervals for the following derived observations:  Coded1 Coefficient of Variation2 Days Sensor Worn3% Data Captured4 TAR % (Time above range - very high)5 TAR % (Time above range - high)6 SHOOTING % (Time in Range)7 TBR % (Time below range - low)8 TBR % (Time below range - very low)By observation code derived from this list, we will potentially find:A) Target - reference interval to indicate the target lower limit (“Low”) and upper limit (“High”).Note that these limits do not depend on the diabetes category.For example: for TIR, it is recommended that the blood glucose value be at least 70% of the time in the “normal” range.So for ReferenceRange “TIR_REF”→ TIR_REF.Low = 70%→ TIR_REF.High = 100%B) filter - application interval with a lower limit and an upper limit to filter the measurement observations considered in the calculation of the derived value. This defines the range of counted values. These ranges may vary by diabetes category.For example: the “normal” range is between 70 mg/dL and 180 mg/dL for category 1 and 3, and between 63 mg/dL and 140 mg/dL for category 2.So for ReferenceRange “TIR_REF”→ TIR_REF.AppliesTo(CAT1, ≥70 mg/dL, ≤180 mg/dL)→ TIR_REF.AppliesTo(CAT2, ≥63 mg/dL, ≤140 mg/dL)→ TIR_REF.AppliesTo(CAT3, ≥70 mg/dL, ≤180 mg/dL)As we base ourselves on ADA standards, there is little point in passing all this information for each observation.If, however, a doctor changes values ​​(target and/or filter) for a specific patient AND you want to communicate these changes outside of your patient file, this mechanism provides the means.See VS_Obs_Diab_Ref",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BeModelObservationDiabetes.referenceRange",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Range"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "BeModelObservationDiabetes",
+      "path" : "BeModelObservationDiabetes",
+      "short" : "BeModelObservationDiabetes",
+      "definition" : "Logical model representing a derived glucose monitoring observation in the context of diabetes care."
+    },
+    {
+      "id" : "BeModelObservationDiabetes.uniqueIdentifier",
+      "path" : "BeModelObservationDiabetes.uniqueIdentifier",
+      "short" : "Unique observation business identifier.",
+      "definition" : "Unique observation business identifier.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.recordedDate",
+      "path" : "BeModelObservationDiabetes.recordedDate",
+      "short" : "Date of encoding of the observation by the Recorder. (DateTime format) See management rule 13.",
+      "definition" : "Date of encoding of the observation by the Recorder. (DateTime format) See management rule 13.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.observationPeriod",
+      "path" : "BeModelObservationDiabetes.observationPeriod",
+      "short" : "Date or observation period (e.g. 27/11/2023) (DateTime format)",
+      "definition" : "Date or observation period (e.g. 27/11/2023) (DateTime format)",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.patient",
+      "path" : "BeModelObservationDiabetes.patient",
+      "short" : "Is the unique identifier of the patient. The unique identifier must be the National Patient Register Number (NISS) [1].",
+      "definition" : "Is the unique identifier of the patient. The unique identifier must be the National Patient Register Number (NISS) [1].",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.recorder",
+      "path" : "BeModelObservationDiabetes.recorder",
+      "short" : "Is the unique identifier (national register number)[1] of the health professional or organization (company number) which encodes the information and takes responsibility for its content.",
+      "definition" : "Is the unique identifier (national register number)[1] of the health professional or organization (company number) which encodes the information and takes responsibility for its content.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.category",
+      "path" : "BeModelObservationDiabetes.category",
+      "short" : "698472009 “Glucose monitoring” (FR) (invariant)See VS_Obs_Dia_Category",
+      "definition" : "698472009 “Glucose monitoring” (FR) (invariant)See VS_Obs_Dia_Category",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.status",
+      "path" : "BeModelObservationDiabetes.status",
+      "short" : "445665009 “Final report” - invariant. See VS_Obs_Diab_Status Status",
+      "definition" : "445665009 “Final report” - invariant. See VS_Obs_Diab_Status Status",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.code",
+      "path" : "BeModelObservationDiabetes.code",
+      "short" : "Code corresponding to the derived value (coding to be established by SNOMED CT). Ex: AGP-PGATAR Time Above Range, TIR Time In Range…See VS_Obs_Diab_Code",
+      "definition" : "Code corresponding to the derived value (coding to be established by SNOMED CT). Ex: AGP-PGATAR Time Above Range, TIR Time In Range…See VS_Obs_Diab_Code",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.value",
+      "path" : "BeModelObservationDiabetes.value",
+      "short" : "Derived value. Value[x]",
+      "definition" : "Derived value. Value[x]",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "BeModelObservationDiabetes.referenceRange",
+      "path" : "BeModelObservationDiabetes.referenceRange",
+      "short" : "Structure composed of reference elements allowing the interpretation of measurements:·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.Low (0...1)·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.High (0...1)·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.AppliesTo (0...*)We automatically work according to the ADA standards which define target value intervals for the following derived observations:  Coded1 Coefficient of Variation2 Days Sensor Worn3% Data Captured4 TAR % (Time above range - very high)5 TAR % (Time above range - high)6 SHOOTING % (Time in Range)7 TBR % (Time below range - low)8 TBR % (Time below range - very low)By observation code derived from this list, we will potentially find:A) Target - reference interval to indicate the target lower limit (“Low”) and upper limit (“High”).Note that these limits do not depend on the diabetes category.For example: for TIR, it is recommended that the blood glucose value be at least 70% of the time in the “normal” range.So for ReferenceRange “TIR_REF”→ TIR_REF.Low = 70%→ TIR_REF.High = 100%B) filter - application interval with a lower limit and an upper limit to filter the measurement observations considered in the calculation of the derived value. This defines the range of counted values. These ranges may vary by diabetes category.For example: the “normal” range is between 70 mg/dL and 180 mg/dL for category 1 and 3, and between 63 mg/dL and 140 mg/dL for category 2.So for ReferenceRange “TIR_REF”→ TIR_REF.AppliesTo(CAT1, ≥70 mg/dL, ≤180 mg/dL)→ TIR_REF.AppliesTo(CAT2, ≥63 mg/dL, ≤140 mg/dL)→ TIR_REF.AppliesTo(CAT3, ≥70 mg/dL, ≤180 mg/dL)As we base ourselves on ADA standards, there is little point in passing all this information for each observation.If, however, a doctor changes values ​​(target and/or filter) for a specific patient AND you want to communicate these changes outside of your patient file, this mechanism provides the means.See VS_Obs_Diab_Ref",
+      "definition" : "Structure composed of reference elements allowing the interpretation of measurements:·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.Low (0...1)·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.High (0...1)·\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 ReferenceRange.AppliesTo (0...*)We automatically work according to the ADA standards which define target value intervals for the following derived observations:  Coded1 Coefficient of Variation2 Days Sensor Worn3% Data Captured4 TAR % (Time above range - very high)5 TAR % (Time above range - high)6 SHOOTING % (Time in Range)7 TBR % (Time below range - low)8 TBR % (Time below range - very low)By observation code derived from this list, we will potentially find:A) Target - reference interval to indicate the target lower limit (“Low”) and upper limit (“High”).Note that these limits do not depend on the diabetes category.For example: for TIR, it is recommended that the blood glucose value be at least 70% of the time in the “normal” range.So for ReferenceRange “TIR_REF”→ TIR_REF.Low = 70%→ TIR_REF.High = 100%B) filter - application interval with a lower limit and an upper limit to filter the measurement observations considered in the calculation of the derived value. This defines the range of counted values. These ranges may vary by diabetes category.For example: the “normal” range is between 70 mg/dL and 180 mg/dL for category 1 and 3, and between 63 mg/dL and 140 mg/dL for category 2.So for ReferenceRange “TIR_REF”→ TIR_REF.AppliesTo(CAT1, ≥70 mg/dL, ≤180 mg/dL)→ TIR_REF.AppliesTo(CAT2, ≥63 mg/dL, ≤140 mg/dL)→ TIR_REF.AppliesTo(CAT3, ≥70 mg/dL, ≤180 mg/dL)As we base ourselves on ADA standards, there is little point in passing all this information for each observation.If, however, a doctor changes values ​​(target and/or filter) for a specific patient AND you want to communicate these changes outside of your patient file, this mechanism provides the means.See VS_Obs_Diab_Ref",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Range"
+      }]
+    }]
+  }
+}

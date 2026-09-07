@@ -1,7 +1,7 @@
-Extension: BeExtDiabetesDevice
-Id: be-ext-diabetes-device
-Title: "Diabetes Device"
-Description: "Identification of the sensor used for glucose monitoring."
+Extension: BeExtDeviceType
+Id: be-ext-device-type
+Title: "Device Type"
+Description: "Extension containing the coded type of a device."
 Context: DiagnosticReport
 
 * extension 0..0

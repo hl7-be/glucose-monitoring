@@ -8,7 +8,7 @@ Id: be-diagnostic-report-diabetes
 * identifier[UUID].system = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diagnostic-report-diabetes"
 * extension contains BeExtRecordedDate named recorded-date 1..1 MS and
     BeExtRecorder named recorder 1..1 MS and
-    BeExtDiabetesDevice named device 1..1 MS and
+    BeExtDeviceType named device 1..1 MS and
     BeExtSimpleNote named note 0..* MS //and
     //http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
 //* extension[device].extension[concept].valueCodeableConcept 1..1 MS

@@ -80,7 +80,7 @@ Description: "Coefficient of variation"
 * extension[BeExtRecorder].valueReference.identifier.value = "0403044007"
 * category[+] = $sct#439926003
 * category[+] = $sct#258090004
-* code = $sct#778232399
+* code = $sct#141121000172108
 * device = Reference(urn:uuid:ce11c616-6625-4966-8a16-012ee8ff1d8e)
 * status = #final
 * valueQuantity.value = 6
@@ -108,7 +108,7 @@ Description: "Days sensor worn"
 * extension[BeExtRecorder].valueReference.identifier.value = "0403044007"
 * category[+] = $sct#439926003
 * category[+] = $sct#258090004
-* code = $sct#757492266
+* code = $sct#141131000172106
 * device = Reference(urn:uuid:ce11c616-6625-4966-8a16-012ee8ff1d8e)
 * status = #final
 * valueQuantity.value = 14
@@ -138,7 +138,7 @@ Description: "% Data Captured"
 * extension[BeExtRecorder].valueReference.identifier.value = "0403044007"
 * category[+] = $sct#439926003
 * category[+] = $sct#258090004
-* code = $sct#242282937
+* code = $sct#141181000172107
 * device = Reference(urn:uuid:ce11c616-6625-4966-8a16-012ee8ff1d8e)
 * status = #final
 * valueQuantity.value = 96
@@ -167,7 +167,7 @@ Description: "TAR-Very high"
 * extension[BeExtRecorder].valueReference.identifier.value = "0403044007"
 * category[+] = $sct#439926003
 * category[+] = $sct#258090004
-* code = $sct#124011008
+* code = $sct#141201000172108
 * device = Reference(urn:uuid:ce11c616-6625-4966-8a16-012ee8ff1d8e)
 * status = #final
 * valueQuantity.value = 20
@@ -197,7 +197,7 @@ Description: "TAR-High"
 * extension[BeExtRecorder].valueReference.identifier.value = "0403044007"
 * category[+] = $sct#439926003
 * category[+] = $sct#258090004
-* code = $sct#865587343
+* code = $sct#141191000172105
 * device = Reference(urn:uuid:ce11c616-6625-4966-8a16-012ee8ff1d8e)
 * status = #final
 * valueQuantity.value = 23
@@ -226,7 +226,7 @@ Description: "TIR"
 * extension[BeExtRecorder].valueReference.identifier.value = "0403044007"
 * category[+] = $sct#439926003
 * category[+] = $sct#258090004
-* code = $sct#438565545
+* code = $sct#141231000172103	
 * device = Reference(urn:uuid:ce11c616-6625-4966-8a16-012ee8ff1d8e)
 * status = #final
 * valueQuantity.value = 47
@@ -257,7 +257,7 @@ Description: "TBR Time below range - low"
 * extension[BeExtRecorder].valueReference.identifier.value = "0403044007"
 * category[+] = $sct#439926003
 * category[+] = $sct#258090004
-* code = $sct#278399267
+* code = $sct#141211000172106
 * device = Reference(urn:uuid:ce11c616-6625-4966-8a16-012ee8ff1d8e)
 * status = #final
 * valueQuantity.value = 4
@@ -287,7 +287,7 @@ Description: "TBR Time below range – very low"
 * extension[BeExtRecorder].valueReference.identifier.value = "0403044007"
 * category[+] = $sct#439926003
 * category[+] = $sct#258090004
-* code = $sct#364527445
+* code = $sct#141221000172101
 * device = Reference(urn:uuid:ce11c616-6625-4966-8a16-012ee8ff1d8e)
 * status = #final
 * valueQuantity.value = 6

@@ -162,12 +162,12 @@ pages:
 menu:
   Home: index.html
   Guidance: guidance.html
-  Artifacts:
-    Logical Models: artifacts.html#structures-logical-models
-    Profiles: artifacts.html#structures-resource-profiles
-    Value Sets: artifacts.html#terminology-value-sets
-    Naming Systems: artifacts.html#terminology-naming-systems
-    Examples: artifacts.html#example-example-instances
+  Artifacts: artifacts.html
+    #Logical Models: artifacts.html#structures-logical-models
+    #Profiles: artifacts.html#structures-resource-profiles
+    #Value Sets: artifacts.html#terminology-value-sets
+    #Naming Systems: artifacts.html#terminology-naming-systems
+    #Examples: artifacts.html#example-example-instances
   Downloads: downloads.html
 #  History: http://hl7.org/fhir/us/example/history.html
 

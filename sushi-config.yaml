@@ -188,6 +188,7 @@ parameters:
   apply-version: 'true'
   excludettl: true
   path-expansion-params: Parameters-terminology-expansion.json
+  auto-oid-root: 2.16.840.1.113883.4.642.40.200.17
 
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.

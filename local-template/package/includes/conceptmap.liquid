@@ -1,0 +1,54 @@
+{% comment %}
+  Renders a logical model -> profile ConceptMap as a side-by-side table.
+  Expects `map` to be the ConceptMap as produced in site.data by the
+  produce-jekyll-data IG parameter.
+  Source codes are element paths in the logical model; target codes are
+  FHIR paths (Resource.element...).
+{% endcomment %}
+{% assign cmap = include.map %}
+
+{% for group in cmap.group %}
+  {% assign sourceName = group.source | split: '/' | last %}
+  {% assign targetName = group.target | split: '/' | last %}
+
+  <div class="table-wrap">
+    <table summary="{{ sourceName }} → {{ targetName }}">
+      <caption>{{ sourceName }} → {{ targetName }}</caption>
+      <thead>
+        <tr>
+          <th colspan="2" class="src-head">{{ sourceName }}</th>
+          <th class="relhead">Relationship</th>
+          <th colspan="4" class="tgt-head">{{ targetName }}</th>
+        </tr>
+        <tr>
+          <th class="src-sub">Element</th>
+          <th class="src-sub">Description</th>
+          <th class="relsub">Relation</th>
+          <th class="tgt-sub">Resource</th>
+          <th class="tgt-sub">Element</th>
+          <th class="tgt-sub">Description</th>
+          <th class="tgt-sub">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for element in group.element %}
+          {% for target in element.target %}
+            {% assign targetParts = target.code | split: '.' %}
+            {% assign resource = targetParts[0] %}
+            {% assign elementPath = target.code | remove_first: resource | remove_first: '.' %}
+            {% assign relation = target.equivalence | default: target.relationship %}
+            <tr>
+              <td><code>{{ element.code }}</code></td>
+              <td>{{ element.display }}</td>
+              <td class="rel-{{ relation }}">{{ relation }}</td>
+              <td>{{ resource }}</td>
+              <td>{% if elementPath != '' %}<code>{{ elementPath }}</code>{% endif %}</td>
+              <td>{{ target.display }}</td>
+              <td>{{ target.comment }}</td>
+            </tr>
+          {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endfor %}

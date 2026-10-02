@@ -22,3 +22,7 @@ Thumbs.db
 # backup files #
 ################
 *.bak
+
+# IG Publisher package index caches #
+.index.db
+.index.json

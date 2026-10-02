@@ -1,0 +1,11 @@
+source_element,source_description,relationship,target_element,target_description,comment
+UniqueIdentifier,Unique observation business identifier,equivalent,Observation.identifier:UUID,Unique identifier of the observation,System fixed to be-ns-observation-diabetes.
+RecordedDate,Date of encoding of the observation by the recorder,equivalent,Observation.extension:recorded-date,Recording date (BeExtRecordedDate),
+ObservationPeriod,Date or observation period,equivalent,Observation.effectivePeriod,Period covered by the observation,"effective[x] is restricted to Period; start and end are both mandatory. A single date is sent as a period with the same start and end."
+Patient,Unique identifier of the patient (NISS),equivalent,Observation.subject,Who the observation is about,"Reference(BePatient). The model carries the NISS; in FHIR it is the identifier of the referenced BePatient (or Reference.identifier)."
+Recorder,Health professional or organization that encodes the information,equivalent,Observation.extension:recorder,Recorder (BeExtRecorder),"The model carries the NISS of the professional or the company number of the organization; in FHIR this is a reference to the corresponding practitioner, practitioner role or organization."
+Category,Glucose monitoring category,equivalent,Observation.category,Classification of type of observation,"Bound to BeVSDiabetesObservationCategory (698472009 Glucose monitoring)."
+Status,Status of the observation,equivalent,Observation.status,final | entered-in-error,"0..1 in the model but 1..1 in the profile. The model refers to the SNOMED CT code 445665009 (Final report); in FHIR this is the observation-status code final (BeVSDiabetesObservationStatus)."
+Code,Code of the derived value (e.g. TAR or TIR),equivalent,Observation.code,Type of derived observation,Bound to BeVSDiabetesObservationCode.
+Value,Derived value,equivalent,Observation.valueQuantity,Actual result,"The profile requires value[x] (1..1) but does not restrict it to Quantity."
+ReferenceRange,Target and filter ranges for interpreting the derived value,equivalent,Observation.referenceRange,Provides guide for interpretation,"Target limits map to referenceRange.low and referenceRange.high. Category-dependent filter ranges (CAT 1/2/3) use referenceRange.appliesTo. Only sent when the values differ from the ADA defaults."

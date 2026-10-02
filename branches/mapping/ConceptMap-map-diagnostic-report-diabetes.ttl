@@ -1,0 +1,267 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ConceptMap/map-diagnostic-report-diabetes> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "map-diagnostic-report-diabetes"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap map-diagnostic-report-diabetes</b></p><a name=\"map-diagnostic-report-diabetes\"> </a><a name=\"hcmap-diagnostic-report-diabetes\"> </a><p>Mapping from <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes.html\">BeModelDiagnosticReportDiabetes</a> to <a href=\"StructureDefinition-be-diagnostic-report-diabetes.html\">BeDiagnosticReportDiabetes</a></p><br/><p>Mapping from <a href=\"StructureDefinition-BeModelDiagnosticReportDiabetes.html\">BeModelDiagnosticReportDiabetes</a> to <a href=\"StructureDefinition-be-diagnostic-report-diabetes.html\">BeDiagnosticReportDiabetes</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Comment</b></td></tr><tr><td colspan=\"3\">UniqueIdentifierNational</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.identifier:UUID\">DiagnosticReport.identifier:UUID</a></td><td>1..1</td><td>todo</td><td>System fixed to be-ns-diagnostic-report-diabetes.</td></tr><tr><td colspan=\"3\">BusinessIdentifier</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.identifier\">DiagnosticReport.identifier</a></td><td>1..*</td><td>todo</td><td>Additional identifier with the supplier's own system (identifier slicing is open).</td></tr><tr><td colspan=\"3\">RecordedDate</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.extension:recorded-date\">DiagnosticReport.extension:recorded-date</a></td><td>1..1</td><td>todo</td><td/></tr><tr><td colspan=\"3\">ObservationPeriod</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td colspan=\"3\">DiagnosticReport.effectivePeriod</td><td>effective[x] is restricted to Period; start and end are both mandatory.</td></tr><tr><td colspan=\"3\">Patient</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.subject\">DiagnosticReport.subject</a></td><td>1..1</td><td>todo</td><td>The model carries the NISS; in FHIR it is the identifier of the referenced patient (or Reference.identifier). Unlike the observation profile, subject is not restricted to BePatient.</td></tr><tr><td colspan=\"3\">Recorder</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.extension:recorder\">DiagnosticReport.extension:recorder</a></td><td>1..1</td><td>todo</td><td>The model carries the NISS of the professional or the company number of the organization; in FHIR this is a reference to the corresponding practitioner, practitioner role or organization.</td></tr><tr><td colspan=\"3\">Performer</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.performer\">DiagnosticReport.performer</a></td><td>0..*</td><td>todo</td><td>Not constrained in the profile. For the diabetes report, performer = recorder.</td></tr><tr><td colspan=\"3\">Interpreter</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.resultsInterpreter\">DiagnosticReport.resultsInterpreter</a></td><td>0..1</td><td>todo</td><td>Reference(BePractitionerRole | BePractitioner). Not provided by the report producer; added by the interpreting care provider.</td></tr><tr><td colspan=\"3\">Category</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.category\">DiagnosticReport.category</a></td><td>1..*</td><td>todo</td><td>Bound to BeVSDiabetesReportCategory.</td></tr><tr><td colspan=\"3\">Qualification</td><td colspan=\"5\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">No element in the profile carries the diabetes category. It is calculated from the diagnosis by the interpreting doctor (default CAT 3) and is also used in Observation.referenceRange.appliesTo.</td></tr><tr><td colspan=\"3\">Device</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td colspan=\"3\">DiagnosticReport.extension:device.extension:concept.valueCodeableConcept</td><td>The INAMI sensor type number is sent as a code with system be-ns-diabetes-device-type.</td></tr><tr><td colspan=\"3\">Code</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.code\">DiagnosticReport.code</a></td><td>1..1</td><td>todo</td><td>Bound to BeVSDiabetesReportCode (e.g. 439926003 Ambulatory continuous glucose monitoring of interstitial tissue fluid).</td></tr><tr><td colspan=\"3\">DerivedObservations</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.result\">DiagnosticReport.result</a></td><td>0..*</td><td>todo</td><td>Reference(BeObservationDiabetes).</td></tr><tr><td colspan=\"3\">MeasurementObservations</td><td colspan=\"5\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">No element in the profile. DiagnosticReport.result is restricted to BeObservationDiabetes (derived values), so the individual measurements are not referenced from the report.</td></tr><tr><td colspan=\"3\">Diagnosis</td><td colspan=\"5\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">No element in the R4 profile. The R5 DiagnosticReport.supportingInfo cross-version extension was considered but is commented out in the profile.</td></tr><tr><td colspan=\"3\">Note</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.extension:note\">DiagnosticReport.extension:note</a></td><td>0..*</td><td>todo</td><td>Not provided by the report producer; added by the interpreting care provider.</td></tr><tr><td colspan=\"3\">Document</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.presentedForm\">DiagnosticReport.presentedForm</a></td><td>0..*</td><td>todo</td><td>contentType fixed to application/pdf.</td></tr><tr><td colspan=\"3\">Status</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.status\">DiagnosticReport.status</a></td><td>1..1</td><td>todo</td><td>Bound to BeVSDiabetesReportStatus. The status depends on the business rule on % Data Captured.</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ConceptMap/map-diagnostic-report-diabetes"] ;
+  fhir:ConceptMap.version [ fhir:value "1.0.0"] ;
+  fhir:ConceptMap.name [ fhir:value "MapDiagnosticReportDiabetes"] ;
+  fhir:ConceptMap.title [ fhir:value "Diabetes Report Model to BeDiagnosticReportDiabetes Mapping"] ;
+  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-10-02T13:33:25+00:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.publisher [ fhir:value "eHealth Platform"] ;
+  fhir:ConceptMap.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "eHealth Platform" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.ehealth.fgov.be" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "message-structure@www.ehealth.fgov.be" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Message-Structure" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "message-structure@www.ehealth.fgov.be" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ConceptMap.description [ fhir:value "Mapping from the BeModelDiagnosticReportDiabetes logical model to the be-diagnostic-report-diabetes profile"] ;
+  fhir:ConceptMap.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BE" ] ;
+       fhir:Coding.display [ fhir:value "Belgium" ]
+     ]
+  ] ;
+  fhir:ConceptMap.sourceCanonical [
+     fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelDiagnosticReportDiabetes" ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelDiagnosticReportDiabetes>
+  ] ;
+  fhir:ConceptMap.targetCanonical [
+     fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-diagnostic-report-diabetes" ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-diagnostic-report-diabetes>
+  ] ;
+  fhir:ConceptMap.group [
+     fhir:index 0 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelDiagnosticReportDiabetes" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-diagnostic-report-diabetes" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "UniqueIdentifierNational" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Unique business identifier of the report" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.identifier:UUID" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Unique identifier of the report" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "System fixed to be-ns-diagnostic-report-diabetes." ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "BusinessIdentifier" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Report identifier for the supplier's internal business" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.identifier" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Business identifier for report" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Additional identifier with the supplier's own system (identifier slicing is open)." ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "RecordedDate" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Date the report was produced" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.extension:recorded-date" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Recording date (BeExtRecordedDate)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ObservationPeriod" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Period covered by the report (typically 14 to 30 days)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.effectivePeriod" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Clinically relevant time/time-period for report" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "effective[x] is restricted to Period; start and end are both mandatory." ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Patient" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Identifier of the patient (preferably NISS)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.subject" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "The subject of the report" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "The model carries the NISS; in FHIR it is the identifier of the referenced patient (or Reference.identifier). Unlike the observation profile, subject is not restricted to BePatient." ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Recorder" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Service provider or organization that encodes the information" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.extension:recorder" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Recorder (BeExtRecorder)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "The model carries the NISS of the professional or the company number of the organization; in FHIR this is a reference to the corresponding practitioner, practitioner role or organization." ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Performer" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Service provider or organization that collects the observations and produces the report" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.performer" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Responsible diagnostic service" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Not constrained in the profile. For the diabetes report, performer = recorder." ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Interpreter" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Care provider who interprets the observations in the report" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.resultsInterpreter" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Primary result interpreter" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Reference(BePractitionerRole | BePractitioner). Not provided by the report producer; added by the interpreting care provider." ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Category" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Category of the report" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.category" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Service category" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Bound to BeVSDiabetesReportCategory." ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Qualification" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Category of diabetic patient (CAT 1/2/3)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "No element in the profile carries the diabetes category. It is calculated from the diagnosis by the interpreting doctor (default CAT 3) and is also used in Observation.referenceRange.appliesTo." ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Device" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Identification number assigned by INAMI to the sensor type" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.extension:device.extension:concept.valueCodeableConcept" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Sensor type (BeExtCodeableReference concept)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "The INAMI sensor type number is sent as a code with system be-ns-diabetes-device-type." ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Code" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Report code (type of procedure)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.code" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Name/Code for this diagnostic report" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Bound to BeVSDiabetesReportCode (e.g. 439926003 Ambulatory continuous glucose monitoring of interstitial tissue fluid)." ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "DerivedObservations" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "References to the derived value observations in the report" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.result" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Observations" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Reference(BeObservationDiabetes)." ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "MeasurementObservations" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "References to the blood glucose measurement observations used to produce the analysis" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "No element in the profile. DiagnosticReport.result is restricted to BeObservationDiabetes (derived values), so the individual measurements are not referenced from the report." ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Diagnosis" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Problem related to this diagnostic report" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "No element in the R4 profile. The R5 DiagnosticReport.supportingInfo cross-version extension was considered but is commented out in the profile." ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Note" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Report comments in free text" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.extension:note" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Comments about the report (BeExtSimpleNote)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Not provided by the report producer; added by the interpreting care provider." ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Document" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "PDF document containing the complete report" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.presentedForm" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Entire report as issued" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "contentType fixed to application/pdf." ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Status" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Report status (default Final)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DiagnosticReport.status" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "final | partial" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Bound to BeVSDiabetesReportStatus. The status depends on the business rule on % Data Captured." ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ConceptMap/map-diagnostic-report-diabetes.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

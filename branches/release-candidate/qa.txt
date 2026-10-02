@@ -1,0 +1,104 @@
+GlucoseMonitoring : Validation Results
+=========================================
+
+err = 0, warn = 0, info = 31
+IG Publisher Version: 2.3.4
+Generated Fri Oct 02 07:34:14 UTC 2026. FHIR version 4.0.1 for hl7.fhir.be.glucose-monitoring#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring)
+ Build Errors : 0 / 0 / 0
+ /work/fsh-generated/resources/Bundle-uc52-bundle : 0 / 0 / 7
+ /work/fsh-generated/resources/Bundle-uc53-bundle : 0 / 0 / 40
+ /work/fsh-generated/resources/CodeSystem-be-cs-diabetes-device-type : 0 / 0 / 1
+ /work/fsh-generated/resources/Composition-uc52-composition : 0 / 0 / 2
+ /work/fsh-generated/resources/Composition-uc53-composition : 0 / 0 / 2
+ /work/fsh-generated/resources/Device-device : 0 / 0 / 1
+ /work/fsh-generated/resources/DiagnosticReport-uc52-pdfonly : 0 / 0 / 2
+ /work/fsh-generated/resources/DiagnosticReport-uc53-pdf-derived : 0 / 0 / 2
+ /work/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.glucose-monitoring : 0 / 0 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-diagnostic-report-diabetes : 0 / 0 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-observation-diabetes : 0 / 0 / 1
+ /work/fsh-generated/resources/Observation-397dffb4-a88a-47d0-b10d-beffcbf6157d : 0 / 0 / 1
+ /work/fsh-generated/resources/Observation-449a728d-dfb4-422d-94aa-1a2d43849ee5 : 0 / 0 / 1
+ /work/fsh-generated/resources/Observation-454a29d0-0893-458a-b2e5-25452b89e29a : 0 / 0 / 1
+ /work/fsh-generated/resources/Observation-6756477d-b57a-4611-b048-374d46f52908 : 0 / 0 / 1
+ /work/fsh-generated/resources/Observation-a6665182-e11a-40a9-ae83-9b093a353f16 : 0 / 0 / 1
+ /work/fsh-generated/resources/Observation-b28ef33b-0480-4bde-a5df-94988813110b : 0 / 0 / 1
+ /work/fsh-generated/resources/Observation-b44fe5d5-f57b-4424-b628-d2baeb447738 : 0 / 0 / 1
+ /work/fsh-generated/resources/Observation-c611b58d-27bb-49e2-b3ec-bd59e986f5f3 : 0 / 0 / 1
+ /work/fsh-generated/resources/Parameters-terminology-expansion : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-BeModelDiagnosticReportDiabetes : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-BeModelObservationDiabetes : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-be-diagnostic-report-diabetes : 0 / 0 / 2
+ /work/fsh-generated/resources/StructureDefinition-be-ext-device-type : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-be-observation-diabetes : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-diabetes-device-type : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-diabetes-observation-category : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-diabetes-observation-code : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-diabetes-observation-status : 0 / 0 / 2
+ /work/fsh-generated/resources/ValueSet-be-vs-diabetes-report-category : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-diabetes-report-code : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-diabetes-report-status : 0 / 0 / 4
+</table>
+== n/a ==
+== fsh-generated/resources/Bundle-uc52-bundle.json ==
+INFORMATION: Bundle/uc52-bundle: Bundle.entry[0].resource/*Composition/uc52-composition*/.type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+INFORMATION: Bundle/uc52-bundle: Bundle.entry[1].resource/*DiagnosticReport/uc52-pdfonly*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+INFORMATION: Bundle/uc52-bundle: Bundle.entry[1].resource/*DiagnosticReport/uc52-pdfonly*/.status: Reference to draft CodeSystem http://hl7.org/fhir/diagnostic-report-status|4.0.1
+== fsh-generated/resources/Bundle-uc53-bundle.json ==
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[0].resource/*Composition/uc53-composition*/.type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[1].resource/*DiagnosticReport/uc53-pdf-derived*/.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[1].resource/*DiagnosticReport/uc53-pdf-derived*/.status: Reference to draft CodeSystem http://hl7.org/fhir/diagnostic-report-status|4.0.1
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[2].resource/*Observation/c611b58d-27bb-49e2-b3ec-bd59e986f5f3*/.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[2].resource/*Observation/c611b58d-27bb-49e2-b3ec-bd59e986f5f3*/.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#258090004)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[3].resource/*Observation/397dffb4-a88a-47d0-b10d-beffcbf6157d*/.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[3].resource/*Observation/397dffb4-a88a-47d0-b10d-beffcbf6157d*/.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#258090004)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[4].resource/*Observation/6756477d-b57a-4611-b048-374d46f52908*/.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[4].resource/*Observation/6756477d-b57a-4611-b048-374d46f52908*/.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#258090004)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[5].resource/*Observation/b44fe5d5-f57b-4424-b628-d2baeb447738*/.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[5].resource/*Observation/b44fe5d5-f57b-4424-b628-d2baeb447738*/.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#258090004)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[6].resource/*Observation/b28ef33b-0480-4bde-a5df-94988813110b*/.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[6].resource/*Observation/b28ef33b-0480-4bde-a5df-94988813110b*/.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#258090004)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[7].resource/*Observation/449a728d-dfb4-422d-94aa-1a2d43849ee5*/.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[7].resource/*Observation/449a728d-dfb4-422d-94aa-1a2d43849ee5*/.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#258090004)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[8].resource/*Observation/a6665182-e11a-40a9-ae83-9b093a353f16*/.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[8].resource/*Observation/a6665182-e11a-40a9-ae83-9b093a353f16*/.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#258090004)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[9].resource/*Observation/454a29d0-0893-458a-b2e5-25452b89e29a*/.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+INFORMATION: Bundle/uc53-bundle: Bundle.entry[9].resource/*Observation/454a29d0-0893-458a-b2e5-25452b89e29a*/.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#258090004)
+== fsh-generated/resources/CodeSystem-be-cs-diabetes-device-type.json ==
+== fsh-generated/resources/Composition-uc52-composition.json ==
+INFORMATION: Composition/uc52-composition: Composition.type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+== fsh-generated/resources/Composition-uc53-composition.json ==
+INFORMATION: Composition/uc53-composition: Composition.type: None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#439926003)
+== fsh-generated/resources/Device-device.json ==
+== fsh-generated/resources/DiagnosticReport-uc52-pdfonly.json ==
+INFORMATION: DiagnosticReport/uc52-pdfonly: DiagnosticReport.status: Reference to draft CodeSystem http://hl7.org/fhir/diagnostic-report-status|4.0.1
+== fsh-generated/resources/DiagnosticReport-uc53-pdf-derived.json ==
+INFORMATION: DiagnosticReport/uc53-pdf-derived: DiagnosticReport.status: Reference to draft CodeSystem http://hl7.org/fhir/diagnostic-report-status|4.0.1
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.glucose-monitoring.json ==
+== fsh-generated/resources/NamingSystem-be-ns-diagnostic-report-diabetes.json ==
+== fsh-generated/resources/NamingSystem-be-ns-observation-diabetes.json ==
+== fsh-generated/resources/Observation-397dffb4-a88a-47d0-b10d-beffcbf6157d.json ==
+== fsh-generated/resources/Observation-449a728d-dfb4-422d-94aa-1a2d43849ee5.json ==
+== fsh-generated/resources/Observation-454a29d0-0893-458a-b2e5-25452b89e29a.json ==
+== fsh-generated/resources/Observation-6756477d-b57a-4611-b048-374d46f52908.json ==
+== fsh-generated/resources/Observation-a6665182-e11a-40a9-ae83-9b093a353f16.json ==
+== fsh-generated/resources/Observation-b28ef33b-0480-4bde-a5df-94988813110b.json ==
+== fsh-generated/resources/Observation-b44fe5d5-f57b-4424-b628-d2baeb447738.json ==
+== fsh-generated/resources/Observation-c611b58d-27bb-49e2-b3ec-bd59e986f5f3.json ==
+== fsh-generated/resources/Parameters-terminology-expansion.json ==
+== fsh-generated/resources/StructureDefinition-BeModelDiagnosticReportDiabetes.json ==
+== fsh-generated/resources/StructureDefinition-BeModelObservationDiabetes.json ==
+== fsh-generated/resources/StructureDefinition-be-diagnostic-report-diabetes.json ==
+INFORMATION: StructureDefinition/be-diagnostic-report-diabetes: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+== fsh-generated/resources/StructureDefinition-be-ext-device-type.json ==
+== fsh-generated/resources/StructureDefinition-be-observation-diabetes.json ==
+== fsh-generated/resources/ValueSet-be-vs-diabetes-device-type.json ==
+== fsh-generated/resources/ValueSet-be-vs-diabetes-observation-category.json ==
+== fsh-generated/resources/ValueSet-be-vs-diabetes-observation-code.json ==
+== fsh-generated/resources/ValueSet-be-vs-diabetes-observation-status.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://hl7.org/fhir/observation-status to 4.0.1 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.0.0 (hl7.fhir.uv.xver-r5.r4#0.1.0)
+== fsh-generated/resources/ValueSet-be-vs-diabetes-report-category.json ==
+== fsh-generated/resources/ValueSet-be-vs-diabetes-report-code.json ==
+== fsh-generated/resources/ValueSet-be-vs-diabetes-report-status.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://hl7.org/fhir/diagnostic-report-status to 4.0.1 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.0.0 (hl7.fhir.uv.xver-r5.r4#0.1.0)
+INFORMATION: ValueSet/be-vs-diabetes-report-status: ValueSet.compose.include[0].concept[0]: Reference to draft CodeSystem http://hl7.org/fhir/diagnostic-report-status|4.0.1
+INFORMATION: ValueSet/be-vs-diabetes-report-status: ValueSet.compose.include[0].concept[1]: Reference to draft CodeSystem http://hl7.org/fhir/diagnostic-report-status|4.0.1

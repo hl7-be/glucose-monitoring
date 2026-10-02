@@ -1,0 +1,76 @@
+# BeVSDiabetesDeviceType - HL7 FHIR Implementation Guide: Glucose Monitoring v1.0.0
+
+## ValueSet: BeVSDiabetesDeviceType 
+
+ 
+Allowed glucose monitoring sensor types used in Belgium. 
+
+ **References** 
+
+* [Device Type](StructureDefinition-be-ext-device-type.md)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-diabetes-device-type",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ValueSet/be-vs-diabetes-device-type",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.200.17.48.1"
+  }],
+  "version" : "1.0.0",
+  "name" : "BeVSDiabetesDeviceType",
+  "title" : "BeVSDiabetesDeviceType",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-02T07:32:05+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be"
+    },
+    {
+      "system" : "email",
+      "value" : "message-structure@www.ehealth.fgov.be"
+    }]
+  },
+  {
+    "name" : "Message-Structure",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@www.ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Allowed glucose monitoring sensor types used in Belgium.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/CodeSystem/be-cs-diabetes-device-type"
+    }]
+  }
+}
+
+```

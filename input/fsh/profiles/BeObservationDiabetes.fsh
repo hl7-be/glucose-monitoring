@@ -20,7 +20,7 @@ Description: "Belgian FHIR profile for representing a derived glucose monitoring
 //* performer 1..1 MS
 //* performer only Reference(BePractitioner or BePractitionerRole)
 * category 1..* MS
-* category from BeVSDiabetesObservationCategory 
+* category from BeVSDiabetesObservationCategory (preferred)
 * status 1..1 MS
 * status from BeVSDiabetesObservationStatus
 * code 1..1 MS

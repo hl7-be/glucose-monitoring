@@ -1,6 +1,7 @@
 Instance: be-ns-diagnostic-report-diabetes
 InstanceOf: NamingSystem
 Usage: #definition
+* description = "Naming system for diabetes diagnostic report identifiers"
 * name = "BeNSDiagnosticReportDiabetes"
 * status = #active
 * kind = #identifier

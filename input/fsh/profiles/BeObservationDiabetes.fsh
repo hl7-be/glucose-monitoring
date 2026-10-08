@@ -1,6 +1,7 @@
 Profile: BeObservationDiabetes
 Parent: BeObservation
 Id: be-observation-diabetes
+Description: "Belgian FHIR profile for representing a derived glucose monitoring observation in the context of diabetes care."
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open 
@@ -19,7 +20,7 @@ Id: be-observation-diabetes
 //* performer 1..1 MS
 //* performer only Reference(BePractitioner or BePractitionerRole)
 * category 1..* MS
-* category from BeVSDiabetesObservationCategory 
+* category from BeVSDiabetesObservationCategory (preferred)
 * status 1..1 MS
 * status from BeVSDiabetesObservationStatus
 * code 1..1 MS

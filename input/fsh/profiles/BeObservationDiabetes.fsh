@@ -12,6 +12,7 @@ Description: "Belgian FHIR profile for representing a derived glucose monitoring
 * extension contains BeExtRecordedDate named recorded-date 1..1 MS and
     //http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo.type named type 1..1 MS and
     BeExtRecorder named recorder 1..1 MS
+* extension[recorder].value[x] only Reference(BePractitioner or BeOrganization)
 * effective[x] only Period
 * effectivePeriod  1..1 MS
 * effectivePeriod.start 1..1 MS

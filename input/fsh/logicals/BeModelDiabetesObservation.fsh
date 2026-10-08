@@ -1,6 +1,6 @@
 Logical: BeModelObservationDiabetes
 Description: "Logical model representing a derived glucose monitoring observation in the context of diabetes care."
-* uniqueIdentifier 1..1 Identifier "Unique observation business identifier."
+* businessIdentifier 1..* Identifier "Unique business identifier of the observation"
 //* observationType 1..1 CodeableConcept "Indicates whether the observation is a derived measurement or is a base measurement. See hl7VS-VS-observationType. “RSLT” / “SCI”"
 * recordedDate 1..1 dateTime "Date of encoding of the observation by the Recorder. (DateTime format) See management rule 13."
 * observationPeriod 1..1 Period "Date or observation period (e.g. 27/11/2023) (DateTime format)"

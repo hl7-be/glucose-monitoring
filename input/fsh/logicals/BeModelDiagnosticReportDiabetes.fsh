@@ -4,12 +4,12 @@ Description: "Logical model representing a diabetes diagnostic report based on g
 * businessIdentifier 1..* Identifier "Business identifier of the report"
 * recordedDate 1..1 dateTime "Date of the last update of the report"
 * observationPeriod 1..1 Period "From date to date corresponding to the period covered by the report. Typically 14 to 30 days. See business rules"
-* patient 1..1 Identifier "Unique identifier of the patient" "Unique identifier of the patient. For GDPR reasons, sensor suppliers may not use the NISS of their users in external communication with other parties. Implementations take this constraint into account."
+* patient 1..1 Reference(BePatient) "The patient that this report is about" "The patient that this report is about. For GDPR reasons, sensor suppliers may not use the NISS of their users in external communication with other parties. Implementations take this constraint into account."
 * status 1..1 code "Report status, by default “Final”. The value is assigned according to the business rule on “% Data Captured”"
 * status from BeVSDiabetesReportStatus
-* recorder 1..1 Identifier "Unique identifier of the healthcare professional (INAMI number / national register number) or organization (INAMI approval number / company number) that encodes the information and takes responsibility for its content"
+* recorder 1..1 Reference(BePractitioner or BeOrganization) "The healthcare professional (INAMI number / national register number) or organization (INAMI approval number / company number) that encodes the information and takes responsibility for its content"
 //* performer 1..1 Identifier "We refer to the service provider or organization that collects the observations and produces the report. [2]The unique identifier of each natural person is the NISS, while for each organization the company number serves as the unique identifier.For the Diabetes Diagnostic Report, it is: “performer = recorder.»"
-* interpreter 0..1 Identifier "Healthcare provider (INAMI number / national register number) who added an interpretation to the report (e.g. endocrinologist, general practitioner). Not provided by the producer of the report"
+* interpreter 0..1 Reference(BePractitionerRole or BePractitioner) "Healthcare provider (INAMI number / national register number) who added an interpretation to the report (e.g. endocrinologist, general practitioner). Not provided by the producer of the report"
 * category 1..* CodeableConcept "Category of the report. At least one category must be assigned"
 * category from BeVSDiabetesReportCategory (preferred)
 // : 4311000179106 |Chemical pathology report (record artifact) and 408475000 |Diabetic medicine (qualifier value). 394583002 |Endocrinology (qualifier value) of the report. Look at VS_DiagRep_Category."

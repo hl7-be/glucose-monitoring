@@ -14,6 +14,7 @@ Description: "Belgian FHIR profile for a diabetes diagnostic report based on glu
     BeExtDeviceType named device 0..1 MS and
     BeExtSimpleNote named note 0..* MS //and
     //http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo named supportingInfo 0..* MS
+* extension[recorder].value[x] only Reference(BePractitioner or BeOrganization)
 //* extension[device].extension[concept].valueCodeableConcept 1..1 MS
 //* extension[device].extension[concept].valueCodeableConcept from BeVSDiabetesDeviceType (extensible)
 * effective[x] only Period

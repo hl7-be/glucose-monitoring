@@ -3,9 +3,12 @@
 The CSV has the columns:
   source_element, source_description, relationship, target_element, target_description, comment
 
-- source_element: path in the logical model (e.g. ReferenceRange)
-- target_element: FHIR path in the profile, starting with the resource type
-  (e.g. Observation.referenceRange, Observation.extension:recorder)
+- source_element: element path in the logical model, without the model name
+  (e.g. observationDate[x]); the code is the element id <model>.<path>
+- target_element: element id in the profile, starting with the resource type
+  (e.g. Observation.effective[x], Observation.extension:recorder)
+- source_description / target_description: the element's short description; the
+  validator checks them as the code displays
 - relationship: an R4 ConceptMap equivalence (equivalent, wider, narrower, relatedto, unmatched, ...)
   'unmatched' rows have no target_element; 'unmatched', 'narrower' and 'inexact' rows need a comment.
 
@@ -117,14 +120,14 @@ def main():
         f'* name = "{to_name(map_id)}"',
         f'* status = #{a.status}',
         '* experimental = false',
-        f'* sourceCanonical = "{source}"',
-        f'* targetCanonical = "{target}"',
         '',
         '* group[+]',
         f'  * source = "{source}"',
         f'  * target = "{target}"',
     ]
     for r in rows:
+        if not r['source_element'].startswith(source_name + '.'):
+            r = {**r, 'source_element': f"{source_name}.{r['source_element']}"}
         v = {k: esc(r[k]) for k in COLUMNS}
         if r['relationship'] == 'unmatched':
             lines.append(f"  * insert ConceptMapElementUnmatched({v['source_element']}, {v['source_description']}, {v['comment']})")

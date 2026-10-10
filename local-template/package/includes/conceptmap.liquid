@@ -2,8 +2,8 @@
   Renders a logical model -> profile ConceptMap as a side-by-side table.
   Expects `map` to be the ConceptMap as produced in site.data by the
   produce-jekyll-data IG parameter.
-  Source codes are element paths in the logical model; target codes are
-  FHIR paths (Resource.element...).
+  Source codes are element ids in the logical model (shown without the model
+  name); target codes are element ids in the profile (Resource.element...).
 {% endcomment %}
 {% assign cmap = include.map %}
 
@@ -38,7 +38,7 @@
             {% assign elementPath = target.code | remove_first: resource | remove_first: '.' %}
             {% assign relation = target.equivalence | default: target.relationship %}
             <tr>
-              <td><code>{{ element.code }}</code></td>
+              <td><code>{{ element.code | remove_first: sourceName | remove_first: '.' }}</code></td>
               <td>{{ element.display }}</td>
               <td class="rel-{{ relation }}">{{ relation }}</td>
               <td>{{ resource }}</td>

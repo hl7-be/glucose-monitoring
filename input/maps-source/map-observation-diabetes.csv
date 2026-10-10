@@ -8,5 +8,3 @@ category,Category of the observation,equivalent,Observation.category,Classificat
 status,"Status of the observation, by default “final”",equivalent,Observation.status,registered | preliminary | final | amended +,Bound to BeVSDiabetesObservationStatus.
 code,Code corresponding to the derived value,equivalent,Observation.code,Type of observation (code / type),Bound to BeVSDiabetesObservationCode.
 value[x],Derived value,equivalent,Observation.value[x],Actual result,value[x] is restricted to Quantity and is mandatory.
-device,The device used to generate the observation data,equivalent,Observation.device,(Measurement) Device,Inherited from BeModelClinicalObservation and BeClinicalObservation; not constrained.
-referenceRange,Guidance on how to interpret the value by comparison to a normal or recommended range,equivalent,Observation.referenceRange,Provides guide for interpretation,Inherited from BeModelClinicalObservation and BeClinicalObservation; not constrained. Out of scope for the derived diabetes observation.

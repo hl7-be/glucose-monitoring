@@ -27,6 +27,5 @@ Description: "Belgian FHIR profile for representing a derived glucose monitoring
 * code 1..1 MS
 * code from BeVSDiabetesObservationCode
 * value[x] 1..1 MS
-* value[x] only Quantity
 //* referenceRange MS
 //* device 0..1 MS

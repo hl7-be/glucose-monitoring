@@ -7,4 +7,4 @@ recorder,The health professional or organization which encodes the information a
 category,Category of the observation,equivalent,Observation.category,Classification of  type of observation,"Bound (preferred) to BeVSDiabetesObservationCategory: the monitoring procedure, and 258090004 Calculated or 258104002 Measured."
 status,"Status of the observation, by default “final”",equivalent,Observation.status,registered | preliminary | final | amended +,Bound to BeVSDiabetesObservationStatus.
 code,Code corresponding to the derived value,equivalent,Observation.code,Type of observation (code / type),Bound to BeVSDiabetesObservationCode.
-value[x],Derived value,equivalent,Observation.value[x],Actual result,value[x] is restricted to Quantity and is mandatory.
+value[x],Derived value,equivalent,Observation.value[x],Actual result,value[x] is mandatory.

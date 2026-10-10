@@ -7,7 +7,8 @@ Description: "Logical model representing a derived glucose monitoring observatio
 * patient 1..1 Reference(BePatient) "The patient that this observation is about"
 * recorder 1..1 Reference(BePractitioner or BeOrganization) "The health professional or organization which encodes the information and takes responsibility for its content"
 //* performer 1..1 Identifier "The unique identifier of the provider (NISS) [2] or organization (company number) which collects the observations. For the Diabetes project: performer = recorder."
-* category 1..* CodeableConcept "698472009 “Glucose monitoring” (FR) (invariant)See VS_Obs_Dia_Category" 
+* category 1..* CodeableConcept "Category of the observation: the monitoring procedure, and whether the value is calculated (derived observation) or measured (measurement observation). See BeVSDiabetesObservationCategory"
+* category from BeVSDiabetesObservationCategory (preferred)
 * device 0..1 Reference(Device) "The sensor device used to create the observation"
 //* diagnosis 0..1 Reference(Condition) "Not applicable in the context of the diabetes project Problem"
 * status 1..1 code "Status of the observation, by default “final”"

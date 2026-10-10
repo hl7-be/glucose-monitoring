@@ -1,0 +1,10 @@
+source_element,source_description,relationship,target_element,target_description,comment
+identifier,Unique business identifier of the observation,equivalent,Observation.identifier,Business Identifier for observation,"At least one identifier is required, including the UUID slice with system fixed to be-ns-observation-diabetes. Slicing is open, so other business identifiers can be added."
+recordedDate,Date of encoding of the observation by the recorder,equivalent,Observation.extension:recorded-date,BeExtRecordedDate,
+observationDate[x],Observation period,equivalent,Observation.effective[x],Clinically relevant time/time-period for observation,observationDate[x] and effective[x] are restricted to Period; start and end are both mandatory.
+patient,The patient that this observation is about,equivalent,Observation.subject,Who and/or what the observation is about,Reference(BePatient).
+recorder,The health professional or organization which encodes the information and takes responsibility for its content,equivalent,Observation.extension:recorder,BeExtRecorder,Inherited from BeClinicalObservation; restricted to Reference(BePractitioner | BeOrganization).
+category,Category of the observation,equivalent,Observation.category,Classification of  type of observation,"Bound (preferred) to BeVSDiabetesObservationCategory: the monitoring procedure, and 258090004 Calculated or 258104002 Measured."
+status,"Status of the observation, by default “final”",equivalent,Observation.status,registered | preliminary | final | amended +,Bound to BeVSDiabetesObservationStatus.
+code,Code corresponding to the derived value,equivalent,Observation.code,Type of observation (code / type),Bound to BeVSDiabetesObservationCode.
+value[x],Derived value,equivalent,Observation.value[x],Actual result,value[x] is mandatory.

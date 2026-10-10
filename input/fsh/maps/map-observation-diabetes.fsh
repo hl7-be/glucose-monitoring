@@ -9,6 +9,22 @@ Description: "Mapping from the BeModelObservationDiabetes logical model to the b
 * name = "MapObservationDiabetes"
 * status = #draft
 * experimental = false
+* text.status = #generated
+* text.div = """<div xmlns="http://www.w3.org/1999/xhtml">
+<p>Mapping from <a href="StructureDefinition-BeModelObservationDiabetes.html">BeModelObservationDiabetes</a> to <a href="StructureDefinition-be-observation-diabetes.html">be-observation-diabetes</a></p>
+<table class="grid">
+<tr><th>Source element</th><th>Relationship</th><th>Target element</th><th>Comment</th></tr>
+<tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.identifier">BeModelObservationDiabetes.identifier</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.identifier">Observation.identifier</a></td><td>At least one identifier is required, including the UUID slice with system fixed to be-ns-observation-diabetes. Slicing is open, so other business identifiers can be added.</td></tr>
+<tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.recordedDate">BeModelObservationDiabetes.recordedDate</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.extension:recorded-date">Observation.extension:recorded-date</a></td><td></td></tr>
+<tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.observationDate_x_">BeModelObservationDiabetes.observationDate[x]</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.effective_x_">Observation.effective[x]</a></td><td>observationDate[x] and effective[x] are restricted to Period; start and end are both mandatory.</td></tr>
+<tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.patient">BeModelObservationDiabetes.patient</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.subject">Observation.subject</a></td><td>Reference(BePatient).</td></tr>
+<tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.recorder">BeModelObservationDiabetes.recorder</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.extension:recorder">Observation.extension:recorder</a></td><td>Inherited from BeClinicalObservation; restricted to Reference(BePractitioner | BeOrganization).</td></tr>
+<tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.category">BeModelObservationDiabetes.category</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.category">Observation.category</a></td><td>Bound (preferred) to BeVSDiabetesObservationCategory: the monitoring procedure, and 258090004 Calculated or 258104002 Measured.</td></tr>
+<tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.status">BeModelObservationDiabetes.status</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.status">Observation.status</a></td><td>Bound to BeVSDiabetesObservationStatus.</td></tr>
+<tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.code">BeModelObservationDiabetes.code</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.code">Observation.code</a></td><td>Bound to BeVSDiabetesObservationCode.</td></tr>
+<tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.value_x_">BeModelObservationDiabetes.value[x]</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.value_x_">Observation.value[x]</a></td><td>value[x] is restricted to Quantity and is mandatory.</td></tr>
+</table>
+</div>"""
 
 * group[+]
   * source = "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelObservationDiabetes"

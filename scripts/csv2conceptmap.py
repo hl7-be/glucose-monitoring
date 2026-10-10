@@ -22,6 +22,7 @@ input/fsh/rulesets/ruleset-conceptmapelement.fsh.
 """
 import argparse
 import csv
+import html
 import os
 import re
 import shlex
@@ -52,6 +53,28 @@ def ig_canonical(config_path):
 
 def sd_url(value, canonical):
     return value if re.match(r'^https?://', value) else f'{canonical}/StructureDefinition/{value}'
+
+
+def anchor_link(sd_id, element_id):
+    """Link to an element in the snapshot view; the IG Publisher writes [x] as _x_ in anchors."""
+    return f'StructureDefinition-{sd_id}.html#s-{element_id.replace("[x]", "_x_")}'
+
+
+def narrative(rows, source_name, target_name):
+    """XHTML table for ConceptMap.text, so the IG Publisher does not generate one with [x] links that do not resolve."""
+    e = lambda s: html.escape(s, quote=True)
+    out = ['<div xmlns="http://www.w3.org/1999/xhtml">',
+           f'<p>Mapping from <a href="StructureDefinition-{source_name}.html">{source_name}</a> '
+           f'to <a href="StructureDefinition-{target_name}.html">{target_name}</a></p>',
+           '<table class="grid">',
+           '<tr><th>Source element</th><th>Relationship</th><th>Target element</th><th>Comment</th></tr>']
+    for r in rows:
+        src = f'<a href="{e(anchor_link(source_name, r["source_element"]))}">{e(r["source_element"])}</a>'
+        tgt = (f'<a href="{e(anchor_link(target_name, r["target_element"]))}">{e(r["target_element"])}</a>'
+               if r['target_element'] else '')
+        out.append(f'<tr><td>{src}</td><td>{e(r["relationship"])}</td><td>{tgt}</td><td>{e(r["comment"])}</td></tr>')
+    out += ['</table>', '</div>']
+    return '\n'.join(out)
 
 
 def to_name(map_id):
@@ -105,7 +128,9 @@ def main():
     if not re.fullmatch(r'[A-Za-z0-9.-]{1,64}', map_id):
         sys.exit(f'"{map_id}" is not a valid FHIR id (letters, digits, - and ., max 64 characters); rename the CSV or use --id')
     out = a.out or os.path.join('input', 'fsh', 'maps', f'{map_id}.fsh')
-    rows = read_rows(a.csv)
+    rows = [r if r['source_element'].startswith(source_name + '.')
+            else {**r, 'source_element': f"{source_name}.{r['source_element']}"}
+            for r in read_rows(a.csv)]
 
     command = 'python scripts/csv2conceptmap.py ' + ' '.join(shlex.quote(x.replace(BS, '/')) for x in sys.argv[1:])
     lines = [
@@ -120,14 +145,14 @@ def main():
         f'* name = "{to_name(map_id)}"',
         f'* status = #{a.status}',
         '* experimental = false',
+        '* text.status = #generated',
+        '* text.div = """' + narrative(rows, source_name, target_name) + '"""',
         '',
         '* group[+]',
         f'  * source = "{source}"',
         f'  * target = "{target}"',
     ]
     for r in rows:
-        if not r['source_element'].startswith(source_name + '.'):
-            r = {**r, 'source_element': f"{source_name}.{r['source_element']}"}
         v = {k: esc(r[k]) for k in COLUMNS}
         if r['relationship'] == 'unmatched':
             lines.append(f"  * insert ConceptMapElementUnmatched({v['source_element']}, {v['source_description']}, {v['comment']})")

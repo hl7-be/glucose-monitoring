@@ -1,0 +1,21 @@
+{
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ImplementationGuide/hl7.fhir.be.glucose-monitoring",
+  "name" : "GlucoseMonitoring",
+  "title" : "HL7 FHIR Implementation Guide: Glucose Monitoring",
+  "description" : "HL7 FHIR Implementation Guide: Glucose Monitoring",
+  "ig-date" : "2026-10-16",
+  "status" : "active",
+  "package-id" : "hl7.fhir.be.glucose-monitoring",
+  "ig-ver" : "1.0.0",
+  "date" : "Sat, 10 Oct, 2026 16:39:07 +0000",
+  "dateISO8601" : "2026-10-10T16:39:07+00:00",
+  "errs" : 0,
+  "warnings" : 0,
+  "hints" : 31,
+  "broken-links" : 3,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 1436124136
+}

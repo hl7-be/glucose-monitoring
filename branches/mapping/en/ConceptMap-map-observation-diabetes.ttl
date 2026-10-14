@@ -1,0 +1,186 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ConceptMap/map-observation-diabetes> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "map-observation-diabetes"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap map-observation-diabetes</b></p><a name=\"map-observation-diabetes\"> </a><a name=\"hcmap-observation-diabetes\"> </a><p>Mapping from <a href=\"StructureDefinition-BeModelObservationDiabetes.html\">BeModelObservationDiabetes</a> to <a href=\"StructureDefinition-be-observation-diabetes.html\">BeObservationDiabetes</a></p><br/><p>Mapping from <a href=\"StructureDefinition-BeModelObservationDiabetes.html\">BeModelObservationDiabetes</a> to <a href=\"StructureDefinition-be-observation-diabetes.html\">BeObservationDiabetes</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Comment</b></td></tr><tr><td colspan=\"3\">UniqueIdentifier</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.identifier:UUID\">Observation.identifier:UUID</a></td><td>1..1</td><td>todo</td><td>System fixed to be-ns-observation-diabetes.</td></tr><tr><td colspan=\"3\">RecordedDate</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.extension:recorded-date\">Observation.extension:recorded-date</a></td><td>1..1</td><td>todo</td><td/></tr><tr><td colspan=\"3\">ObservationPeriod</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td colspan=\"3\">Observation.effectivePeriod</td><td>effective[x] is restricted to Period; start and end are both mandatory. A single date is sent as a period with the same start and end.</td></tr><tr><td colspan=\"3\">Patient</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.subject\">Observation.subject</a></td><td>1..1</td><td>todo</td><td>Reference(BePatient). The model carries the NISS; in FHIR it is the identifier of the referenced BePatient (or Reference.identifier).</td></tr><tr><td colspan=\"3\">Recorder</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.extension:recorder\">Observation.extension:recorder</a></td><td>1..1</td><td>todo</td><td>The model carries the NISS of the professional or the company number of the organization; in FHIR this is a reference to the corresponding practitioner, practitioner role or organization.</td></tr><tr><td colspan=\"3\">Category</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.category\">Observation.category</a></td><td>1..*</td><td>todo</td><td>Bound to BeVSDiabetesObservationCategory (698472009 Glucose monitoring).</td></tr><tr><td colspan=\"3\">Status</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.status\">Observation.status</a></td><td>1..1</td><td>todo</td><td>0..1 in the model but 1..1 in the profile. The model refers to the SNOMED CT code 445665009 (Final report); in FHIR this is the observation-status code final (BeVSDiabetesObservationStatus).</td></tr><tr><td colspan=\"3\">Code</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.code\">Observation.code</a></td><td>1..1</td><td>todo</td><td>Bound to BeVSDiabetesObservationCode.</td></tr><tr><td colspan=\"3\">Value</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td colspan=\"3\">Observation.valueQuantity</td><td>The profile requires value[x] (1..1) but does not restrict it to Quantity.</td></tr><tr><td colspan=\"3\">ReferenceRange</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.referenceRange\">Observation.referenceRange</a></td><td>0..*</td><td>todo</td><td>Target limits map to referenceRange.low and referenceRange.high. Category-dependent filter ranges (CAT 1/2/3) use referenceRange.appliesTo. Only sent when the values differ from the ADA defaults.</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ConceptMap/map-observation-diabetes"] ;
+  fhir:ConceptMap.version [ fhir:value "1.0.0"] ;
+  fhir:ConceptMap.name [ fhir:value "MapObservationDiabetes"] ;
+  fhir:ConceptMap.title [ fhir:value "Diabetes Observation Model to BeObservationDiabetes Mapping"] ;
+  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-10-02T13:33:25+00:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.publisher [ fhir:value "eHealth Platform"] ;
+  fhir:ConceptMap.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "eHealth Platform" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.ehealth.fgov.be" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "message-structure@www.ehealth.fgov.be" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Message-Structure" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "message-structure@www.ehealth.fgov.be" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ConceptMap.description [ fhir:value "Mapping from the BeModelObservationDiabetes logical model to the be-observation-diabetes profile"] ;
+  fhir:ConceptMap.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BE" ] ;
+       fhir:Coding.display [ fhir:value "Belgium" ]
+     ]
+  ] ;
+  fhir:ConceptMap.sourceCanonical [
+     fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelObservationDiabetes" ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelObservationDiabetes>
+  ] ;
+  fhir:ConceptMap.targetCanonical [
+     fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-observation-diabetes" ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-observation-diabetes>
+  ] ;
+  fhir:ConceptMap.group [
+     fhir:index -1 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelObservationDiabetes" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-observation-diabetes" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "UniqueIdentifier" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Unique observation business identifier" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Observation.identifier:UUID" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Unique identifier of the observation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "System fixed to be-ns-observation-diabetes." ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "RecordedDate" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Date of encoding of the observation by the recorder" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Observation.extension:recorded-date" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Recording date (BeExtRecordedDate)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ObservationPeriod" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Date or observation period" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Observation.effectivePeriod" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Period covered by the observation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "effective[x] is restricted to Period; start and end are both mandatory. A single date is sent as a period with the same start and end." ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Patient" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Unique identifier of the patient (NISS)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Observation.subject" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Who the observation is about" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Reference(BePatient). The model carries the NISS; in FHIR it is the identifier of the referenced BePatient (or Reference.identifier)." ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Recorder" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Health professional or organization that encodes the information" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Observation.extension:recorder" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Recorder (BeExtRecorder)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "The model carries the NISS of the professional or the company number of the organization; in FHIR this is a reference to the corresponding practitioner, practitioner role or organization." ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Category" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Glucose monitoring category" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Observation.category" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Classification of type of observation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Bound to BeVSDiabetesObservationCategory (698472009 Glucose monitoring)." ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Status" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Status of the observation" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Observation.status" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "final | entered-in-error" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "0..1 in the model but 1..1 in the profile. The model refers to the SNOMED CT code 445665009 (Final report); in FHIR this is the observation-status code final (BeVSDiabetesObservationStatus)." ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Code" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Code of the derived value (e.g. TAR or TIR)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Observation.code" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Type of derived observation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Bound to BeVSDiabetesObservationCode." ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Value" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Derived value" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Observation.valueQuantity" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Actual result" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "The profile requires value[x] (1..1) but does not restrict it to Quantity." ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ReferenceRange" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Target and filter ranges for interpreting the derived value" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Observation.referenceRange" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Provides guide for interpretation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Target limits map to referenceRange.low and referenceRange.high. Category-dependent filter ranges (CAT 1/2/3) use referenceRange.appliesTo. Only sent when the values differ from the ADA defaults." ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ConceptMap/map-observation-diabetes.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

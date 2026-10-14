@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/CodeSystem/be-cs-diabetes-device-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "be-cs-diabetes-device-type"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-diabetes-device-type</b></p><a name=\"be-cs-diabetes-device-type\"> </a><a name=\"hcbe-cs-diabetes-device-type\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/CodeSystem/be-cs-diabetes-device-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">701010000180<a name=\"be-cs-diabetes-device-type-701010000180\"> </a></td><td>FreeStyle Libre® Flash Glucose Monitoring System</td></tr><tr><td style=\"white-space:nowrap\">701010000576<a name=\"be-cs-diabetes-device-type-701010000576\"> </a></td><td>FreeStyle Libre® 2 Flash Glucose Monitoring System</td></tr><tr><td style=\"white-space:nowrap\">701010000675<a name=\"be-cs-diabetes-device-type-701010000675\"> </a></td><td>GlucoMen Day CGM</td></tr><tr><td style=\"white-space:nowrap\">701010000279<a name=\"be-cs-diabetes-device-type-701010000279\"> </a></td><td>Guardian Connect System</td></tr><tr><td style=\"white-space:nowrap\">701010000378<a name=\"be-cs-diabetes-device-type-701010000378\"> </a></td><td>Dexcom G5® Mobile continuous glucose monitoring system</td></tr><tr><td style=\"white-space:nowrap\">701010000477<a name=\"be-cs-diabetes-device-type-701010000477\"> </a></td><td>Dexcom G5® Mobile continuous glucose monitoring system</td></tr><tr><td style=\"white-space:nowrap\">701010000774<a name=\"be-cs-diabetes-device-type-701010000774\"> </a></td><td>Guardian 4 Sensor</td></tr><tr><td style=\"white-space:nowrap\">701010000873<a name=\"be-cs-diabetes-device-type-701010000873\"> </a></td><td>Dexcom ONE Continuous Glucose Monitoring (CGM) system</td></tr><tr><td style=\"white-space:nowrap\">701010000972<a name=\"be-cs-diabetes-device-type-701010000972\"> </a></td><td>FreeStyle Libre 3</td></tr><tr><td style=\"white-space:nowrap\">701010001071<a name=\"be-cs-diabetes-device-type-701010001071\"> </a></td><td>Dexcom G7 Continuous Glucose Monitoring (CGM) system</td></tr><tr><td style=\"white-space:nowrap\">701010001170<a name=\"be-cs-diabetes-device-type-701010001170\"> </a></td><td>Glunovo p3</td></tr><tr><td style=\"white-space:nowrap\">701010001269<a name=\"be-cs-diabetes-device-type-701010001269\"> </a></td><td>Dexcom ONE+</td></tr><tr><td style=\"white-space:nowrap\">701019999989<a name=\"be-cs-diabetes-device-type-701019999989\"> </a></td><td>Unknown</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/CodeSystem/be-cs-diabetes-device-type"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "BeCSDiabetesDeviceType"] ;
+  fhir:CodeSystem.title [ fhir:value "BeCSDiabetesDeviceType"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-09-07T09:48:30+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "eHealth Platform"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "eHealth Platform" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.ehealth.fgov.be" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "message-structure@www.ehealth.fgov.be" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Message-Structure" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "message-structure@www.ehealth.fgov.be" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Identification codes for glucose monitoring sensor types used in Belgium."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BE" ] ;
+       fhir:Coding.display [ fhir:value "Belgium" ]
+     ]
+  ] ;
+  fhir:CodeSystem.copyright [ fhir:value "For information purposes. The list of sensor types and identification codes is maintained by INAMI and may be updated regularly."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "13"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701010000180" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FreeStyle Libre® Flash Glucose Monitoring System" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701010000576" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FreeStyle Libre® 2 Flash Glucose Monitoring System" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701010000675" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "GlucoMen Day CGM" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701010000279" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Guardian Connect System" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701010000378" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dexcom G5® Mobile continuous glucose monitoring system" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701010000477" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dexcom G5® Mobile continuous glucose monitoring system" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701010000774" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Guardian 4 Sensor" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701010000873" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dexcom ONE Continuous Glucose Monitoring (CGM) system" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701010000972" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FreeStyle Libre 3" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701010001071" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dexcom G7 Continuous Glucose Monitoring (CGM) system" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701010001170" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Glunovo p3" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701010001269" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dexcom ONE+" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "701019999989" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/CodeSystem/be-cs-diabetes-device-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

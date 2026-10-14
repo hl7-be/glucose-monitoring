@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="map-diagnostic-report-diabetes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from <a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html">BeModelDiagnosticReportDiabetes</a> to <a href="StructureDefinition-be-diagnostic-report-diabetes.html">be-diagnostic-report-diabetes</a></p><table class="grid"><tr><th>Source element</th><th>Relationship</th><th>Target element</th><th>Comment</th></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.businessIdentifier">BeModelDiagnosticReportDiabetes.businessIdentifier</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.identifier">DiagnosticReport.identifier</a></td><td>At least one identifier is required, including the UUID slice with system fixed to be-ns-diagnostic-report-diabetes. Slicing is open, so other business identifiers can be added.</td></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.recordedDate">BeModelDiagnosticReportDiabetes.recordedDate</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.extension:recorded-date">DiagnosticReport.extension:recorded-date</a></td><td/></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.observationPeriod">BeModelDiagnosticReportDiabetes.observationPeriod</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.effective_x_">DiagnosticReport.effective[x]</a></td><td>effective[x] is restricted to Period; start and end are both mandatory.</td></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.patient">BeModelDiagnosticReportDiabetes.patient</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.subject">DiagnosticReport.subject</a></td><td>Reference(BePatient). For GDPR reasons, sensor suppliers may not use the NISS of their users in external communication.</td></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.status">BeModelDiagnosticReportDiabetes.status</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.status">DiagnosticReport.status</a></td><td>Bound to BeVSDiabetesReportStatus. The value is assigned according to the business rule on % Data Captured.</td></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.recorder">BeModelDiagnosticReportDiabetes.recorder</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.extension:recorder">DiagnosticReport.extension:recorder</a></td><td>Reference(BePractitioner | BeOrganization). The professional is identified by INAMI or national register number, the organization by INAMI approval or company number.</td></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.interpreter">BeModelDiagnosticReportDiabetes.interpreter</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.resultsInterpreter">DiagnosticReport.resultsInterpreter</a></td><td>Reference(BePractitionerRole | BePractitioner). Not provided by the report producer; added by the interpreting care provider.</td></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.category">BeModelDiagnosticReportDiabetes.category</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.category">DiagnosticReport.category</a></td><td>Bound (preferred) to BeVSDiabetesReportCategory.</td></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.deviceType">BeModelDiagnosticReportDiabetes.deviceType</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.extension:device">DiagnosticReport.extension:device</a></td><td>valueCodeableConcept bound (extensible) to BeVSDiabetesDeviceType. The individual sensor device is mentioned in the measurement observation.</td></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.code">BeModelDiagnosticReportDiabetes.code</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.code">DiagnosticReport.code</a></td><td>Bound to BeVSDiabetesReportCode (e.g. 439926003 Ambulatory continuous glucose monitoring of interstitial tissue fluid).</td></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.derivedObservations">BeModelDiagnosticReportDiabetes.derivedObservations</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.result">DiagnosticReport.result</a></td><td>Reference(BeObservationDiabetes).</td></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.measuredDiabetesObservations">BeModelDiagnosticReportDiabetes.measuredDiabetesObservations</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.result">DiagnosticReport.result</a></td><td>Reference(BeObservationDiabetes). Shares DiagnosticReport.result with the derived observations; there is no separate slice yet.</td></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.note">BeModelDiagnosticReportDiabetes.note</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.extension:note">DiagnosticReport.extension:note</a></td><td>Not provided by the report producer; added by the interpreting care provider.</td></tr><tr><td><a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html#s-BeModelDiagnosticReportDiabetes.document">BeModelDiagnosticReportDiabetes.document</a></td><td>equivalent</td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.presentedForm">DiagnosticReport.presentedForm</a></td><td>contentType fixed to application/pdf.</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ConceptMap/map-diagnostic-report-diabetes"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.200.17.18.1"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="MapDiagnosticReportDiabetes"/>
+  <title value="Diabetes Report Model to BeDiagnosticReportDiabetes Mapping"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-10T16:39:07+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@www.ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message-Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@www.ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Mapping from the BeModelDiagnosticReportDiabetes logical model to the be-diagnostic-report-diabetes profile"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <group>
+    <source value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelDiagnosticReportDiabetes"/>
+    <target value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-diagnostic-report-diabetes"/>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.businessIdentifier"/>
+      <display value="Business identifier of the report"/>
+      <target>
+        <code value="DiagnosticReport.identifier"/>
+        <display value="Business identifier for report"/>
+        <equivalence value="equivalent"/>
+        <comment value="At least one identifier is required, including the UUID slice with system fixed to be-ns-diagnostic-report-diabetes. Slicing is open, so other business identifiers can be added."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.recordedDate"/>
+      <display value="Date of the last update of the report"/>
+      <target>
+        <code value="DiagnosticReport.extension:recorded-date"/>
+        <display value="BeExtRecordedDate"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.observationPeriod"/>
+      <display value="From date to date corresponding to the period covered by the report. Typically 14 to 30 days. See business rules"/>
+      <target>
+        <code value="DiagnosticReport.effective[x]"/>
+        <display value="Clinically relevant time/time-period for report"/>
+        <equivalence value="equivalent"/>
+        <comment value="effective[x] is restricted to Period; start and end are both mandatory."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.patient"/>
+      <display value="The patient that this report is about"/>
+      <target>
+        <code value="DiagnosticReport.subject"/>
+        <display value="The subject of the report - usually, but not always, the patient"/>
+        <equivalence value="equivalent"/>
+        <comment value="Reference(BePatient). For GDPR reasons, sensor suppliers may not use the NISS of their users in external communication."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.status"/>
+      <display value="Report status, by default “Final”. The value is assigned according to the business rule on “% Data Captured”"/>
+      <target>
+        <code value="DiagnosticReport.status"/>
+        <display value="registered | partial | preliminary | final +"/>
+        <equivalence value="equivalent"/>
+        <comment value="Bound to BeVSDiabetesReportStatus. The value is assigned according to the business rule on % Data Captured."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.recorder"/>
+      <display value="The healthcare professional (INAMI number / national register number) or organization (INAMI approval number / company number) that encodes the information and takes responsibility for its content"/>
+      <target>
+        <code value="DiagnosticReport.extension:recorder"/>
+        <display value="BeExtRecorder"/>
+        <equivalence value="equivalent"/>
+        <comment value="Reference(BePractitioner | BeOrganization). The professional is identified by INAMI or national register number, the organization by INAMI approval or company number."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.interpreter"/>
+      <display value="Healthcare provider (INAMI number / national register number) who added an interpretation to the report (e.g. endocrinologist, general practitioner). Not provided by the producer of the report"/>
+      <target>
+        <code value="DiagnosticReport.resultsInterpreter"/>
+        <display value="Primary result interpreter"/>
+        <equivalence value="equivalent"/>
+        <comment value="Reference(BePractitionerRole | BePractitioner). Not provided by the report producer; added by the interpreting care provider."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.category"/>
+      <display value="Category of the report. At least one category must be assigned"/>
+      <target>
+        <code value="DiagnosticReport.category"/>
+        <display value="Service category"/>
+        <equivalence value="equivalent"/>
+        <comment value="Bound (preferred) to BeVSDiabetesReportCategory."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.deviceType"/>
+      <display value="Identification number assigned by INAMI to the type of sensor model used to create the observations on which the report is based. The individual sensor device is mentioned in the measurement observation"/>
+      <target>
+        <code value="DiagnosticReport.extension:device"/>
+        <display value="Device Type"/>
+        <equivalence value="equivalent"/>
+        <comment value="valueCodeableConcept bound (extensible) to BeVSDiabetesDeviceType. The individual sensor device is mentioned in the measurement observation."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.code"/>
+      <display value="Report code - indicating the type of procedure that leads to the production of the primary values of this report, i.e. 439926003 | Ambulatory continuous glucose monitoring of interstitial tissue fluid"/>
+      <target>
+        <code value="DiagnosticReport.code"/>
+        <display value="Name/Code for this diagnostic report"/>
+        <equivalence value="equivalent"/>
+        <comment value="Bound to BeVSDiabetesReportCode (e.g. 439926003 Ambulatory continuous glucose monitoring of interstitial tissue fluid)."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.derivedObservations"/>
+      <display value="List of references to “derived values” type observations (a dozen derived observations) mentioned in the report. These observations are part of the diagnostic report"/>
+      <target>
+        <code value="DiagnosticReport.result"/>
+        <display value="Observations"/>
+        <equivalence value="equivalent"/>
+        <comment value="Reference(BeObservationDiabetes)."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.measuredDiabetesObservations"/>
+      <display value="References to the measured diabetes observations (a few thousand measurements) used to produce the analysis"/>
+      <target>
+        <code value="DiagnosticReport.result"/>
+        <display value="Observations"/>
+        <equivalence value="equivalent"/>
+        <comment value="Reference(BeObservationDiabetes). Shares DiagnosticReport.result with the derived observations; there is no separate slice yet."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.note"/>
+      <display value="Report comments in free text format. Not provided by the producer of the report, but by the healthcare provider doing the interpretation"/>
+      <target>
+        <code value="DiagnosticReport.extension:note"/>
+        <display value="BeExtSimpleNote"/>
+        <equivalence value="equivalent"/>
+        <comment value="Not provided by the report producer; added by the interpreting care provider."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelDiagnosticReportDiabetes.document"/>
+      <display value="PDF document containing the complete report (text, graphics, deduced observations, conclusions, etc.)"/>
+      <target>
+        <code value="DiagnosticReport.presentedForm"/>
+        <display value="Entire report as issued"/>
+        <equivalence value="equivalent"/>
+        <comment value="contentType fixed to application/pdf."/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

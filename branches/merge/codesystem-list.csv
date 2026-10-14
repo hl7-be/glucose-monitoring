@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/CodeSystem/be-cs-diabetes-device-type,1.0.0,active,"2.16.840.1.113883.4.642.40.200.17.16.1",BeCSDiabetesDeviceType,BeCSDiabetesDeviceType,"Identification codes for glucose monitoring sensor types used in Belgium.",

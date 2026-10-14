@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="map-observation-diabetes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from <a href="StructureDefinition-BeModelObservationDiabetes.html">BeModelObservationDiabetes</a> to <a href="StructureDefinition-be-observation-diabetes.html">be-observation-diabetes</a></p><table class="grid"><tr><th>Source element</th><th>Relationship</th><th>Target element</th><th>Comment</th></tr><tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.identifier">BeModelObservationDiabetes.identifier</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.identifier">Observation.identifier</a></td><td>At least one identifier is required, including the UUID slice with system fixed to be-ns-observation-diabetes. Slicing is open, so other business identifiers can be added.</td></tr><tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.recordedDate">BeModelObservationDiabetes.recordedDate</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.extension:recorded-date">Observation.extension:recorded-date</a></td><td/></tr><tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.observationDate_x_">BeModelObservationDiabetes.observationDate[x]</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.effective_x_">Observation.effective[x]</a></td><td>observationDate[x] and effective[x] are restricted to Period; start and end are both mandatory.</td></tr><tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.patient">BeModelObservationDiabetes.patient</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.subject">Observation.subject</a></td><td>Reference(BePatient).</td></tr><tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.recorder">BeModelObservationDiabetes.recorder</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.extension:recorder">Observation.extension:recorder</a></td><td>Inherited from BeClinicalObservation; restricted to Reference(BePractitioner | BeOrganization).</td></tr><tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.category">BeModelObservationDiabetes.category</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.category">Observation.category</a></td><td>Bound (preferred) to BeVSDiabetesObservationCategory: the monitoring procedure, and 258090004 Calculated or 258104002 Measured.</td></tr><tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.status">BeModelObservationDiabetes.status</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.status">Observation.status</a></td><td>Bound to BeVSDiabetesObservationStatus.</td></tr><tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.code">BeModelObservationDiabetes.code</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.code">Observation.code</a></td><td>Bound to BeVSDiabetesObservationCode.</td></tr><tr><td><a href="StructureDefinition-BeModelObservationDiabetes.html#s-BeModelObservationDiabetes.value_x_">BeModelObservationDiabetes.value[x]</a></td><td>equivalent</td><td><a href="StructureDefinition-be-observation-diabetes.html#s-Observation.value_x_">Observation.value[x]</a></td><td>value[x] is mandatory.</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ConceptMap/map-observation-diabetes"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.200.17.18.2"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="MapObservationDiabetes"/>
+  <title value="Diabetes Observation Model to BeObservationDiabetes Mapping"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-10T16:39:03+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@www.ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message-Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@www.ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Mapping from the BeModelObservationDiabetes logical model to the be-observation-diabetes profile"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <group>
+    <source value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelObservationDiabetes"/>
+    <target value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-observation-diabetes"/>
+    <element>
+      <code value="BeModelObservationDiabetes.identifier"/>
+      <display value="Unique business identifier of the observation"/>
+      <target>
+        <code value="Observation.identifier"/>
+        <display value="Business Identifier for observation"/>
+        <equivalence value="equivalent"/>
+        <comment value="At least one identifier is required, including the UUID slice with system fixed to be-ns-observation-diabetes. Slicing is open, so other business identifiers can be added."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelObservationDiabetes.recordedDate"/>
+      <display value="Date of encoding of the observation by the recorder"/>
+      <target>
+        <code value="Observation.extension:recorded-date"/>
+        <display value="BeExtRecordedDate"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelObservationDiabetes.observationDate[x]"/>
+      <display value="Observation period"/>
+      <target>
+        <code value="Observation.effective[x]"/>
+        <display value="Clinically relevant time/time-period for observation"/>
+        <equivalence value="equivalent"/>
+        <comment value="observationDate[x] and effective[x] are restricted to Period; start and end are both mandatory."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelObservationDiabetes.patient"/>
+      <display value="The patient that this observation is about"/>
+      <target>
+        <code value="Observation.subject"/>
+        <display value="Who and/or what the observation is about"/>
+        <equivalence value="equivalent"/>
+        <comment value="Reference(BePatient)."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelObservationDiabetes.recorder"/>
+      <display value="The health professional or organization which encodes the information and takes responsibility for its content"/>
+      <target>
+        <code value="Observation.extension:recorder"/>
+        <display value="BeExtRecorder"/>
+        <equivalence value="equivalent"/>
+        <comment value="Inherited from BeClinicalObservation; restricted to Reference(BePractitioner | BeOrganization)."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelObservationDiabetes.category"/>
+      <display value="Category of the observation"/>
+      <target>
+        <code value="Observation.category"/>
+        <display value="Classification of  type of observation"/>
+        <equivalence value="equivalent"/>
+        <comment value="Bound (preferred) to BeVSDiabetesObservationCategory: the monitoring procedure, and 258090004 Calculated or 258104002 Measured."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelObservationDiabetes.status"/>
+      <display value="Status of the observation, by default “final”"/>
+      <target>
+        <code value="Observation.status"/>
+        <display value="registered | preliminary | final | amended +"/>
+        <equivalence value="equivalent"/>
+        <comment value="Bound to BeVSDiabetesObservationStatus."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelObservationDiabetes.code"/>
+      <display value="Code corresponding to the derived value"/>
+      <target>
+        <code value="Observation.code"/>
+        <display value="Type of observation (code / type)"/>
+        <equivalence value="equivalent"/>
+        <comment value="Bound to BeVSDiabetesObservationCode."/>
+      </target>
+    </element>
+    <element>
+      <code value="BeModelObservationDiabetes.value[x]"/>
+      <display value="Derived value"/>
+      <target>
+        <code value="Observation.value[x]"/>
+        <display value="Actual result"/>
+        <equivalence value="equivalent"/>
+        <comment value="value[x] is mandatory."/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

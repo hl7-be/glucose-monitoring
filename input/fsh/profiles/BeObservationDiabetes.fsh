@@ -24,6 +24,7 @@ Description: "Belgian FHIR profile for representing a derived glucose monitoring
 * category from BeVSDiabetesObservationCategory (preferred)
 * status 1..1 MS
 * status from BeVSDiabetesObservationStatus
+* status ^short = "Status of the observation"
 * code 1..1 MS
 * code from BeVSDiabetesObservationCode
 * value[x] 1..1 MS

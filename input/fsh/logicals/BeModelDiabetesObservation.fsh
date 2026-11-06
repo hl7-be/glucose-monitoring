@@ -34,4 +34,4 @@ Description: "Logical model representing a derived glucose monitoring observatio
 //* conclusion 0..1 string "Not applicable for the diabetes project Conclusion"
 //* bodyLocalisation 0..1 CodeableConcept " Not application for the diabetes project BodyLocalisation"
 //* bodyLaterality 0..1 CodeableConcept "Not application for the diabetes project BodyLaterality"
-//* note 0..* Annotation "Not applicable for the diabetes project"
+//* note 0..* Annotation "Not applicable for the diabetes project"

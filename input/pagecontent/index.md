@@ -28,14 +28,6 @@ This IG builds upon:
 
 {% capture cross-version-analysis %}{% include cross-version-analysis.xhtml %}{% endcapture %}{{ cross-version-analysis | remove: '<p>' | remove: '</p>'}}
 
-### Global Profiles
-
-{% include globals-table.xhtml %}
-
-### Expansion Parameters
-
-{% include expansion-params.xhtml %}
-
 ### Intellectual Property Considerations
 
 This IG is published under a public domain license; however, it references code systems with additional restrictions:

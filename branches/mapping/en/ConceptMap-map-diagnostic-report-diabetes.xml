@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="map-diagnostic-report-diabetes"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap map-diagnostic-report-diabetes</b></p><a name="map-diagnostic-report-diabetes"> </a><a name="hcmap-diagnostic-report-diabetes"> </a><p>Mapping from <a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html">BeModelDiagnosticReportDiabetes</a> to <a href="StructureDefinition-be-diagnostic-report-diabetes.html">BeDiagnosticReportDiabetes</a></p><br/><p>Mapping from <a href="StructureDefinition-BeModelDiagnosticReportDiabetes.html">BeModelDiagnosticReportDiabetes</a> to <a href="StructureDefinition-be-diagnostic-report-diabetes.html">BeDiagnosticReportDiabetes</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Comment</b></td></tr><tr><td colspan="3">UniqueIdentifierNational</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.identifier:UUID">DiagnosticReport.identifier:UUID</a></td><td>1..1</td><td>todo</td><td>System fixed to be-ns-diagnostic-report-diabetes.</td></tr><tr><td colspan="3">BusinessIdentifier</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.identifier">DiagnosticReport.identifier</a></td><td>1..*</td><td>todo</td><td>Additional identifier with the supplier's own system (identifier slicing is open).</td></tr><tr><td colspan="3">RecordedDate</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.extension:recorded-date">DiagnosticReport.extension:recorded-date</a></td><td>1..1</td><td>todo</td><td/></tr><tr><td colspan="3">ObservationPeriod</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">DiagnosticReport.effectivePeriod</td><td>effective[x] is restricted to Period; start and end are both mandatory.</td></tr><tr><td colspan="3">Patient</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.subject">DiagnosticReport.subject</a></td><td>1..1</td><td>todo</td><td>The model carries the NISS; in FHIR it is the identifier of the referenced patient (or Reference.identifier). Unlike the observation profile, subject is not restricted to BePatient.</td></tr><tr><td colspan="3">Recorder</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.extension:recorder">DiagnosticReport.extension:recorder</a></td><td>1..1</td><td>todo</td><td>The model carries the NISS of the professional or the company number of the organization; in FHIR this is a reference to the corresponding practitioner, practitioner role or organization.</td></tr><tr><td colspan="3">Performer</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.performer">DiagnosticReport.performer</a></td><td>0..*</td><td>todo</td><td>Not constrained in the profile. For the diabetes report, performer = recorder.</td></tr><tr><td colspan="3">Interpreter</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.resultsInterpreter">DiagnosticReport.resultsInterpreter</a></td><td>0..1</td><td>todo</td><td>Reference(BePractitionerRole | BePractitioner). Not provided by the report producer; added by the interpreting care provider.</td></tr><tr><td colspan="3">Category</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.category">DiagnosticReport.category</a></td><td>1..*</td><td>todo</td><td>Bound to BeVSDiabetesReportCategory.</td></tr><tr><td colspan="3">Qualification</td><td colspan="5" style="background-color: #efefef">(not mapped)</td><td style="background-color: #efefef">No element in the profile carries the diabetes category. It is calculated from the diagnosis by the interpreting doctor (default CAT 3) and is also used in Observation.referenceRange.appliesTo.</td></tr><tr><td colspan="3">Device</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td colspan="3">DiagnosticReport.extension:device.extension:concept.valueCodeableConcept</td><td>The INAMI sensor type number is sent as a code with system be-ns-diabetes-device-type.</td></tr><tr><td colspan="3">Code</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.code">DiagnosticReport.code</a></td><td>1..1</td><td>todo</td><td>Bound to BeVSDiabetesReportCode (e.g. 439926003 Ambulatory continuous glucose monitoring of interstitial tissue fluid).</td></tr><tr><td colspan="3">DerivedObservations</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.result">DiagnosticReport.result</a></td><td>0..*</td><td>todo</td><td>Reference(BeObservationDiabetes).</td></tr><tr><td colspan="3">MeasurementObservations</td><td colspan="5" style="background-color: #efefef">(not mapped)</td><td style="background-color: #efefef">No element in the profile. DiagnosticReport.result is restricted to BeObservationDiabetes (derived values), so the individual measurements are not referenced from the report.</td></tr><tr><td colspan="3">Diagnosis</td><td colspan="5" style="background-color: #efefef">(not mapped)</td><td style="background-color: #efefef">No element in the R4 profile. The R5 DiagnosticReport.supportingInfo cross-version extension was considered but is commented out in the profile.</td></tr><tr><td colspan="3">Note</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.extension:note">DiagnosticReport.extension:note</a></td><td>0..*</td><td>todo</td><td>Not provided by the report producer; added by the interpreting care provider.</td></tr><tr><td colspan="3">Document</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.presentedForm">DiagnosticReport.presentedForm</a></td><td>0..*</td><td>todo</td><td>contentType fixed to application/pdf.</td></tr><tr><td colspan="3">Status</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="StructureDefinition-be-diagnostic-report-diabetes.html#s-DiagnosticReport.status">DiagnosticReport.status</a></td><td>1..1</td><td>todo</td><td>Bound to BeVSDiabetesReportStatus. The status depends on the business rule on % Data Captured.</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ConceptMap/map-diagnostic-report-diabetes"/>
+  <version value="1.0.0"/>
+  <name value="MapDiagnosticReportDiabetes"/>
+  <title value="Diabetes Report Model to BeDiagnosticReportDiabetes Mapping"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-02T13:33:25+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@www.ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message-Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@www.ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Mapping from the BeModelDiagnosticReportDiabetes logical model to the be-diagnostic-report-diabetes profile"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <sourceCanonical value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelDiagnosticReportDiabetes"/>
+  <targetCanonical value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-diagnostic-report-diabetes"/>
+  <group>
+    <source value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelDiagnosticReportDiabetes"/>
+    <target value="https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-diagnostic-report-diabetes"/>
+    <element>
+      <code value="UniqueIdentifierNational"/>
+      <display value="Unique business identifier of the report"/>
+      <target>
+        <code value="DiagnosticReport.identifier:UUID"/>
+        <display value="Unique identifier of the report"/>
+        <equivalence value="equivalent"/>
+        <comment value="System fixed to be-ns-diagnostic-report-diabetes."/>
+      </target>
+    </element>
+    <element>
+      <code value="BusinessIdentifier"/>
+      <display value="Report identifier for the supplier's internal business"/>
+      <target>
+        <code value="DiagnosticReport.identifier"/>
+        <display value="Business identifier for report"/>
+        <equivalence value="equivalent"/>
+        <comment value="Additional identifier with the supplier's own system (identifier slicing is open)."/>
+      </target>
+    </element>
+    <element>
+      <code value="RecordedDate"/>
+      <display value="Date the report was produced"/>
+      <target>
+        <code value="DiagnosticReport.extension:recorded-date"/>
+        <display value="Recording date (BeExtRecordedDate)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ObservationPeriod"/>
+      <display value="Period covered by the report (typically 14 to 30 days)"/>
+      <target>
+        <code value="DiagnosticReport.effectivePeriod"/>
+        <display value="Clinically relevant time/time-period for report"/>
+        <equivalence value="equivalent"/>
+        <comment value="effective[x] is restricted to Period; start and end are both mandatory."/>
+      </target>
+    </element>
+    <element>
+      <code value="Patient"/>
+      <display value="Identifier of the patient (preferably NISS)"/>
+      <target>
+        <code value="DiagnosticReport.subject"/>
+        <display value="The subject of the report"/>
+        <equivalence value="equivalent"/>
+        <comment value="The model carries the NISS; in FHIR it is the identifier of the referenced patient (or Reference.identifier). Unlike the observation profile, subject is not restricted to BePatient."/>
+      </target>
+    </element>
+    <element>
+      <code value="Recorder"/>
+      <display value="Service provider or organization that encodes the information"/>
+      <target>
+        <code value="DiagnosticReport.extension:recorder"/>
+        <display value="Recorder (BeExtRecorder)"/>
+        <equivalence value="equivalent"/>
+        <comment value="The model carries the NISS of the professional or the company number of the organization; in FHIR this is a reference to the corresponding practitioner, practitioner role or organization."/>
+      </target>
+    </element>
+    <element>
+      <code value="Performer"/>
+      <display value="Service provider or organization that collects the observations and produces the report"/>
+      <target>
+        <code value="DiagnosticReport.performer"/>
+        <display value="Responsible diagnostic service"/>
+        <equivalence value="equivalent"/>
+        <comment value="Not constrained in the profile. For the diabetes report, performer = recorder."/>
+      </target>
+    </element>
+    <element>
+      <code value="Interpreter"/>
+      <display value="Care provider who interprets the observations in the report"/>
+      <target>
+        <code value="DiagnosticReport.resultsInterpreter"/>
+        <display value="Primary result interpreter"/>
+        <equivalence value="equivalent"/>
+        <comment value="Reference(BePractitionerRole | BePractitioner). Not provided by the report producer; added by the interpreting care provider."/>
+      </target>
+    </element>
+    <element>
+      <code value="Category"/>
+      <display value="Category of the report"/>
+      <target>
+        <code value="DiagnosticReport.category"/>
+        <display value="Service category"/>
+        <equivalence value="equivalent"/>
+        <comment value="Bound to BeVSDiabetesReportCategory."/>
+      </target>
+    </element>
+    <element>
+      <code value="Qualification"/>
+      <display value="Category of diabetic patient (CAT 1/2/3)"/>
+      <target>
+        <equivalence value="unmatched"/>
+        <comment value="No element in the profile carries the diabetes category. It is calculated from the diagnosis by the interpreting doctor (default CAT 3) and is also used in Observation.referenceRange.appliesTo."/>
+      </target>
+    </element>
+    <element>
+      <code value="Device"/>
+      <display value="Identification number assigned by INAMI to the sensor type"/>
+      <target>
+        <code value="DiagnosticReport.extension:device.extension:concept.valueCodeableConcept"/>
+        <display value="Sensor type (BeExtCodeableReference concept)"/>
+        <equivalence value="equivalent"/>
+        <comment value="The INAMI sensor type number is sent as a code with system be-ns-diabetes-device-type."/>
+      </target>
+    </element>
+    <element>
+      <code value="Code"/>
+      <display value="Report code (type of procedure)"/>
+      <target>
+        <code value="DiagnosticReport.code"/>
+        <display value="Name/Code for this diagnostic report"/>
+        <equivalence value="equivalent"/>
+        <comment value="Bound to BeVSDiabetesReportCode (e.g. 439926003 Ambulatory continuous glucose monitoring of interstitial tissue fluid)."/>
+      </target>
+    </element>
+    <element>
+      <code value="DerivedObservations"/>
+      <display value="References to the derived value observations in the report"/>
+      <target>
+        <code value="DiagnosticReport.result"/>
+        <display value="Observations"/>
+        <equivalence value="equivalent"/>
+        <comment value="Reference(BeObservationDiabetes)."/>
+      </target>
+    </element>
+    <element>
+      <code value="MeasurementObservations"/>
+      <display value="References to the blood glucose measurement observations used to produce the analysis"/>
+      <target>
+        <equivalence value="unmatched"/>
+        <comment value="No element in the profile. DiagnosticReport.result is restricted to BeObservationDiabetes (derived values), so the individual measurements are not referenced from the report."/>
+      </target>
+    </element>
+    <element>
+      <code value="Diagnosis"/>
+      <display value="Problem related to this diagnostic report"/>
+      <target>
+        <equivalence value="unmatched"/>
+        <comment value="No element in the R4 profile. The R5 DiagnosticReport.supportingInfo cross-version extension was considered but is commented out in the profile."/>
+      </target>
+    </element>
+    <element>
+      <code value="Note"/>
+      <display value="Report comments in free text"/>
+      <target>
+        <code value="DiagnosticReport.extension:note"/>
+        <display value="Comments about the report (BeExtSimpleNote)"/>
+        <equivalence value="equivalent"/>
+        <comment value="Not provided by the report producer; added by the interpreting care provider."/>
+      </target>
+    </element>
+    <element>
+      <code value="Document"/>
+      <display value="PDF document containing the complete report"/>
+      <target>
+        <code value="DiagnosticReport.presentedForm"/>
+        <display value="Entire report as issued"/>
+        <equivalence value="equivalent"/>
+        <comment value="contentType fixed to application/pdf."/>
+      </target>
+    </element>
+    <element>
+      <code value="Status"/>
+      <display value="Report status (default Final)"/>
+      <target>
+        <code value="DiagnosticReport.status"/>
+        <display value="final | partial"/>
+        <equivalence value="equivalent"/>
+        <comment value="Bound to BeVSDiabetesReportStatus. The status depends on the business rule on % Data Captured."/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/Composition/uc52-composition> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "uc52-composition"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition uc52-composition</b></p><a name=\"uc52-composition\"> </a><a name=\"hcuc52-composition\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 439926003}\">Ambulatory continuous glucose monitoring of interstitial tissue fluid (procedure)</span></p><p><b>date</b>: 2024-11-25</p><p><b>author</b>: Identifier: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-nihdi.html\" title=\"RIZIV/INAMI\">BeNIHDINamingSystem</a>/0403044007</p><p><b>title</b>: Diabetes device report</p></div>"
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:439926003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000172109" ] ;
+       fhir:Coding.code [ fhir:value "439926003" ]
+     ]
+  ] ;
+  fhir:Composition.date [ fhir:value "2024-11-25"^^xsd:date] ;
+  fhir:Composition.author [
+     fhir:index -1 ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi" ] ;
+       fhir:Identifier.value [ fhir:value "0403044007" ]
+     ]
+  ] ;
+  fhir:Composition.title [ fhir:value "Diabetes device report"] ;
+  fhir:Composition.section [
+     fhir:index -1 ;
+     fhir:Composition.section.entry [
+       fhir:index -1 ;
+       fhir:Reference.reference [ fhir:value "urn:uuid:6e126868-aa6a-41ef-b7fb-3c8b690d8ffb" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/Composition/uc52-composition.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

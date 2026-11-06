@@ -1,0 +1,149 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "map-observation-diabetes",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap map-observation-diabetes</b></p><a name=\"map-observation-diabetes\"> </a><a name=\"hcmap-observation-diabetes\"> </a><p>Mapping from <a href=\"StructureDefinition-BeModelObservationDiabetes.html\">BeModelObservationDiabetes</a> to <a href=\"StructureDefinition-be-observation-diabetes.html\">BeObservationDiabetes</a></p><br/><p>Mapping from <a href=\"StructureDefinition-BeModelObservationDiabetes.html\">BeModelObservationDiabetes</a> to <a href=\"StructureDefinition-be-observation-diabetes.html\">BeObservationDiabetes</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Comment</b></td></tr><tr><td colspan=\"3\">UniqueIdentifier</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.identifier:UUID\">Observation.identifier:UUID</a></td><td>1..1</td><td>todo</td><td>System fixed to be-ns-observation-diabetes.</td></tr><tr><td colspan=\"3\">RecordedDate</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.extension:recorded-date\">Observation.extension:recorded-date</a></td><td>1..1</td><td>todo</td><td/></tr><tr><td colspan=\"3\">ObservationPeriod</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td colspan=\"3\">Observation.effectivePeriod</td><td>effective[x] is restricted to Period; start and end are both mandatory. A single date is sent as a period with the same start and end.</td></tr><tr><td colspan=\"3\">Patient</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.subject\">Observation.subject</a></td><td>1..1</td><td>todo</td><td>Reference(BePatient). The model carries the NISS; in FHIR it is the identifier of the referenced BePatient (or Reference.identifier).</td></tr><tr><td colspan=\"3\">Recorder</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.extension:recorder\">Observation.extension:recorder</a></td><td>1..1</td><td>todo</td><td>The model carries the NISS of the professional or the company number of the organization; in FHIR this is a reference to the corresponding practitioner, practitioner role or organization.</td></tr><tr><td colspan=\"3\">Category</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.category\">Observation.category</a></td><td>1..*</td><td>todo</td><td>Bound to BeVSDiabetesObservationCategory (698472009 Glucose monitoring).</td></tr><tr><td colspan=\"3\">Status</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.status\">Observation.status</a></td><td>1..1</td><td>todo</td><td>0..1 in the model but 1..1 in the profile. The model refers to the SNOMED CT code 445665009 (Final report); in FHIR this is the observation-status code final (BeVSDiabetesObservationStatus).</td></tr><tr><td colspan=\"3\">Code</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.code\">Observation.code</a></td><td>1..1</td><td>todo</td><td>Bound to BeVSDiabetesObservationCode.</td></tr><tr><td colspan=\"3\">Value</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td colspan=\"3\">Observation.valueQuantity</td><td>The profile requires value[x] (1..1) but does not restrict it to Quantity.</td></tr><tr><td colspan=\"3\">ReferenceRange</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"StructureDefinition-be-observation-diabetes.html#s-Observation.referenceRange\">Observation.referenceRange</a></td><td>0..*</td><td>todo</td><td>Target limits map to referenceRange.low and referenceRange.high. Category-dependent filter ranges (CAT 1/2/3) use referenceRange.appliesTo. Only sent when the values differ from the ADA defaults.</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/ConceptMap/map-observation-diabetes",
+  "version" : "1.0.0",
+  "name" : "MapObservationDiabetes",
+  "title" : "Diabetes Observation Model to BeObservationDiabetes Mapping",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-02T13:33:25+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be"
+    },
+    {
+      "system" : "email",
+      "value" : "message-structure@www.ehealth.fgov.be"
+    }]
+  },
+  {
+    "name" : "Message-Structure",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@www.ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Mapping from the BeModelObservationDiabetes logical model to the be-observation-diabetes profile",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "sourceCanonical" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelObservationDiabetes",
+  "targetCanonical" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-observation-diabetes",
+  "group" : [{
+    "source" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/BeModelObservationDiabetes",
+    "target" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-observation-diabetes",
+    "element" : [{
+      "code" : "UniqueIdentifier",
+      "display" : "Unique observation business identifier",
+      "target" : [{
+        "code" : "Observation.identifier:UUID",
+        "display" : "Unique identifier of the observation",
+        "equivalence" : "equivalent",
+        "comment" : "System fixed to be-ns-observation-diabetes."
+      }]
+    },
+    {
+      "code" : "RecordedDate",
+      "display" : "Date of encoding of the observation by the recorder",
+      "target" : [{
+        "code" : "Observation.extension:recorded-date",
+        "display" : "Recording date (BeExtRecordedDate)",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ObservationPeriod",
+      "display" : "Date or observation period",
+      "target" : [{
+        "code" : "Observation.effectivePeriod",
+        "display" : "Period covered by the observation",
+        "equivalence" : "equivalent",
+        "comment" : "effective[x] is restricted to Period; start and end are both mandatory. A single date is sent as a period with the same start and end."
+      }]
+    },
+    {
+      "code" : "Patient",
+      "display" : "Unique identifier of the patient (NISS)",
+      "target" : [{
+        "code" : "Observation.subject",
+        "display" : "Who the observation is about",
+        "equivalence" : "equivalent",
+        "comment" : "Reference(BePatient). The model carries the NISS; in FHIR it is the identifier of the referenced BePatient (or Reference.identifier)."
+      }]
+    },
+    {
+      "code" : "Recorder",
+      "display" : "Health professional or organization that encodes the information",
+      "target" : [{
+        "code" : "Observation.extension:recorder",
+        "display" : "Recorder (BeExtRecorder)",
+        "equivalence" : "equivalent",
+        "comment" : "The model carries the NISS of the professional or the company number of the organization; in FHIR this is a reference to the corresponding practitioner, practitioner role or organization."
+      }]
+    },
+    {
+      "code" : "Category",
+      "display" : "Glucose monitoring category",
+      "target" : [{
+        "code" : "Observation.category",
+        "display" : "Classification of type of observation",
+        "equivalence" : "equivalent",
+        "comment" : "Bound to BeVSDiabetesObservationCategory (698472009 Glucose monitoring)."
+      }]
+    },
+    {
+      "code" : "Status",
+      "display" : "Status of the observation",
+      "target" : [{
+        "code" : "Observation.status",
+        "display" : "final | entered-in-error",
+        "equivalence" : "equivalent",
+        "comment" : "0..1 in the model but 1..1 in the profile. The model refers to the SNOMED CT code 445665009 (Final report); in FHIR this is the observation-status code final (BeVSDiabetesObservationStatus)."
+      }]
+    },
+    {
+      "code" : "Code",
+      "display" : "Code of the derived value (e.g. TAR or TIR)",
+      "target" : [{
+        "code" : "Observation.code",
+        "display" : "Type of derived observation",
+        "equivalence" : "equivalent",
+        "comment" : "Bound to BeVSDiabetesObservationCode."
+      }]
+    },
+    {
+      "code" : "Value",
+      "display" : "Derived value",
+      "target" : [{
+        "code" : "Observation.valueQuantity",
+        "display" : "Actual result",
+        "equivalence" : "equivalent",
+        "comment" : "The profile requires value[x] (1..1) but does not restrict it to Quantity."
+      }]
+    },
+    {
+      "code" : "ReferenceRange",
+      "display" : "Target and filter ranges for interpreting the derived value",
+      "target" : [{
+        "code" : "Observation.referenceRange",
+        "display" : "Provides guide for interpretation",
+        "equivalence" : "equivalent",
+        "comment" : "Target limits map to referenceRange.low and referenceRange.high. Category-dependent filter ranges (CAT 1/2/3) use referenceRange.appliesTo. Only sent when the values differ from the ADA defaults."
+      }]
+    }]
+  }]
+}

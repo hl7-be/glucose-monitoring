@@ -37,5 +37,6 @@ Description: "Belgian FHIR profile for a diabetes diagnostic report based on glu
 * presentedForm.contentType = #"application/pdf"
 * status MS
 * status from BeVSDiabetesReportStatus
+* status ^short = "Status of the report"
 * subject 1..1 MS
 * subject only Reference(BePatient)

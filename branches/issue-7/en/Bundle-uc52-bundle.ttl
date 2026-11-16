@@ -1,0 +1,166 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/Bundle/uc52-bundle> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "uc52-bundle"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diagnostic-report-diabetes" ] ;
+     fhir:Identifier.value [ fhir:value "6e126868-aa6a-41ef-b7fb-3c8b690d8ffb" ]
+  ] ;
+  fhir:Bundle.type [ fhir:value "document"] ;
+  fhir:Bundle.timestamp [ fhir:value "2024-11-25T00:00:00.000+01:00"^^xsd:dateTime] ;
+  fhir:Bundle.entry [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:66442d1d-2a00-45cc-a4bd-b07c2a376212" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:66442d1d-2a00-45cc-a4bd-b07c2a376212>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:6e126868-aa6a-41ef-b7fb-3c8b690d8ffb" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:6e126868-aa6a-41ef-b7fb-3c8b690d8ffb>
+  ] .
+
+<urn:uuid:66442d1d-2a00-45cc-a4bd-b07c2a376212> a fhir:Composition ;
+  fhir:Resource.id [ fhir:value "uc52-composition"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_uc52-composition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition uc52-composition</b></p><a name=\"uc52-composition\"> </a><a name=\"hcuc52-composition\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 439926003}\">Ambulatory continuous glucose monitoring of interstitial tissue fluid (procedure)</span></p><p><b>date</b>: 2024-11-25</p><p><b>author</b>: Identifier: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-nihdi.html\" title=\"RIZIV/INAMI\">BeNIHDINamingSystem</a>/0403044007</p><p><b>title</b>: Diabetes device report</p></div>"
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:439926003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000172109" ] ;
+       fhir:Coding.code [ fhir:value "439926003" ]
+     ]
+  ] ;
+  fhir:Composition.date [ fhir:value "2024-11-25"^^xsd:date] ;
+  fhir:Composition.author [
+     fhir:index -1 ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi" ] ;
+       fhir:Identifier.value [ fhir:value "0403044007" ]
+     ]
+  ] ;
+  fhir:Composition.title [ fhir:value "Diabetes device report"] ;
+  fhir:Composition.section [
+     fhir:index -1 ;
+     fhir:Composition.section.entry [
+       fhir:index -1 ;
+       fhir:Reference.reference [ fhir:value "urn:uuid:6e126868-aa6a-41ef-b7fb-3c8b690d8ffb" ]
+     ]
+  ] .
+
+<urn:uuid:6e126868-aa6a-41ef-b7fb-3c8b690d8ffb> a fhir:DiagnosticReport ;
+  fhir:Resource.id [ fhir:value "uc52-pdfonly"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-diagnostic-report-diabetes" ;
+       fhir:index -1 ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-diagnostic-report-diabetes>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_uc52-pdfonly\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport uc52-pdfonly</b></p><a name=\"uc52-pdfonly\"> </a><a name=\"hcuc52-pdfonly\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-diagnostic-report-diabetes.html\">BeDiagnosticReportDiabetes</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 439926003}\">Ambulatory continuous glucose monitoring of interstitial tissue fluid (procedure)</span> (<span title=\"Codes:{http://snomed.info/sct 4311000179106}\">Chemical pathology report (record artifact)</span>, <span title=\"Codes:{http://snomed.info/sct 408475000}\">Diabetic medicine (qualifier value)</span>, <span title=\"Codes:{http://snomed.info/sct 394583002}\">Endocrinology (qualifier value)</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Relevant Time</td><td>2024-11-11 --&gt; 2024-11-24</td></tr><tr><td>Identifier</td><td> <a href=\"NamingSystem-be-ns-diagnostic-report-diabetes.html\">BeNSDiagnosticReportDiabetes</a>/6e126868-aa6a-41ef-b7fb-3c8b690d8ffb</td></tr><tr><td>Presented Form</td><td> application/pdf: JVBERi0xLjANCjEgMCBvYmo8PC9QYWdl...</td></tr></table><p><b>Report Details</b></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorded-date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2024-11-25"^^xsd:date ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder" ] ;
+     fhir:Extension.valueReference [
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi" ] ;
+         fhir:Identifier.value [ fhir:value "0403044007" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/StructureDefinition/be-ext-device-type" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/CodeSystem/be-cs-diabetes-device-type" ] ;
+         fhir:Coding.code [ fhir:value "701010000576" ]
+       ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/NamingSystem/be-ns-diagnostic-report-diabetes" ] ;
+     fhir:Identifier.value [ fhir:value "6e126868-aa6a-41ef-b7fb-3c8b690d8ffb" ]
+  ] ;
+  fhir:DiagnosticReport.status [ fhir:value "final"] ;
+  fhir:DiagnosticReport.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:4311000179106 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000172109" ] ;
+       fhir:Coding.code [ fhir:value "4311000179106" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:408475000 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000172109" ] ;
+       fhir:Coding.code [ fhir:value "408475000" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:394583002 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000172109" ] ;
+       fhir:Coding.code [ fhir:value "394583002" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:439926003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000172109" ] ;
+       fhir:Coding.code [ fhir:value "439926003" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin" ] ;
+       fhir:Identifier.value [ fhir:value "80051207915" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.effectivePeriod [
+     fhir:Period.start [ fhir:value "2024-11-11"^^xsd:date ] ;
+     fhir:Period.end [ fhir:value "2024-11-24"^^xsd:date ]
+  ] ;
+  fhir:DiagnosticReport.presentedForm [
+     fhir:index -1 ;
+     fhir:Attachment.contentType [ fhir:value "application/pdf" ] ;
+     fhir:Attachment.data [ fhir:value "JVBERi0xLjANCjEgMCBvYmo8PC9QYWdlcyAyIDAgUj4+ZW5kb2JqIDIgMCBvYmo8PC9LaWRzWzMgMCBSXS9Db3VudCAxPj5lbmRvYmogMyAwIG9iajw8L01lZGlhQm94WzAgMCAzIDNdPj5lbmRvYmoNCnRyYWlsZXI8PC9Sb290IDEgMCBSPj4="^^xsd:base64Binary ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/Bundle/uc52-bundle.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

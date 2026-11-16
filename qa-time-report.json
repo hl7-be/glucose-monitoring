@@ -1,0 +1,1248 @@
+{
+  "date" : "Tue, 13 Oct, 2026 07:09:03 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.glucose-monitoring.json",
+    "size" : 11836,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 88,
+      "length" : 11
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 91,
+      "length" : 9
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 54
+    },
+    {
+      "activity" : "validate",
+      "start" : 100,
+      "length" : 5118
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 160
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 215
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 133,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 146,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Bundle-uc52-bundle.json",
+    "size" : 4720,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 18
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 91,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 91,
+      "length" : 2957
+    },
+    {
+      "activity" : "validate",
+      "start" : 105,
+      "length" : 1784
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 43
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 36
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 133,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Bundle-uc53-bundle.json",
+    "size" : 30617,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 9
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 16
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 91,
+      "length" : 8
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 94,
+      "length" : 1600
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 105,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 107,
+      "length" : 3476
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 124
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 279
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Composition-uc52-composition.json",
+    "size" : 657,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 3
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 18
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 18
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Composition-uc53-composition.json",
+    "size" : 657,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 16
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 15
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Device-device.json",
+    "size" : 258,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 14
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/DiagnosticReport-uc52-pdfonly.json",
+    "size" : 2736,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 2
+    },
+    {
+      "activity" : "loadDepInfo",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 22
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 21
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 16
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/DiagnosticReport-uc53-pdf-derived.json",
+    "size" : 3398,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 24
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 30
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 38
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/NamingSystem-be-ns-diabetes-device-type.json",
+    "size" : 890,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 9
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 97,
+      "length" : 318
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 19
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 20
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/NamingSystem-be-ns-diagnostic-report-diabetes.json",
+    "size" : 391,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 88,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 98,
+      "length" : 16
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 17
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 13
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 133,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/NamingSystem-be-ns-observation-diabetes.json",
+    "size" : 374,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 98,
+      "length" : 15
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 16
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 13
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-397dffb4-a88a-47d0-b10d-beffcbf6157d.json",
+    "size" : 2340,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 6
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 7
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 21
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 17
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-449a728d-dfb4-422d-94aa-1a2d43849ee5.json",
+    "size" : 2428,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 9
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 22
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 15
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-454a29d0-0893-458a-b2e5-25452b89e29a.json",
+    "size" : 2414,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 11
+    },
+    {
+      "activity" : "generate1",
+      "start" : 111,
+      "length" : 19
+    },
+    {
+      "activity" : "generate2",
+      "start" : 116,
+      "length" : 15
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 146,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-6756477d-b57a-4611-b048-374d46f52908.json",
+    "size" : 2334,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "loadInfo",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 37
+    },
+    {
+      "activity" : "generate1",
+      "start" : 112,
+      "length" : 19
+    },
+    {
+      "activity" : "generate2",
+      "start" : 117,
+      "length" : 17
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-a6665182-e11a-40a9-ae83-9b093a353f16.json",
+    "size" : 2426,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 11
+    },
+    {
+      "activity" : "generate1",
+      "start" : 112,
+      "length" : 20
+    },
+    {
+      "activity" : "generate2",
+      "start" : 117,
+      "length" : 15
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-b28ef33b-0480-4bde-a5df-94988813110b.json",
+    "size" : 2430,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 10
+    },
+    {
+      "activity" : "generate1",
+      "start" : 112,
+      "length" : 20
+    },
+    {
+      "activity" : "generate2",
+      "start" : 117,
+      "length" : 13
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-b44fe5d5-f57b-4424-b628-d2baeb447738.json",
+    "size" : 2418,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 8
+    },
+    {
+      "activity" : "generate1",
+      "start" : 112,
+      "length" : 19
+    },
+    {
+      "activity" : "generate2",
+      "start" : 117,
+      "length" : 13
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-c611b58d-27bb-49e2-b3ec-bd59e986f5f3.json",
+    "size" : 2334,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 4
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 105,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 7
+    },
+    {
+      "activity" : "generate1",
+      "start" : 112,
+      "length" : 24
+    },
+    {
+      "activity" : "generate2",
+      "start" : 117,
+      "length" : 14
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Parameters-terminology-expansion.json",
+    "size" : 166,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 111,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 112,
+      "length" : 10
+    },
+    {
+      "activity" : "generate2",
+      "start" : 117,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-BeModelDiagnosticReportDiabetes.json",
+    "size" : 13046,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 9
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 88,
+      "length" : 15
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 78
+    },
+    {
+      "activity" : "validate",
+      "start" : 99,
+      "length" : 194
+    },
+    {
+      "activity" : "generate1",
+      "start" : 112,
+      "length" : 132
+    },
+    {
+      "activity" : "generate2",
+      "start" : 117,
+      "length" : 816
+    },
+    {
+      "activity" : "generate2",
+      "start" : 121,
+      "length" : 308
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 123,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 133,
+      "length" : 5
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-BeModelObservationDiabetes.json",
+    "size" : 9309,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 8
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 88,
+      "length" : 13
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 14
+    },
+    {
+      "activity" : "validate",
+      "start" : 99,
+      "length" : 70
+    },
+    {
+      "activity" : "generate1",
+      "start" : 112,
+      "length" : 87
+    },
+    {
+      "activity" : "generate2",
+      "start" : 117,
+      "length" : 266
+    },
+    {
+      "activity" : "generate2",
+      "start" : 122,
+      "length" : 89
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 133,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-be-diagnostic-report-diabetes.json",
+    "size" : 7399,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 10
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 88,
+      "length" : 92
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 69
+    },
+    {
+      "activity" : "validate",
+      "start" : 99,
+      "length" : 720
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 105,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 105,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 112,
+      "length" : 332
+    },
+    {
+      "activity" : "generate2",
+      "start" : 118,
+      "length" : 887
+    },
+    {
+      "activity" : "generate2",
+      "start" : 122,
+      "length" : 406
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 133,
+      "length" : 11
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 146,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-be-observation-diabetes.json",
+    "size" : 4631,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 7
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 88,
+      "length" : 63
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 33
+    },
+    {
+      "activity" : "validate",
+      "start" : 100,
+      "length" : 289
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 105,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 112,
+      "length" : 301
+    },
+    {
+      "activity" : "generate2",
+      "start" : 119,
+      "length" : 1212
+    },
+    {
+      "activity" : "generate2",
+      "start" : 122,
+      "length" : 235
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 133,
+      "length" : 8
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 146,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-be-vs-diabetes-observation-category.json",
+    "size" : 932,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 4
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 913
+    },
+    {
+      "activity" : "validate",
+      "start" : 98,
+      "length" : 542
+    },
+    {
+      "activity" : "generate1",
+      "start" : 112,
+      "length" : 15
+    },
+    {
+      "activity" : "generate2",
+      "start" : 120,
+      "length" : 286
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-be-vs-diabetes-observation-code.json",
+    "size" : 1611,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 97,
+      "length" : 163
+    },
+    {
+      "activity" : "validate",
+      "start" : 98,
+      "length" : 337
+    },
+    {
+      "activity" : "generate1",
+      "start" : 112,
+      "length" : 21
+    },
+    {
+      "activity" : "generate2",
+      "start" : 120,
+      "length" : 416
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 133,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-be-vs-diabetes-observation-status.json",
+    "size" : 821,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 88,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 97,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 99,
+      "length" : 24
+    },
+    {
+      "activity" : "generate1",
+      "start" : 113,
+      "length" : 15
+    },
+    {
+      "activity" : "generate2",
+      "start" : 120,
+      "length" : 89
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-be-vs-diabetes-report-category.json",
+    "size" : 911,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 97,
+      "length" : 159
+    },
+    {
+      "activity" : "validate",
+      "start" : 99,
+      "length" : 320
+    },
+    {
+      "activity" : "generate1",
+      "start" : 113,
+      "length" : 15
+    },
+    {
+      "activity" : "generate2",
+      "start" : 121,
+      "length" : 233
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-be-vs-diabetes-report-code.json",
+    "size" : 767,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 88,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 91,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 97,
+      "length" : 158
+    },
+    {
+      "activity" : "validate",
+      "start" : 99,
+      "length" : 9
+    },
+    {
+      "activity" : "checkURLsUnique",
+      "start" : 105,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 113,
+      "length" : 14
+    },
+    {
+      "activity" : "generate2",
+      "start" : 121,
+      "length" : 219
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 133,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-be-vs-diabetes-report-status.json",
+    "size" : 793,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 88,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 88,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 97,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 99,
+      "length" : 10
+    },
+    {
+      "activity" : "generate1",
+      "start" : 113,
+      "length" : 15
+    },
+    {
+      "activity" : "generate2",
+      "start" : 121,
+      "length" : 64
+    }]
+  },
+  {
+    "name" : "/input/includes/dmn2html.xslt",
+    "size" : 6208,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 121,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/includes/menu.xml_bla",
+    "size" : 919
+  },
+  {
+    "name" : "/input/includes/dmn.css",
+    "size" : 838
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 2165,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 121,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 1772
+  },
+  {
+    "name" : "/input/data/features.yml",
+    "size" : 5,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 121,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/changes.xml",
+    "size" : 457,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 121,
+      "length" : 42
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/guidance.xml",
+    "size" : 523,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 121,
+      "length" : 32
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/index.xml",
+    "size" : 3129,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 121,
+      "length" : 29
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/downloads.xml",
+    "size" : 1287,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 121,
+      "length" : 27
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/spec.md",
+    "size" : 56
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 46
+  },
+  {
+    "name" : "/input/images",
+    "size" : 0
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 216,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 121,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/temp/pages/_includes/fragment-artifacts-table.html",
+    "size" : 3443
+  }]
+}

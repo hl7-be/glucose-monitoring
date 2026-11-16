@@ -1,0 +1,10 @@
+{
+  "codeSystems" : [{
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/glucose-monitoring/CodeSystem/be-cs-diabetes-device-type",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSDiabetesDeviceType",
+    "title" : "BeCSDiabetesDeviceType",
+    "description" : "Identification codes for glucose monitoring sensor types used in Belgium."
+  }]
+}
